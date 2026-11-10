@@ -1,0 +1,20 @@
+# 사이클 B — 2026-11-18에 끝난다
+cycle: B
+active: true
+ends_on: 2026-11-18      # 이 날부터 active를 false로 바꾼다 (코드는 그대로)
+
+# 종료 규칙: ends_on 전에 한 사이클을 다 끝내지 못할 것 같으면
+# B의 새 사이클은 시작하지 않는다. (사이클 소요 시간은 첫 사이클에서 측정)
+no_new_cycle_if_unfinishable: true
+
+members:
+  gemini: { person: U, tool: antigravity }
+  codex:  { person: Y, tool: codex }
+  claude: { person: J, tool: claude_code }
+
+slices:
+  "1-1": { generate: gemini, label_1: codex,  label_2: claude }
+  "1-2": { generate: codex,  label_1: claude, label_2: gemini }
+  "1-3": { generate: claude, label_1: gemini, label_2: codex }
+
+cases_per_slice: 1000

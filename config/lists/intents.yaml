@@ -1,0 +1,114 @@
+# 의도 목록 (30개) — 지식 베이스 설계 4-1절
+# 서버와 앱도 같은 목록을 쓴다. 바뀐 목록은 팀 승인 후 다음 배치부터 적용.
+#
+# reserved: none(의도 없음), unclassified(목록에 없는 의도)
+# frequency: 목적을 뽑는 가중치 (common ×3 · normal ×2 · rare ×1, 시작값)
+# related_tags: "관련 있는 일정"을 붙일 때 쓰는 캘린더 태그
+# 민감한 의도(출산 준비, 병간호, 다이어트)는 넣지 않는다.
+
+version: 1
+reserved: [none, unclassified]
+frequency_weight: { common: 3, normal: 2, rare: 1 }
+
+intents:
+  # 손님·모임
+  - { id: kid_birthday_party, group: 손님·모임, name: 아이 생일 파티, frequency: common,
+      definition: "아이 생일을 집에서 축하. 케이크·초 + 아이용 파티 소품·답례품",
+      related_tags: [생일] }
+  - { id: adult_birthday, group: 손님·모임, name: 어른 생일 축하, frequency: common,
+      definition: "어른 생일. 케이크·초·꽃. 아이용 파티 소품 없음",
+      related_tags: [생일] }
+  - { id: home_party, group: 손님·모임, name: 지인 초대 홈파티 (집들이 포함), frequency: common,
+      definition: "친구·동료를 불러 음식·술 대접. 생일 소품·응원 용품 없음",
+      related_tags: [집들이, 친구 모임, 연말 모임] }
+  - { id: family_gathering, group: 손님·모임, name: 가족 모임·식사 대접, frequency: common,
+      definition: "부모님·친척과 집에서 식사. 명절 음식 재료 없음",
+      related_tags: [가족 모임, 어버이날, 졸업식] }
+  - { id: guest_overnight, group: 손님·모임, name: 손님 숙박, frequency: normal,
+      definition: "손님이 하룻밤 이상 묵음. 여분 침구·수건·세면도구",
+      related_tags: [손님 방문] }
+  - { id: kids_playdate, group: 손님·모임, name: 아이 친구 놀러 옴, frequency: normal,
+      definition: "생일이 아닌 아이 친구 방문. 소량 간식·놀이 용품. 케이크·학습지 없음",
+      related_tags: [손님 방문, 어린이날] }
+  - { id: watch_party, group: 손님·모임, name: 경기·영화 함께 보기, frequency: normal,
+      definition: "여럿이 화면 앞에 모임. 응원 용품·야식·맥주",
+      related_tags: [경기 관람] }
+
+  # 명절·연중
+  - { id: holiday_feast, group: 명절·연중, name: 명절 상차림, frequency: normal,
+      definition: "설·추석 음식. 전 재료·제수용품",
+      related_tags: [설날, 추석] }
+  - { id: christmas_party, group: 명절·연중, name: 크리스마스·연말 파티, frequency: normal,
+      definition: "트리·장식 + 파티 음식",
+      related_tags: [크리스마스, 연말 모임] }
+  - { id: anniversary_dinner, group: 명절·연중, name: 기념일 홈 디너, frequency: normal,
+      definition: "결혼·연애 기념일에 둘이 집에서 저녁. 스테이크·와인·꽃·초",
+      related_tags: [기념일] }
+  - { id: kimjang, group: 명절·연중, name: 김장, frequency: rare,
+      definition: "절임배추·고춧가루·김장 매트·대용량 통",
+      related_tags: [김장] }
+
+  # 여행·외출
+  - { id: trip_away, group: 여행·외출, name: 여행으로 집 비움, frequency: common,
+      definition: "여행용품·짐 꾸리기. 캠핑 장비 없음",
+      related_tags: [여행, 출장] }
+  - { id: camping_trip, group: 여행·외출, name: 캠핑 준비, frequency: normal,
+      definition: "캠핑 장비·연료·캠핑 음식",
+      related_tags: [캠핑] }
+  - { id: picnic_lunchbox, group: 여행·외출, name: 나들이 도시락, frequency: normal,
+      definition: "당일 나들이. 도시락 재료·돗자리",
+      related_tags: [나들이·소풍, 어린이날] }
+
+  # 생활 변화
+  - { id: moving_in, group: 생활 변화, name: 이사·새집 입주 (첫 자취 포함), frequency: rare,
+      definition: "새 공간 세팅. 수납·기본 살림살이 + 청소",
+      related_tags: [이사] }
+  - { id: new_dog, group: 생활 변화, name: 강아지 맞이, frequency: rare,
+      definition: "강아지 사료·배변패드·켄넬",
+      related_tags: [반려동물 입양] }
+  - { id: new_cat, group: 생활 변화, name: 고양이 맞이, frequency: rare,
+      definition: "고양이 모래·화장실·스크래처",
+      related_tags: [반려동물 입양] }
+  - { id: school_start, group: 생활 변화, name: 입학·새 학기 (초중고·대학), frequency: normal,
+      definition: "가방·필기구·실내화",
+      related_tags: [입학·개학] }
+  - { id: kids_vacation, group: 생활 변화, name: 아이 방학 시작, frequency: normal,
+      definition: "방학 동안 집에 있는 아이 준비. 간식·점심 재료 대량, 학습지",
+      related_tags: [방학] }
+  - { id: exam_focus, group: 생활 변화, name: 시험·수험 기간, frequency: normal,
+      definition: "집중 환경. 독서대·스탠드·간편식",
+      related_tags: [시험] }
+  - { id: wfh_start, group: 생활 변화, name: 재택근무 시작, frequency: rare,
+      definition: "홈오피스 세팅. 모니터암·의자 쿠션·책상 조명",
+      related_tags: [] }
+
+  # 집·계절
+  - { id: rainy_season, group: 집·계절, name: 장마·습기 대비, frequency: normal,
+      definition: "제습제·제습기 필터·곰팡이 제거제 중 2개 이상",
+      related_tags: [] }
+  - { id: summer_heat, group: 집·계절, name: 여름 더위 대비, frequency: common,
+      definition: "선풍기·쿨매트·에어컨 필터 중 2개 이상",
+      related_tags: [] }
+  - { id: winter_dry_cold, group: 집·계절, name: 겨울 추위·건조 대비, frequency: common,
+      definition: "가습기·전기요·문풍지 중 2개 이상",
+      related_tags: [] }
+  - { id: fine_dust, group: 집·계절, name: 미세먼지 대비, frequency: normal,
+      definition: "공기청정기 필터·대용량 마스크 등 2개 이상",
+      related_tags: [] }
+  - { id: deep_cleaning, group: 집·계절, name: 대청소, frequency: common,
+      definition: "청소 도구·세제 여러 종류를 한꺼번에",
+      related_tags: [대청소] }
+  - { id: closet_change, group: 집·계절, name: 옷·이불 교체, frequency: normal,
+      definition: "압축팩·이불 커버·옷걸이 중 2개 이상",
+      related_tags: [] }
+
+  # 취미·자기관리
+  - { id: home_baking, group: 취미·자기관리, name: 홈베이킹, frequency: normal,
+      definition: "밀가루·버터·베이킹 도구. 초·파티 소품 없음",
+      related_tags: [] }
+  - { id: home_workout_start, group: 취미·자기관리, name: 홈트레이닝 시작, frequency: rare,
+      definition: "요가매트·덤벨·폼롤러",
+      related_tags: [] }
+  - { id: meal_prep, group: 취미·자기관리, name: 밀프렙, frequency: normal,
+      definition: "도시락 용기 여러 개 + 닭가슴살·채소 대량",
+      related_tags: [] }

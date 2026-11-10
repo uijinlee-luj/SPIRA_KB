@@ -1,0 +1,39 @@
+# 가구 유형 (20개)와 조합 규칙 — 지식 베이스 설계 4-3 · 4-4절
+# 성별은 넣지 않는다. 가구 프로필에는 "입양 예정" 같은 계획을 넣지 않는다 (의도가 새어 나감).
+
+version: 1
+
+axes:
+  size:        { pick: one,  types: ["1인", "2인", "3~4인", "5인 이상"] }
+  composition: { pick: many, types: ["부부·커플", "영유아 자녀", "초등 자녀", "중학생 자녀",
+                                     "고등학생 자녀", "부모 + 성인 자녀", "3대 함께", "룸메이트·셰어하우스"] }
+  life_stage:  { pick: one,  types: ["대학생", "직장인", "은퇴·노년"] }   # 주문하는 사람 기준
+  work_style:  { pick: many, types: ["맞벌이", "재택근무"] }
+  pets:        { pick: many, types: ["반려견", "반려묘", "그 밖의 반려동물"] }
+
+child_types: ["영유아 자녀", "초등 자녀", "중학생 자녀", "고등학생 자녀"]
+
+# 최소 인원 = (부부·커플이면 2, 아니면 1) + 자녀 칸 수 + (부모 + 성인 자녀면 1). 3대 함께면 최소 3.
+# 인원 칸 상한: 1인 = 1, 2인 = 2, 3~4인 = 4, 5인 이상 = 제한 없음
+size_max: { "1인": 1, "2인": 2, "3~4인": 4, "5인 이상": null }
+
+# blocked: 합성 데이터와 앱 온보딩 모두에서 막는다
+# rare:    합성 데이터에서만 막는다
+rules:
+  - { level: blocked, rule: "최소 인원이 인원 칸보다 많음" }
+  - { level: blocked, rule: "룸메이트·셰어하우스 + 부부·커플 / 자녀 칸 / 부모 + 성인 자녀 / 3대 함께" }
+  - { level: blocked, rule: "맞벌이인데 부부·커플 없음" }
+  - { level: blocked, rule: "은퇴·노년 + 맞벌이 또는 재택근무" }
+  - { level: rare,    rule: "대학생 + 맞벌이 / 영유아~고등학생 자녀 / 재택근무" }
+  - { level: rare,    rule: "은퇴·노년 + 영유아~고등학생 자녀" }
+  - { level: rare,    rule: "인원 칸이 최소 인원보다 2명 이상 많음" }
+
+# 의도가 있는 주문은 의도와 맞는 가구에만 붙인다 (4-4절). 여기 없는 의도는 제한 없음.
+intent_requirements:
+  kid_birthday_party: { any_of: [child_types] }
+  kids_playdate:      { any_of: [child_types] }
+  kids_vacation:      { any_of: [child_types] }
+  school_start:       { any_of: [child_types, "대학생"] }
+  exam_focus:         { any_of: ["중학생 자녀", "고등학생 자녀", "부모 + 성인 자녀", "대학생"] }
+  anniversary_dinner: { any_of: ["부부·커플"] }
+  wfh_start:          { none_of: ["은퇴·노년"] }

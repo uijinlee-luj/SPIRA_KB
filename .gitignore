@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SPIRA_KB local
+.env
+.venv/
+.spira-me
+logs/

@@ -1,0 +1,10 @@
+# J — 각자 낼 몫. Actions가 이 파일을 읽고 그날 할당량을 정한다.
+person: J
+accounts:
+  - { company: codex,  tool: codex,       cycles: [A] }
+  - { company: claude, tool: claude_code, cycles: [B] }
+
+weekly_share_percent: null   # 이번 주에 낼 몫 (주간 한도의 %, 권장 30~40)
+run_window: null             # 주로 돌릴 시간대 (예: "00:00-05:00")
+calibration:
+  tokens_per_percent: {}     # 측정용 작업 뒤 채움
