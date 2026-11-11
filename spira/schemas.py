@@ -28,7 +28,7 @@ class IntentRef(BaseModel):
 
 class JobHeader(BaseModel):
     job_id: str
-    batch: str                 # 예) A1-2
+    batch: str                 # 예) A1-2 (아이템 풀은 "pool")
     role: Role
     company: Company
     prompt_version: str        # 예) generate_bundle@v1
@@ -38,6 +38,7 @@ class JobHeader(BaseModel):
 
 class ItemPoolJob(JobHeader):
     role: Literal["item_pool"] = "item_pool"
+    batch: Literal["pool"] = "pool"   # 작업 id = pool_{회사}_{상품군번호2자리}
     category: str              # 예) 과일·채소, 세제·청소용품
     target_count: int = Field(ge=20, le=300)
 
