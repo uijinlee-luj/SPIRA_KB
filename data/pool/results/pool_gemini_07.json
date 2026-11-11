@@ -1,0 +1,125 @@
+{
+ "job_id": "pool_gemini_07",
+ "items": [
+  {
+   "name": "소주",
+   "everyday": true
+  },
+  {
+   "name": "맥주",
+   "everyday": true
+  },
+  {
+   "name": "막걸리",
+   "everyday": true
+  },
+  {
+   "name": "와인",
+   "everyday": true
+  },
+  {
+   "name": "위스키",
+   "everyday": true
+  },
+  {
+   "name": "보드카",
+   "everyday": false
+  },
+  {
+   "name": "진",
+   "everyday": false
+  },
+  {
+   "name": "럼",
+   "everyday": false
+  },
+  {
+   "name": "데킬라",
+   "everyday": false
+  },
+  {
+   "name": "브랜디",
+   "everyday": false
+  },
+  {
+   "name": "고량주",
+   "everyday": true
+  },
+  {
+   "name": "사케",
+   "everyday": true
+  },
+  {
+   "name": "청주",
+   "everyday": true
+  },
+  {
+   "name": "약주",
+   "everyday": true
+  },
+  {
+   "name": "증류식 소주",
+   "everyday": true
+  },
+  {
+   "name": "샴페인",
+   "everyday": false
+  },
+  {
+   "name": "포트와인",
+   "everyday": false
+  },
+  {
+   "name": "애플사이다",
+   "everyday": true
+  },
+  {
+   "name": "벌꿀술",
+   "everyday": false
+  },
+  {
+   "name": "복분자주",
+   "everyday": true
+  },
+  {
+   "name": "베르무트",
+   "everyday": false
+  },
+  {
+   "name": "차례주",
+   "everyday": false
+  },
+  {
+   "name": "담금소주",
+   "everyday": false
+  },
+  {
+   "name": "무알코올 맥주",
+   "everyday": true
+  },
+  {
+   "name": "리큐르",
+   "everyday": false
+  },
+  {
+   "name": "뱅쇼",
+   "everyday": false
+  },
+  {
+   "name": "캔 하이볼",
+   "everyday": true
+  },
+  {
+   "name": "인삼주",
+   "everyday": false
+  },
+  {
+   "name": "이강주",
+   "everyday": false
+  },
+  {
+   "name": "샹그리아",
+   "everyday": false
+  }
+ ]
+}
