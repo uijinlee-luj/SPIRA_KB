@@ -1,9 +1,0 @@
-{
- "job_id": "pool_gemini_11",
- "batch": "pool",
- "role": "item_pool",
- "company": "gemini",
- "prompt_version": "item_pool@v2",
- "category": "주방용품·식기",
- "target_count": 100
-}

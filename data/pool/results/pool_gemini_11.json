@@ -1,0 +1,405 @@
+{
+ "job_id": "pool_gemini_11",
+ "items": [
+  {
+   "name": "프라이팬",
+   "everyday": true
+  },
+  {
+   "name": "냄비",
+   "everyday": true
+  },
+  {
+   "name": "궁중팬",
+   "everyday": true
+  },
+  {
+   "name": "압력솥",
+   "everyday": true
+  },
+  {
+   "name": "뚝배기",
+   "everyday": true
+  },
+  {
+   "name": "전골냄비",
+   "everyday": true
+  },
+  {
+   "name": "찜기",
+   "everyday": true
+  },
+  {
+   "name": "와플팬",
+   "everyday": false
+  },
+  {
+   "name": "직화냄비",
+   "everyday": false
+  },
+  {
+   "name": "식칼",
+   "everyday": true
+  },
+  {
+   "name": "과도",
+   "everyday": true
+  },
+  {
+   "name": "주방가위",
+   "everyday": true
+  },
+  {
+   "name": "도마",
+   "everyday": true
+  },
+  {
+   "name": "칼갈이",
+   "everyday": true
+  },
+  {
+   "name": "감자칼",
+   "everyday": true
+  },
+  {
+   "name": "강판",
+   "everyday": true
+  },
+  {
+   "name": "채칼",
+   "everyday": true
+  },
+  {
+   "name": "마늘다지기",
+   "everyday": true
+  },
+  {
+   "name": "파채칼",
+   "everyday": true
+  },
+  {
+   "name": "빵칼",
+   "everyday": false
+  },
+  {
+   "name": "중식도",
+   "everyday": false
+  },
+  {
+   "name": "밤가위",
+   "everyday": false
+  },
+  {
+   "name": "국자",
+   "everyday": true
+  },
+  {
+   "name": "뒤집개",
+   "everyday": true
+  },
+  {
+   "name": "집게",
+   "everyday": true
+  },
+  {
+   "name": "거품기",
+   "everyday": true
+  },
+  {
+   "name": "실리콘주걱",
+   "everyday": true
+  },
+  {
+   "name": "조리용 젓가락",
+   "everyday": true
+  },
+  {
+   "name": "채반",
+   "everyday": true
+  },
+  {
+   "name": "믹싱볼",
+   "everyday": true
+  },
+  {
+   "name": "건지기",
+   "everyday": true
+  },
+  {
+   "name": "계량컵",
+   "everyday": true
+  },
+  {
+   "name": "계량스푼",
+   "everyday": true
+  },
+  {
+   "name": "주방타이머",
+   "everyday": true
+  },
+  {
+   "name": "밀대",
+   "everyday": true
+  },
+  {
+   "name": "요리솔",
+   "everyday": true
+  },
+  {
+   "name": "야채탈수기",
+   "everyday": true
+  },
+  {
+   "name": "김밥말이",
+   "everyday": false
+  },
+  {
+   "name": "절구",
+   "everyday": false
+  },
+  {
+   "name": "밥공기",
+   "everyday": true
+  },
+  {
+   "name": "국그릇",
+   "everyday": true
+  },
+  {
+   "name": "찬기",
+   "everyday": true
+  },
+  {
+   "name": "접시",
+   "everyday": true
+  },
+  {
+   "name": "면기",
+   "everyday": true
+  },
+  {
+   "name": "파스타볼",
+   "everyday": true
+  },
+  {
+   "name": "샐러드볼",
+   "everyday": true
+  },
+  {
+   "name": "종지",
+   "everyday": true
+  },
+  {
+   "name": "나눔접시",
+   "everyday": true
+  },
+  {
+   "name": "생선접시",
+   "everyday": true
+  },
+  {
+   "name": "뚝배기받침",
+   "everyday": true
+  },
+  {
+   "name": "수저받침",
+   "everyday": false
+  },
+  {
+   "name": "유아식판",
+   "everyday": false
+  },
+  {
+   "name": "캠핑식판",
+   "everyday": false
+  },
+  {
+   "name": "제기",
+   "everyday": false
+  },
+  {
+   "name": "숟가락",
+   "everyday": true
+  },
+  {
+   "name": "젓가락",
+   "everyday": true
+  },
+  {
+   "name": "포크",
+   "everyday": true
+  },
+  {
+   "name": "티스푼",
+   "everyday": true
+  },
+  {
+   "name": "버터나이프",
+   "everyday": true
+  },
+  {
+   "name": "스테이크나이프",
+   "everyday": false
+  },
+  {
+   "name": "머그잔",
+   "everyday": true
+  },
+  {
+   "name": "유리잔",
+   "everyday": true
+  },
+  {
+   "name": "물병",
+   "everyday": true
+  },
+  {
+   "name": "텀블러",
+   "everyday": true
+  },
+  {
+   "name": "보온병",
+   "everyday": true
+  },
+  {
+   "name": "얼음틀",
+   "everyday": true
+  },
+  {
+   "name": "병따개",
+   "everyday": true
+  },
+  {
+   "name": "소주잔",
+   "everyday": true
+  },
+  {
+   "name": "맥주잔",
+   "everyday": false
+  },
+  {
+   "name": "와인잔",
+   "everyday": false
+  },
+  {
+   "name": "와인오프너",
+   "everyday": false
+  },
+  {
+   "name": "찻잔",
+   "everyday": false
+  },
+  {
+   "name": "티인퓨저",
+   "everyday": false
+  },
+  {
+   "name": "커피드리퍼",
+   "everyday": false
+  },
+  {
+   "name": "밀폐용기",
+   "everyday": true
+  },
+  {
+   "name": "양념통",
+   "everyday": true
+  },
+  {
+   "name": "오일병",
+   "everyday": true
+  },
+  {
+   "name": "쌀통",
+   "everyday": true
+  },
+  {
+   "name": "버터보관함",
+   "everyday": true
+  },
+  {
+   "name": "소스통",
+   "everyday": true
+  },
+  {
+   "name": "김치통",
+   "everyday": false
+  },
+  {
+   "name": "도시락통",
+   "everyday": false
+  },
+  {
+   "name": "보온도시락",
+   "everyday": false
+  },
+  {
+   "name": "이유식용기",
+   "everyday": false
+  },
+  {
+   "name": "식기건조대",
+   "everyday": true
+  },
+  {
+   "name": "수저통",
+   "everyday": true
+  },
+  {
+   "name": "칼꽂이",
+   "everyday": true
+  },
+  {
+   "name": "냄비받침",
+   "everyday": true
+  },
+  {
+   "name": "주방장갑",
+   "everyday": true
+  },
+  {
+   "name": "싱크대거름망",
+   "everyday": true
+  },
+  {
+   "name": "배수구덮개",
+   "everyday": true
+  },
+  {
+   "name": "행주걸이",
+   "everyday": true
+  },
+  {
+   "name": "키친타월걸이",
+   "everyday": true
+  },
+  {
+   "name": "프라이팬정리대",
+   "everyday": true
+  },
+  {
+   "name": "김장매트",
+   "everyday": false
+  },
+  {
+   "name": "쿠키커터",
+   "everyday": false
+  },
+  {
+   "name": "머핀틀",
+   "everyday": false
+  },
+  {
+   "name": "짤주머니",
+   "everyday": false
+  },
+  {
+   "name": "주방저울",
+   "everyday": false
+  },
+  {
+   "name": "빙수기",
+   "everyday": false
+  }
+ ]
+}
