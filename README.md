@@ -17,11 +17,12 @@ SPIRA_KB/
 ├─ spira/                 # 코드 (두 사이클 공통)
 │  ├─ runner.py           #   spira 명령: check · whoami · start
 │  ├─ config.py           #   설정 읽기 + 설계 규칙 검사
+│  ├─ embedding.py        #   basket_text · embed_basket (서버와 공동)
 │  ├─ steps/              #   코드 단계 ①③⑤⑥⑦ (GitHub Actions에서 실행)
 │  └─ agents/             #   AI별 실행 방법: claude · codex · gemini
 ├─ prompts/               # 생성 · 라벨 프롬프트 (공통, 커밋 기록 = 수정 이력)
 ├─ config/
-│  ├─ cycles/A.yaml       # 사이클 A (계속): Y=Gemini, J=Codex, S=Claude
+│  ├─ cycles/A.yaml       # 사이클 A (계속): Y=Gemini, J=Codex, S=Claude + 모델
 │  ├─ cycles/B.yaml       # 사이클 B (~11/18): U=Gemini, Y=Codex, J=Claude
 │  ├─ nodes/              # 사람별 계정과 낼 몫: U · Y · S · J
 │  └─ lists/              # 의도 30개 · 캘린더 태그 30개 · 가구 유형 20개
@@ -34,6 +35,30 @@ SPIRA_KB/
 - 코드와 프롬프트는 사이클별로 나누지 않는다. 나누면 A와 B가 다른 규칙으로 데이터를 만들게 된다
 - 누가 어떤 AI로 무슨 역할을 하는지는 `config/cycles/`에서 본다
 - 코드 폴더 이름은 `code/`가 아니라 `spira/`다. `code`는 파이썬 기본 모듈 이름과 겹친다
+
+## 이름 규칙
+
+| 무엇 | 규칙 | 예시 |
+| --- | --- | --- |
+| 배치 (조각) | `{사이클}{회차}-{조각}` | `A1-1` · `A1-2` · `A1-3` · `A2-1` … |
+| 사례 id | `syn_{배치}_{번호4자리}` | `syn_A2-3_0042` |
+| KB 버전 | `kb-v{번호}` (`kb_version` 칸 + 같은 이름의 GitHub 태그) | `kb-v1` |
+| 서버용 조회 전용 DB 계정 | `kb_reader` | |
+
+## 서버에서 쓰는 법 (KB-16)
+
+```bash
+pip install "spira-kb[embed] @ git+https://github.com/uijinlee-luj/SPIRA_KB"
+```
+
+```python
+from spira.embedding import basket_text, embed_basket
+
+basket_text(["세제", "딸기", "줄넘기"])   # "딸기, 세제, 줄넘기"  (이름만, 가나다순)
+embed_basket(["세제", "딸기", "줄넘기"])  # BGE-M3, 1024차원, L2 정규화
+```
+
+목록 세 개(`config/lists/`)의 원본은 이 저장소다 (KB-15). 바뀌면 JSON으로 만들어 SPIRA_AI `contracts/`에 PR로 보낸다 (자동화 예정).
 
 ## 처음 한 번 (팀원)
 

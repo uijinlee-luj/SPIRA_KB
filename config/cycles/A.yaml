@@ -10,9 +10,17 @@ members:
   claude: { person: S, tool: claude_code }
 
 # 역할 돌리기: 묶음을 만든 회사는 자기 조각에 라벨을 달지 않는다
+# 배치 이름 = {사이클}{회차}-{조각}  예) A1-1, A1-2, A1-3, A2-1 …
 slices:
-  "1-1": { generate: gemini, label_1: codex,  label_2: claude }
-  "1-2": { generate: codex,  label_1: claude, label_2: gemini }
-  "1-3": { generate: claude, label_1: gemini, label_2: codex }
+  "1": { generate: gemini, label_1: codex,  label_2: claude }
+  "2": { generate: codex,  label_1: claude, label_2: gemini }
+  "3": { generate: claude, label_1: gemini, label_2: codex }
 
 cases_per_slice: 1000    # 조각 하나 = 품질 관문 1배치
+
+# 회사별로 고정해서 쓰는 모델 (KB-12). 실제로 쓰인 모델은 작업 결과마다 따로 기록한다.
+# TODO(측정 후): 각자 계정에서 쓸 수 있는 모델로 확정
+models:
+  gemini: null   # 예) gemini-3.x-pro
+  codex:  null   # 예) gpt-5.x-codex
+  claude: null   # 예) claude-opus-5-5

@@ -52,6 +52,8 @@ def check(today: date | None = None) -> list[str]:
             trio = [roles.get("generate"), roles.get("label_1"), roles.get("label_2")]
             if len(set(trio)) != 3 or not set(trio) <= COMPANIES:
                 problems.append(f"사이클 {name} 조각 {slice_id}: 생성·라벨①·라벨②가 서로 다른 회사여야 함 ({trio})")
+        if sorted(c.get("slices", {})) != ["1", "2", "3"]:
+            problems.append(f"사이클 {name}: 조각 이름은 1, 2, 3이어야 함 (지금 {sorted(c.get('slices', {}))})")
         gens = sorted(r.get("generate") for r in c.get("slices", {}).values())
         if gens != sorted(COMPANIES):
             problems.append(f"사이클 {name}: 각 회사가 생성을 한 번씩 맡아야 함 ({gens})")
@@ -89,13 +91,14 @@ def check(today: date | None = None) -> list[str]:
         for t in i.get("related_tags", []):
             if t not in tags:
                 problems.append(f"의도 {i['id']}의 관련 태그 '{t}'가 태그 목록에 없음")
-    syn = load_list("calendar_tags").get("synonyms", {})
-    owners: dict[str, str] = {}
-    for tag, words in syn.items():
-        for w in words:
-            if w in owners:
-                problems.append(f"동의어 '{w}'가 태그 {owners[w]}·{tag} 두 곳에 있음")
-            owners[w] = tag
+    ids = {i["id"] for i in intents}
+    for i in intents:
+        target = i.get("merged_into")
+        if target and target not in ids:
+            problems.append(f"의도 {i['id']}의 merged_into '{target}'가 목록에 없음")
+        for t in i.get("split_into", []):
+            if t not in ids:
+                problems.append(f"의도 {i['id']}의 split_into '{t}'가 목록에 없음")
     axes = load_list("household").get("axes", {})
     n_types = sum(len(a["types"]) for a in axes.values())
     if n_types != 20:
