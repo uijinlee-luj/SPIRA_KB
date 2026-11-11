@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_05",
+ "items": [
+  {
+   "name": "감자칩",
+   "everyday": true
+  },
+  {
+   "name": "팝콘",
+   "everyday": true
+  },
+  {
+   "name": "나초",
+   "everyday": true
+  },
+  {
+   "name": "비스킷",
+   "everyday": true
+  },
+  {
+   "name": "크래커",
+   "everyday": true
+  },
+  {
+   "name": "쿠키",
+   "everyday": true
+  },
+  {
+   "name": "웨이퍼",
+   "everyday": true
+  },
+  {
+   "name": "프레첼",
+   "everyday": true
+  },
+  {
+   "name": "쌀과자",
+   "everyday": true
+  },
+  {
+   "name": "건빵",
+   "everyday": true
+  },
+  {
+   "name": "전병",
+   "everyday": true
+  },
+  {
+   "name": "뻥튀기",
+   "everyday": true
+  },
+  {
+   "name": "오징어땅콩",
+   "everyday": true
+  },
+  {
+   "name": "김부각",
+   "everyday": true
+  },
+  {
+   "name": "식빵",
+   "everyday": true
+  },
+  {
+   "name": "모닝빵",
+   "everyday": true
+  },
+  {
+   "name": "베이글",
+   "everyday": true
+  },
+  {
+   "name": "바게트",
+   "everyday": true
+  },
+  {
+   "name": "크루아상",
+   "everyday": true
+  },
+  {
+   "name": "치아바타",
+   "everyday": true
+  },
+  {
+   "name": "단팥빵",
+   "everyday": true
+  },
+  {
+   "name": "소보로빵",
+   "everyday": true
+  },
+  {
+   "name": "슈크림빵",
+   "everyday": true
+  },
+  {
+   "name": "피자빵",
+   "everyday": true
+  },
+  {
+   "name": "마늘빵",
+   "everyday": true
+  },
+  {
+   "name": "소금빵",
+   "everyday": true
+  },
+  {
+   "name": "모카빵",
+   "everyday": true
+  },
+  {
+   "name": "꽈배기",
+   "everyday": true
+  },
+  {
+   "name": "도넛",
+   "everyday": true
+  },
+  {
+   "name": "카스텔라",
+   "everyday": true
+  },
+  {
+   "name": "머핀",
+   "everyday": true
+  },
+  {
+   "name": "스콘",
+   "everyday": true
+  },
+  {
+   "name": "마들렌",
+   "everyday": true
+  },
+  {
+   "name": "브라우니",
+   "everyday": true
+  },
+  {
+   "name": "에그타르트",
+   "everyday": true
+  },
+  {
+   "name": "마카롱",
+   "everyday": true
+  },
+  {
+   "name": "티라미수",
+   "everyday": true
+  },
+  {
+   "name": "푸딩",
+   "everyday": true
+  },
+  {
+   "name": "와플",
+   "everyday": true
+  },
+  {
+   "name": "만주",
+   "everyday": true
+  },
+  {
+   "name": "가래떡",
+   "everyday": true
+  },
+  {
+   "name": "인절미",
+   "everyday": true
+  },
+  {
+   "name": "꿀떡",
+   "everyday": true
+  },
+  {
+   "name": "백설기",
+   "everyday": true
+  },
+  {
+   "name": "찹쌀떡",
+   "everyday": true
+  },
+  {
+   "name": "약과",
+   "everyday": true
+  },
+  {
+   "name": "유과",
+   "everyday": true
+  },
+  {
+   "name": "양갱",
+   "everyday": true
+  },
+  {
+   "name": "모나카",
+   "everyday": true
+  },
+  {
+   "name": "강정",
+   "everyday": true
+  },
+  {
+   "name": "초콜릿",
+   "everyday": true
+  },
+  {
+   "name": "알사탕",
+   "everyday": true
+  },
+  {
+   "name": "막대사탕",
+   "everyday": true
+  },
+  {
+   "name": "목캔디",
+   "everyday": true
+  },
+  {
+   "name": "구미젤리",
+   "everyday": true
+  },
+  {
+   "name": "곤약젤리",
+   "everyday": true
+  },
+  {
+   "name": "캐러멜",
+   "everyday": true
+  },
+  {
+   "name": "마시멜로",
+   "everyday": true
+  },
+  {
+   "name": "껌",
+   "everyday": true
+  },
+  {
+   "name": "솜사탕",
+   "everyday": true
+  },
+  {
+   "name": "맛밤",
+   "everyday": true
+  },
+  {
+   "name": "고구마말랭이",
+   "everyday": true
+  },
+  {
+   "name": "건망고",
+   "everyday": true
+  },
+  {
+   "name": "하루견과",
+   "everyday": true
+  },
+  {
+   "name": "에너지바",
+   "everyday": true
+  },
+  {
+   "name": "핫도그",
+   "everyday": true
+  },
+  {
+   "name": "붕어빵",
+   "everyday": true
+  },
+  {
+   "name": "호떡",
+   "everyday": true
+  },
+  {
+   "name": "치즈볼",
+   "everyday": true
+  },
+  {
+   "name": "츄러스",
+   "everyday": true
+  },
+  {
+   "name": "케이크",
+   "everyday": false
+  },
+  {
+   "name": "롤케이크",
+   "everyday": false
+  },
+  {
+   "name": "백일떡",
+   "everyday": false
+  },
+  {
+   "name": "시루떡",
+   "everyday": false
+  },
+  {
+   "name": "한과세트",
+   "everyday": false
+  },
+  {
+   "name": "화과자",
+   "everyday": false
+  },
+  {
+   "name": "옥춘당",
+   "everyday": false
+  },
+  {
+   "name": "합격엿",
+   "everyday": false
+  },
+  {
+   "name": "슈톨렌",
+   "everyday": false
+  },
+  {
+   "name": "에너지젤",
+   "everyday": false
+  }
+ ]
+}
