@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_12",
+ "items": [
+  {
+   "name": "옷걸이",
+   "everyday": true
+  },
+  {
+   "name": "바지걸이",
+   "everyday": true
+  },
+  {
+   "name": "리빙박스",
+   "everyday": true
+  },
+  {
+   "name": "의류 압축팩",
+   "everyday": false
+  },
+  {
+   "name": "옷커버",
+   "everyday": true
+  },
+  {
+   "name": "속옷 정리함",
+   "everyday": true
+  },
+  {
+   "name": "신발 정리대",
+   "everyday": true
+  },
+  {
+   "name": "부츠 키퍼",
+   "everyday": false
+  },
+  {
+   "name": "모자걸이",
+   "everyday": false
+  },
+  {
+   "name": "넥타이걸이",
+   "everyday": false
+  },
+  {
+   "name": "접시 정리대",
+   "everyday": true
+  },
+  {
+   "name": "후라이팬 정리대",
+   "everyday": true
+  },
+  {
+   "name": "싱크대 하부선반",
+   "everyday": true
+  },
+  {
+   "name": "양념통 선반",
+   "everyday": true
+  },
+  {
+   "name": "수저통",
+   "everyday": true
+  },
+  {
+   "name": "칼꽂이",
+   "everyday": true
+  },
+  {
+   "name": "컵걸이",
+   "everyday": true
+  },
+  {
+   "name": "수세미 거치대",
+   "everyday": true
+  },
+  {
+   "name": "행주걸이",
+   "everyday": true
+  },
+  {
+   "name": "쌀통",
+   "everyday": true
+  },
+  {
+   "name": "냉장고 정리용기",
+   "everyday": true
+  },
+  {
+   "name": "캔음료 정리대",
+   "everyday": true
+  },
+  {
+   "name": "비닐봉투 정리함",
+   "everyday": true
+  },
+  {
+   "name": "와인랙",
+   "everyday": false
+  },
+  {
+   "name": "캡슐커피 보관함",
+   "everyday": false
+  },
+  {
+   "name": "욕실 선반",
+   "everyday": true
+  },
+  {
+   "name": "칫솔걸이",
+   "everyday": true
+  },
+  {
+   "name": "비누받침",
+   "everyday": true
+  },
+  {
+   "name": "욕실화 거치대",
+   "everyday": true
+  },
+  {
+   "name": "드라이기 거치대",
+   "everyday": true
+  },
+  {
+   "name": "치약짜개",
+   "everyday": true
+  },
+  {
+   "name": "수건걸이",
+   "everyday": true
+  },
+  {
+   "name": "빨래바구니",
+   "everyday": true
+  },
+  {
+   "name": "세탁기 선반",
+   "everyday": true
+  },
+  {
+   "name": "북엔드",
+   "everyday": true
+  },
+  {
+   "name": "모니터 받침대",
+   "everyday": true
+  },
+  {
+   "name": "문구 정리함",
+   "everyday": true
+  },
+  {
+   "name": "화장품 정리대",
+   "everyday": true
+  },
+  {
+   "name": "멀티탭 정리함",
+   "everyday": true
+  },
+  {
+   "name": "케이블 타이",
+   "everyday": true
+  },
+  {
+   "name": "수납바구니",
+   "everyday": true
+  },
+  {
+   "name": "서랍 칸막이",
+   "everyday": true
+  },
+  {
+   "name": "플라스틱 서랍장",
+   "everyday": true
+  },
+  {
+   "name": "틈새 수납장",
+   "everyday": true
+  },
+  {
+   "name": "이동식 트롤리",
+   "everyday": true
+  },
+  {
+   "name": "벽걸이 후크",
+   "everyday": true
+  },
+  {
+   "name": "도어행거",
+   "everyday": true
+  },
+  {
+   "name": "압축봉",
+   "everyday": true
+  },
+  {
+   "name": "네트망",
+   "everyday": true
+  },
+  {
+   "name": "티슈케이스",
+   "everyday": true
+  },
+  {
+   "name": "리모컨 꽂이",
+   "everyday": true
+  },
+  {
+   "name": "약통",
+   "everyday": true
+  },
+  {
+   "name": "도어스토퍼",
+   "everyday": true
+  },
+  {
+   "name": "우산꽂이",
+   "everyday": true
+  },
+  {
+   "name": "분리수거함",
+   "everyday": true
+  },
+  {
+   "name": "발매트",
+   "everyday": true
+  },
+  {
+   "name": "러그",
+   "everyday": true
+  },
+  {
+   "name": "쿠션",
+   "everyday": true
+  },
+  {
+   "name": "무드등",
+   "everyday": true
+  },
+  {
+   "name": "벽시계",
+   "everyday": true
+  },
+  {
+   "name": "탁상시계",
+   "everyday": true
+  },
+  {
+   "name": "전신거울",
+   "everyday": true
+  },
+  {
+   "name": "탁상거울",
+   "everyday": true
+  },
+  {
+   "name": "디퓨저",
+   "everyday": true
+  },
+  {
+   "name": "향초",
+   "everyday": true
+  },
+  {
+   "name": "화병",
+   "everyday": true
+  },
+  {
+   "name": "조화",
+   "everyday": true
+  },
+  {
+   "name": "마그넷",
+   "everyday": true
+  },
+  {
+   "name": "액자",
+   "everyday": true
+  },
+  {
+   "name": "주얼리 보관함",
+   "everyday": false
+  },
+  {
+   "name": "시계 보관함",
+   "everyday": false
+  },
+  {
+   "name": "피규어 장식장",
+   "everyday": false
+  },
+  {
+   "name": "기저귀 정리함",
+   "everyday": false
+  },
+  {
+   "name": "캔들워머",
+   "everyday": false
+  },
+  {
+   "name": "인센스 홀더",
+   "everyday": false
+  },
+  {
+   "name": "패브릭 포스터",
+   "everyday": false
+  },
+  {
+   "name": "모빌",
+   "everyday": false
+  },
+  {
+   "name": "썬캐쳐",
+   "everyday": false
+  },
+  {
+   "name": "현관문 종",
+   "everyday": false
+  },
+  {
+   "name": "크리스마스 트리",
+   "everyday": false
+  }
+ ]
+}
