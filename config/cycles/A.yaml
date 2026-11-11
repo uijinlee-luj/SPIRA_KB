@@ -22,5 +22,5 @@ cases_per_slice: 1000    # 조각 하나 = 품질 관문 1배치
 # TODO(측정 후): 각자 계정에서 쓸 수 있는 모델로 확정
 models:
   gemini: gemini-3.8-flash-high   # Antigravity `agy models` 이름 (Flash, High)
-  codex:  null   # 예) gpt-5.x-codex
-  claude: null   # 예) claude-opus-5-5
+  codex:  null   # TODO: Y · J의 Codex `/model` 목록을 보고 ChatGPT Plus에서 쓸 수 있는 중간급으로
+  claude: claude-sonnet-5-5      # Claude Pro 요금제, 중간급 (Opus는 한도를 몇 배로 씀)

@@ -179,8 +179,11 @@ def release(job: Job) -> None:
         _commit_and_push(f"되돌림 {job.job_id}", [q, run / f"{job.job_id}.json", run / f"{job.job_id}.claim.json"])
 
 
-def requeue_stale(scopes: list[str]) -> list[str]:
-    """오래 멈춰 있는 작업(노트북이 꺼진 경우 등)을 대기열로 돌린다."""
+def requeue_stale(scopes: list[str], me: str | None = None) -> list[str]:
+    """멈춘 작업을 대기열로 돌린다.
+    - 내가(me) 예약해 둔 작업: 바로 돌린다. 내 spira start는 한 번에 하나만 돌기 때문에,
+      새로 시작할 때 running에 남아 있는 내 작업은 노트북이 꺼지거나 멈춰서 남은 것이다.
+    - 다른 사람 작업: 3시간 넘게 멈춰 있으면 돌린다 (그 사람 노트북이 꺼진 채인 경우)."""
     back = []
     with _lock:
         sync()
@@ -188,7 +191,8 @@ def requeue_stale(scopes: list[str]) -> list[str]:
             run = _dir(scope, "running")
             for claim in sorted(run.glob("*.claim.json")):
                 info = json.loads(claim.read_text(encoding="utf-8"))
-                if now() - datetime.fromisoformat(info["claimed_at"]) < STALE_AFTER:
+                mine = me is not None and info.get("person") == me
+                if not mine and now() - datetime.fromisoformat(info["claimed_at"]) < STALE_AFTER:
                     continue
                 job_id = claim.name.removesuffix(".claim.json")
                 job_file = run / f"{job_id}.json"

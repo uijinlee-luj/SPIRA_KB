@@ -1,9 +1,8 @@
-# J — 각자 낼 몫. Actions가 이 파일을 읽고 그날 할당량을 정한다.
+# J — 각자 낼 몫. spira start가 이 파일을 읽는다 (비워 두면 기본값).
 person: J
 accounts:
   - { company: codex,  tool: codex,       cycles: [A] }
   - { company: claude, tool: claude_code, cycles: [B] }
 
 weekly_share_percent: null   # 주간 한도 중 낼 몫 (%, 비우면 30). AI 도구의 한도 %를 자동으로 읽어서 맞춘다
-run_window: null             # 주로 돌릴 시간대 (예: "00:00-05:00")
 jobs_per_day: null           # 한도 %를 알려 주지 않는 도구만: 하루 작업 수 (비우면 10)
