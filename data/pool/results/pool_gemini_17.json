@@ -1,0 +1,245 @@
+{
+ "job_id": "pool_gemini_17",
+ "items": [
+  {
+   "name": "강아지 사료",
+   "everyday": true
+  },
+  {
+   "name": "개껌",
+   "everyday": true
+  },
+  {
+   "name": "강아지 져키",
+   "everyday": true
+  },
+  {
+   "name": "동결건조 간식",
+   "everyday": true
+  },
+  {
+   "name": "강아지 영양제",
+   "everyday": true
+  },
+  {
+   "name": "배변패드",
+   "everyday": true
+  },
+  {
+   "name": "배변판",
+   "everyday": true
+  },
+  {
+   "name": "강아지 기저귀",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 탈취제",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 물티슈",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 샴푸",
+   "everyday": true
+  },
+  {
+   "name": "귀세정제",
+   "everyday": true
+  },
+  {
+   "name": "눈물세정제",
+   "everyday": true
+  },
+  {
+   "name": "발바닥 보습제",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 빗",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 발톱깎이",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 칫솔",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 치약",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 털제거기",
+   "everyday": true
+  },
+  {
+   "name": "강아지 넥카라",
+   "everyday": false
+  },
+  {
+   "name": "강아지 하네스",
+   "everyday": true
+  },
+  {
+   "name": "리드줄",
+   "everyday": true
+  },
+  {
+   "name": "배변봉투",
+   "everyday": true
+  },
+  {
+   "name": "산책용 물병",
+   "everyday": true
+  },
+  {
+   "name": "강아지 입마개",
+   "everyday": false
+  },
+  {
+   "name": "강아지 켄넬",
+   "everyday": false
+  },
+  {
+   "name": "강아지 유모차",
+   "everyday": false
+  },
+  {
+   "name": "강아지 카시트",
+   "everyday": false
+  },
+  {
+   "name": "반려동물 식기",
+   "everyday": true
+  },
+  {
+   "name": "반려동물 방석",
+   "everyday": true
+  },
+  {
+   "name": "노즈워크 매트",
+   "everyday": true
+  },
+  {
+   "name": "터그 장난감",
+   "everyday": true
+  },
+  {
+   "name": "강아지 계단",
+   "everyday": false
+  },
+  {
+   "name": "강아지 쿨매트",
+   "everyday": false
+  },
+  {
+   "name": "강아지 한복",
+   "everyday": false
+  },
+  {
+   "name": "강아지 구명조끼",
+   "everyday": false
+  },
+  {
+   "name": "자동급식기",
+   "everyday": false
+  },
+  {
+   "name": "고양이 사료",
+   "everyday": true
+  },
+  {
+   "name": "고양이 캔",
+   "everyday": true
+  },
+  {
+   "name": "츄르",
+   "everyday": true
+  },
+  {
+   "name": "캣닢",
+   "everyday": true
+  },
+  {
+   "name": "캣그라스",
+   "everyday": true
+  },
+  {
+   "name": "고양이 모래",
+   "everyday": true
+  },
+  {
+   "name": "모래삽",
+   "everyday": true
+  },
+  {
+   "name": "고양이 화장실",
+   "everyday": true
+  },
+  {
+   "name": "사막화 방지 매트",
+   "everyday": true
+  },
+  {
+   "name": "스크래쳐",
+   "everyday": true
+  },
+  {
+   "name": "숨숨집",
+   "everyday": true
+  },
+  {
+   "name": "고양이 낚시대",
+   "everyday": true
+  },
+  {
+   "name": "고양이 터널",
+   "everyday": true
+  },
+  {
+   "name": "캣타워",
+   "everyday": false
+  },
+  {
+   "name": "물고기 사료",
+   "everyday": true
+  },
+  {
+   "name": "수질조정제",
+   "everyday": true
+  },
+  {
+   "name": "어항 뜰채",
+   "everyday": true
+  },
+  {
+   "name": "어항",
+   "everyday": false
+  },
+  {
+   "name": "어항 히터",
+   "everyday": false
+  },
+  {
+   "name": "햄스터 사료",
+   "everyday": true
+  },
+  {
+   "name": "햄스터 베딩",
+   "everyday": true
+  },
+  {
+   "name": "햄스터 쳇바퀴",
+   "everyday": false
+  },
+  {
+   "name": "새 모이",
+   "everyday": true
+  }
+ ]
+}
