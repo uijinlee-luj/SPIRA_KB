@@ -45,31 +45,37 @@ def git(*args: str, check: bool = True) -> subprocess.CompletedProcess:
 
 
 def sync() -> None:
-    """원격의 최신 대기열을 받는다. 노트북에서 고친 다른 파일은 그대로 둔다."""
+    """원격의 최신 대기열을 받는다. 노트북에서 고친 다른 파일은 그대로 둔다.
+    지난번에 올리지 못한 커밋(push가 붐벼서 실패한 것)이 있으면 이때 같이 올린다."""
     with _lock:
         git("pull", "--rebase", "--autostash", "-q")
+        if "ahead" in git("status", "-sb", check=False).stdout.splitlines()[0]:
+            git("push", "-q", check=False)
 
 
-def _commit_and_push(message: str, paths: list[Path], attempts: int = 5) -> bool:
+def _commit_and_push(message: str, paths: list[Path], attempts: int = 12) -> bool:
     """paths만 커밋해서 push한다. 다른 사람이 먼저 push했으면 받아서 다시 시도한다.
     rebase가 충돌하면(= 같은 작업을 남이 먼저 가져감) 이 커밋을 취소하고 False."""
     rel = []
     for p in paths:
         r = str(p.relative_to(ROOT)).replace("\\", "/")
         if p.exists():
-            git("add", "--", r)
+            git("add", "-A", "--", r)
             rel.append(r)
         elif git("cat-file", "-e", f"HEAD:{r}", check=False).returncode == 0:
-            git("rm", "-q", "--cached", "--ignore-unmatch", "--", r)   # 지운 파일
+            git("rm", "-r", "-q", "--cached", "--ignore-unmatch", "--", r)   # 지운 파일
             rel.append(r)
     if not rel:
         return True
     if git("diff", "--cached", "--quiet", check=False).returncode == 0:
         return True   # 바뀐 것 없음
     git("commit", "-q", "-m", message, "--", *rel)
-    for _ in range(attempts):
+    import random
+    import time
+    for k in range(attempts):
         if git("push", "-q", check=False).returncode == 0:
             return True
+        time.sleep(random.uniform(0.2, 1.0) * min(k + 1, 5))   # 여럿이 동시에 올릴 때 엇갈리게
         if git("pull", "--rebase", "--autostash", "-q", check=False).returncode != 0:
             git("rebase", "--abort", check=False)
             git("reset", "--keep", "HEAD~1", check=False)   # 내 커밋만 취소, 다른 로컬 변경은 유지

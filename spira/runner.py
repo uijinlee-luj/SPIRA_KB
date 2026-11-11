@@ -83,5 +83,159 @@ def make_pool_jobs(push: bool = typer.Option(True, help="만든 뒤 바로 올�
     typer.echo(f"✓ 아이템 풀 작업 ({step.PROMPT_VERSION}): 새로 {made}개 · 버전 변경 {updated}개 · 옛 결과 다시 돌림 {redo}개")
 
 
+@app.command()
+def tick(commit: bool = typer.Option(False, help="바뀐 파일을 main에 올릴지 (Actions에서 켬)")) -> None:
+    """(Actions) 할 수 있는 단계를 모두 한 칸씩 진행한다."""
+    import os
+
+    from spira import pipeline, queue
+
+    res = pipeline.tick()
+    for line in res["log"]:
+        typer.echo(f"· {line}")
+    if commit and res["changed"]:
+        queue.sync()
+        ok = queue._commit_and_push("자동 진행: " + " / ".join(res["log"])[:300], res["changed"])
+        typer.echo("✓ 올림" if ok else "✗ 올리지 못함 (다음 실행 때 다시)")
+    out = os.environ.get("GITHUB_OUTPUT")
+    if out:
+        with open(out, "a", encoding="utf-8") as f:
+            f.write(f"ready_to_load={' '.join(res['ready_to_load'])}\n")
+    typer.echo(f"적재 기다림: {', '.join(res['ready_to_load']) or '없음'}")
+
+
+@app.command()
+def load(batch: list[str] = typer.Argument(None, help="비우면 통과한 배치 전부"),
+         dry_run: bool = typer.Option(False, "--dry-run", help="DB에 쓰지 않고 미리 보기만"),
+         commit: bool = typer.Option(False, help="결과를 main에 올리고 KB 버전 태그를 붙일지 (Actions에서 켬)")) -> None:
+    """(Actions) 품질 관문을 통과한 배치를 임베딩해서 DB에 올린다."""
+    from spira import batches as B
+    from spira import pipeline, queue
+    from spira.steps import embed_load
+
+    targets = batch or [b for b in B.all_batches() if B.state(b) == "passed"]
+    changed = []
+    for b in targets:
+        changed += embed_load.load(b, dry_run=dry_run or None)
+        typer.echo(f"✓ {b}")
+    if commit and changed:
+        queue.sync()
+        queue._commit_and_push(f"적재: {', '.join(targets)}", changed)
+        existing = set(queue.git("tag", "--list").stdout.split())
+        for tag in pipeline.versions_to_tag():
+            if tag not in existing:
+                queue.git("tag", tag)
+                queue.git("push", "origin", tag)
+                typer.echo(f"✓ 태그 {tag}")
+
+
+@app.command("confirm-pool")
+def confirm_pool() -> None:
+    """(U) 아이템 풀을 검토한 뒤 확정한다. 확정해야 사이클이 시작된다."""
+    from spira import queue
+    from spira.steps import merge_item_pool
+
+    merge_item_pool.confirm()
+    queue.sync()
+    queue._commit_and_push("아이템 풀 확정", [merge_item_pool.OUT])
+    typer.echo("✓ 아이템 풀 확정. 다음 자동 진행 때 사이클이 시작됩니다")
+
+
+@app.command()
+def review() -> None:
+    """내 검수 파일을 보여 준다 (review/todo/<배치>_<내이름>.csv)."""
+    from spira import queue
+    queue.sync()
+    me = _me()
+    files = sorted((config.ROOT / "review" / "todo").glob(f"*_{me}.csv"))
+    if not files:
+        typer.echo("지금 검수할 파일이 없습니다.")
+        return
+    typer.echo("검수할 파일 (엑셀로 열어 '판정' 칸에 O 또는 X, X면 '맞는 의도 id'도 적고 저장):")
+    for f in files:
+        typer.echo(f"  - {f.relative_to(config.ROOT)}")
+    typer.echo("다 했으면 `uv run spira review-done`")
+
+
+@app.command("review-done")
+def review_done() -> None:
+    """판정을 다 적은 내 검수 파일을 review/done/으로 옮기고 올린다."""
+    import csv as _csv
+
+    from spira import queue
+    from spira.checks import _read_csv
+    me = _me()
+    todo = config.ROOT / "review" / "todo"
+    done = config.ROOT / "review" / "done"
+    moved, skipped = [], []
+    for f in sorted(todo.glob(f"*_{me}.csv")):
+        rows = _read_csv(f)
+        marks = [next((r[k] for k in r if k and k.startswith("판정")), "").strip().upper() for r in rows]
+        if not rows or any(m not in ("O", "X") for m in marks):
+            skipped.append(f.name)
+            continue
+        done.mkdir(parents=True, exist_ok=True)
+        dst = done / f.name
+        f.replace(dst)
+        moved += [f, dst]
+    if moved:
+        queue.sync()
+        queue._commit_and_push(f"검수 완료 ({me})", moved)
+        typer.echo(f"✓ {len(moved) // 2}개 파일을 올렸습니다")
+    for name in skipped:
+        typer.echo(f"✗ {name}: 판정 칸이 비었거나 O/X가 아닌 줄이 있어 옮기지 않았습니다")
+
+
+@app.command()
+def accept(batch: str, reason: str = typer.Option(..., help="통과시키는 이유 (보고서에 남는다)")) -> None:
+    """(U) 품질 관문을 통과하지 못한 배치를 그래도 통과시킨다. 기준이 첫 배치 시작값이라 다시 잡을 때 등."""
+    from spira import batches as B
+    from spira import queue
+    if B.state(batch) != "failed":
+        typer.echo(f"{batch}는 failed 상태가 아닙니다 ({B.state(batch)})")
+        raise typer.Exit(1)
+    rep = B.read(batch, "report.json")
+    rep["accepted"] = {"by": _me(), "reason": reason, "at": B.now_iso()}
+    B.write(batch, "report.json", rep)
+    B.set_state(batch, "passed", note=f"U 통과 처리: {reason}")
+    queue.sync()
+    queue._commit_and_push(f"{batch} 통과 처리", [B.bdir(batch) / "report.json", B.bdir(batch) / "state.json"])
+    typer.echo(f"✓ {batch} 통과 처리. 다음 자동 진행 때 적재됩니다")
+
+
+@app.command("redo-batch")
+def redo_batch(batch: str) -> None:
+    """(U) 배치를 처음부터 다시 만든다. 프롬프트 · 설정을 고친 뒤에 쓴다. 옛 배치는 discarded_batches/로 옮긴다."""
+    import shutil
+
+    from spira import batches as B
+    from spira import queue
+    from spira.steps import sample_goals
+    cycle, _, _ = B.parse(batch)
+    src = B.bdir(batch)
+    if not src.exists():
+        typer.echo(f"{batch}가 없습니다")
+        raise typer.Exit(1)
+    queue.sync()
+    k = 1
+    while (dst := queue.DATA / cycle / "discarded_batches" / f"{batch}.{k}").exists():
+        k += 1
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    changed = [src, dst]
+    shutil.move(src, dst)
+    for kind in ("queue", "running", "results", "failed"):   # 그 배치의 옛 작업 파일
+        for f in (queue.DATA / cycle / kind).glob(f"{batch}_*"):
+            target = dst / "jobs" / kind / f.name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.move(f, target)
+            changed += [f, target]
+    for f in (config.ROOT / "review").glob(f"*/{batch}_*.csv"):
+        f.unlink()
+        changed.append(f)
+    changed += sample_goals.start_batch(batch)
+    queue._commit_and_push(f"{batch} 다시 만들기", changed)
+    typer.echo(f"✓ {batch}를 새로 시작했습니다 (옛 것은 {dst.relative_to(config.ROOT)})")
+
+
 if __name__ == "__main__":
     app()

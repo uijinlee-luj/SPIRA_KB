@@ -1,0 +1,25 @@
+# E 유형(경계 의도)에 쓰는 헷갈리는 의도 쌍 (설계 5-2절).
+# 의도 X의 묶음에 의도 Y 묶음의 물건 1~2개를 섞는다. 정의에 적힌 구분 단서로 가를 수 있는 쌍만 둔다.
+# 배치 보고서의 "자주 갈리는 의도 쌍"을 보고 U가 더하거나 뺀다.
+
+pairs:
+  - [home_baking, kid_birthday_party]
+  - [home_baking, adult_birthday]
+  - [kid_birthday_party, adult_birthday]
+  - [kid_birthday_party, kids_playdate]
+  - [home_party, watch_party]
+  - [home_party, christmas_party]
+  - [home_party, family_gathering]
+  - [family_gathering, holiday_feast]
+  - [anniversary_dinner, adult_birthday]
+  - [camping_trip, picnic_lunchbox]
+  - [camping_trip, trip_away]
+  - [picnic_lunchbox, meal_prep]
+  - [moving_in, deep_cleaning]
+  - [new_dog, new_cat]
+  - [kids_vacation, kids_playdate]
+  - [school_start, exam_focus]
+  - [rainy_season, summer_heat]
+  - [winter_dry_cold, fine_dust]
+  - [closet_change, winter_dry_cold]
+  - [guest_overnight, home_party]

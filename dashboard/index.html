@@ -122,6 +122,12 @@ td.r, th.r { text-align: right; }
 .fail-list { display: grid; gap: 8px; }
 .fail-item { padding: 10px 14px; border-left: 3px solid var(--bad); display: grid; gap: 2px; }
 .fail-item .err { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+.state { font-size: 11px; padding: 1px 8px; border-radius: 10px; font-weight: 500; background: var(--track); color: var(--muted); }
+.state.ok { background: var(--accent-soft); color: var(--accent); }
+.state.wait { background: var(--run-soft); color: var(--run); }
+.state.bad { background: var(--bad-soft); color: var(--bad); }
+.todo { display: grid; gap: 6px; padding: 12px 14px; }
+.todo li { margin-left: 18px; }
 .notice { padding: 12px 14px; border-left: 3px solid var(--bad); background: var(--bad-soft); border-radius: 6px; }
 footer { color: var(--muted); font-size: 12px; }
 footer a { color: inherit; }
@@ -142,6 +148,11 @@ footer a { color: inherit; }
   </header>
 
   <div id="error" class="notice" hidden></div>
+
+  <section id="todo-sec" hidden>
+    <h2>사람이 할 일</h2>
+    <div class="panel"><ul id="todo" class="todo"></ul></div>
+  </section>
 
   <section>
     <h2>지금 돌리는 중</h2>
@@ -198,6 +209,13 @@ const REFRESH_S = 90;
 const CO = { gemini: "Gemini", codex: "Codex", claude: "Claude" };
 const ROLE = { generate: "생성", label_1: "라벨 ①", label_2: "라벨 ②", item_pool: "아이템 풀" };
 const SCOPE = { pool: "아이템 풀 (처음 한 번)", A: "사이클 A", B: "사이클 B" };
+const STATE = {
+  generating: ["묶음 생성 중", "wait"], labeling: ["라벨 다는 중", "wait"], compared: ["비교 끝", "wait"],
+  reviewing: ["사람 검수 기다림", "wait"], passed: ["관문 통과 · 적재 기다림", "ok"], loaded: ["DB 적재 완료", "ok"],
+  failed: ["관문 통과 못 함", "bad"],
+};
+const GATE = { none_ratio: "의도 없음 비율", calendar_shortcut: "캘린더 지름길", label_agreement: "두 라벨 일치",
+  b_recall: "B 유형", w_seen: "W 유형", per_intent: "의도별 개수", checks: "확인용 사례" };
 let data = null, nextAt = 0;
 
 const $ = (id) => document.getElementById(id);
@@ -257,7 +275,16 @@ function renderProgress() {
       const groups = batches[b];
       const sum = Object.values(groups).reduce((a, c) => ({ done: a.done + c.results, all: a.all + c.queue + c.running + c.results + c.failed }), { done: 0, all: 0 });
       const title = s === "pool" ? SCOPE.pool : `${SCOPE[s] || s} · 배치 ${b}`;
-      html += `<div class="batch-title">${esc(title)} <span class="num">${sum.done} / ${sum.all} 작업</span></div>`;
+      const info = s === "pool" ? null : (data.batches || {})[b];
+      let chip = "";
+      if (info && STATE[info.state]) {
+        const [t, cls] = STATE[info.state];
+        const why = info.state === "failed" && info.failed_items.length ? ` (${info.failed_items.map((k) => GATE[k] || k).join(", ")})` : "";
+        chip = `<span class="state ${cls}">${t}${why}</span>`;
+      } else if (s === "pool" && data.item_pool) {
+        chip = data.item_pool === "confirmed" ? `<span class="state ok">확정</span>` : `<span class="state wait">U 검토 기다림</span>`;
+      }
+      html += `<div class="batch-title">${esc(title)} <span class="num">${sum.done} / ${sum.all} 작업</span>${chip}</div>`;
       const order = s === "pool" ? ["gemini", "codex", "claude"] : ["generate", "label_1", "label_2"];
       const keys = [...order.filter((k) => groups[k]), ...Object.keys(groups).filter((k) => !order.includes(k))];
       for (const k of keys) {
@@ -319,9 +346,25 @@ function renderFailed() {
     <div class="err">${esc(x.error)}</div></div>`).join("");
 }
 
+function renderTodo() {
+  const items = [];
+  if (data.item_pool === "draft") items.push("U: 아이템 풀 검토 (review/item_pool_review.csv) 후 <code>uv run spira confirm-pool</code>");
+  for (const [b, info] of Object.entries(data.batches || {})) {
+    if (info.state === "failed") items.push(`U: 배치 ${esc(b)} 품질 관문 보고서 확인 후 <code>spira accept ${esc(b)}</code> 또는 <code>spira redo-batch ${esc(b)}</code>`);
+  }
+  const byPerson = {};
+  for (const f of data.review_todo || []) {
+    const m = f.match(/^(.+)_([A-Z])\.csv$/);
+    if (m) (byPerson[m[2]] ||= []).push(m[1]);
+  }
+  for (const [p, bs] of Object.entries(byPerson).sort()) items.push(`${esc(p)}: 검수 ${bs.map(esc).join(", ")} → <code>uv run spira review</code>`);
+  $("todo-sec").hidden = !items.length;
+  $("todo").innerHTML = items.map((x) => `<li>${x}</li>`).join("");
+}
+
 function render() {
   $("updated").textContent = clock(data.generated_at) + ` (${ago(data.generated_at)})`;
-  renderRunning(); renderProgress(); renderPeople(); renderFailed(); renderRecent();
+  renderTodo(); renderRunning(); renderProgress(); renderPeople(); renderFailed(); renderRecent();
 }
 
 async function load() {
