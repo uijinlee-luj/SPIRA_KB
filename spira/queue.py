@@ -76,10 +76,19 @@ def _commit_and_push(message: str, paths: list[Path], attempts: int = 12) -> boo
         if git("push", "-q", check=False).returncode == 0:
             return True
         time.sleep(random.uniform(0.2, 1.0) * min(k + 1, 5))   # 여럿이 동시에 올릴 때 엇갈리게
-        if git("pull", "--rebase", "--autostash", "-q", check=False).returncode != 0:
-            git("rebase", "--abort", check=False)
-            git("reset", "--keep", "HEAD~1", check=False)   # 내 커밋만 취소, 다른 로컬 변경은 유지
-            git("pull", "--rebase", "--autostash", "-q", check=False)
+        pull = git("pull", "--rebase", "--autostash", "-q", check=False)
+        if pull.returncode != 0:
+            gitdir = Path(git("rev-parse", "--git-dir").stdout.strip())
+            if not gitdir.is_absolute():
+                gitdir = ROOT / gitdir
+            if (gitdir / "rebase-merge").exists() or (gitdir / "rebase-apply").exists():
+                # 같은 파일을 남이 먼저 바꿈 (= 같은 작업을 남이 먼저 가져감): 내 커밋만 취소
+                git("rebase", "--abort", check=False)
+                git("reset", "--keep", "HEAD~1", check=False)
+                git("pull", "--rebase", "--autostash", "-q", check=False)
+            else:
+                # 받기 자체가 안 됨 (인터넷, 로그인, 지워지지 않은 로컬 파일 등): 내 커밋은 그대로 두고 다음에 올린다
+                raise GitError("저장소를 받지 못했습니다: " + (pull.stderr.strip() or pull.stdout.strip())[-400:])
             return False
     return False
 
