@@ -17,6 +17,7 @@ MODEL = "GEMINI_MODEL_TBD"
 
 def build_command(prompt: str) -> list[str]:
     # TODO: 무인 실행에서 승인 대기로 멈추지 않도록 설정 (non-TTY에서 멈추는 문제 확인)
+    #       명령 실행 도구를 막는 설정 확인 (사례는 직접 읽고 판단해야 한다. 코드로 규칙화 금지)
     return ["agy", "--model", MODEL, "-p", prompt]
 
 
