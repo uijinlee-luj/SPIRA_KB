@@ -30,9 +30,13 @@ class AgentResult:
 
 
 def total_tokens(usage: dict) -> int | None:
-    """회사마다 다른 사용량 칸을 하나의 숫자로. 할당량은 이 숫자로 잰다 (측정으로 % 환산)."""
+    """회사마다 다른 사용량 칸을 하나의 숫자로. 할당량은 이 숫자로 잰다 (측정으로 % 환산).
+    CLI가 합계(total_tokens)를 주면 그대로 쓴다 (입력에 캐시가 이미 포함됐는지 회사마다 달라서)."""
+    if isinstance(usage.get("total_tokens"), (int, float)):
+        return int(usage["total_tokens"])
     keys = ("input_tokens", "output_tokens", "cache_creation_input_tokens", "cache_read_input_tokens",
-            "cached_input_tokens", "reasoning_output_tokens")
+            "cached_input_tokens", "reasoning_output_tokens",
+            "thinking_tokens", "cache_read_tokens")
     vals = [usage[k] for k in keys if isinstance(usage.get(k), (int, float))]
     return int(sum(vals)) if vals else None
 
