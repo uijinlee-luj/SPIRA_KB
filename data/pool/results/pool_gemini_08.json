@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_08",
+ "items": [
+  {
+   "name": "세탁세제",
+   "everyday": true
+  },
+  {
+   "name": "섬유유연제",
+   "everyday": true
+  },
+  {
+   "name": "중성세제",
+   "everyday": true
+  },
+  {
+   "name": "과탄산소다",
+   "everyday": true
+  },
+  {
+   "name": "빨래비누",
+   "everyday": true
+  },
+  {
+   "name": "얼룩제거제",
+   "everyday": true
+  },
+  {
+   "name": "이염방지시트",
+   "everyday": true
+  },
+  {
+   "name": "건조기시트",
+   "everyday": true
+  },
+  {
+   "name": "세탁망",
+   "everyday": true
+  },
+  {
+   "name": "빨래집게",
+   "everyday": true
+  },
+  {
+   "name": "운동화세제",
+   "everyday": true
+  },
+  {
+   "name": "세탁조클리너",
+   "everyday": false
+  },
+  {
+   "name": "운동화세탁망",
+   "everyday": false
+  },
+  {
+   "name": "주방세제",
+   "everyday": true
+  },
+  {
+   "name": "식기세척기세제",
+   "everyday": true
+  },
+  {
+   "name": "식기세척기린스",
+   "everyday": true
+  },
+  {
+   "name": "베이킹소다",
+   "everyday": true
+  },
+  {
+   "name": "구연산",
+   "everyday": true
+  },
+  {
+   "name": "기름때제거제",
+   "everyday": true
+  },
+  {
+   "name": "인덕션클리너",
+   "everyday": true
+  },
+  {
+   "name": "수세미",
+   "everyday": true
+  },
+  {
+   "name": "철수세미",
+   "everyday": true
+  },
+  {
+   "name": "행주",
+   "everyday": true
+  },
+  {
+   "name": "고무장갑",
+   "everyday": true
+  },
+  {
+   "name": "배수구망",
+   "everyday": true
+  },
+  {
+   "name": "배수구덮개",
+   "everyday": true
+  },
+  {
+   "name": "텀블러세척솔",
+   "everyday": true
+  },
+  {
+   "name": "빨대세척솔",
+   "everyday": true
+  },
+  {
+   "name": "탄냄비클리너",
+   "everyday": false
+  },
+  {
+   "name": "욕실세정제",
+   "everyday": true
+  },
+  {
+   "name": "변기세정제",
+   "everyday": true
+  },
+  {
+   "name": "변기솔",
+   "everyday": true
+  },
+  {
+   "name": "배수관세정제",
+   "everyday": true
+  },
+  {
+   "name": "욕실청소솔",
+   "everyday": true
+  },
+  {
+   "name": "욕실스퀴지",
+   "everyday": true
+  },
+  {
+   "name": "물때제거제",
+   "everyday": true
+  },
+  {
+   "name": "곰팡이제거제",
+   "everyday": false
+  },
+  {
+   "name": "곰팡이방지테이프",
+   "everyday": false
+  },
+  {
+   "name": "줄눈보수제",
+   "everyday": false
+  },
+  {
+   "name": "실리콘제거기",
+   "everyday": false
+  },
+  {
+   "name": "세면대관통기",
+   "everyday": false
+  },
+  {
+   "name": "정전기청소포",
+   "everyday": true
+  },
+  {
+   "name": "물걸레청소포",
+   "everyday": true
+  },
+  {
+   "name": "밀대걸레",
+   "everyday": true
+  },
+  {
+   "name": "테이프클리너",
+   "everyday": true
+  },
+  {
+   "name": "먼지털이",
+   "everyday": true
+  },
+  {
+   "name": "빗자루세트",
+   "everyday": true
+  },
+  {
+   "name": "극세사걸레",
+   "everyday": true
+  },
+  {
+   "name": "바닥세정제",
+   "everyday": true
+  },
+  {
+   "name": "로봇청소기세정제",
+   "everyday": true
+  },
+  {
+   "name": "청소용물티슈",
+   "everyday": true
+  },
+  {
+   "name": "매직블럭",
+   "everyday": true
+  },
+  {
+   "name": "다목적세정제",
+   "everyday": true
+  },
+  {
+   "name": "틈새청소솔",
+   "everyday": true
+  },
+  {
+   "name": "바닥왁스",
+   "everyday": false
+  },
+  {
+   "name": "유리세정제",
+   "everyday": true
+  },
+  {
+   "name": "창틀청소솔",
+   "everyday": true
+  },
+  {
+   "name": "먼지제거스프레이",
+   "everyday": true
+  },
+  {
+   "name": "방충망청소솔",
+   "everyday": false
+  },
+  {
+   "name": "자석창문닦이",
+   "everyday": false
+  },
+  {
+   "name": "가죽클리너",
+   "everyday": false
+  },
+  {
+   "name": "가구광택제",
+   "everyday": false
+  },
+  {
+   "name": "스티커제거제",
+   "everyday": false
+  },
+  {
+   "name": "에어컨세정제",
+   "everyday": false
+  },
+  {
+   "name": "섬유탈취제",
+   "everyday": true
+  },
+  {
+   "name": "살균소독제",
+   "everyday": true
+  },
+  {
+   "name": "락스",
+   "everyday": true
+  },
+  {
+   "name": "소독용에탄올",
+   "everyday": true
+  },
+  {
+   "name": "신발탈취제",
+   "everyday": true
+  },
+  {
+   "name": "냉장고탈취제",
+   "everyday": true
+  },
+  {
+   "name": "옷장탈취제",
+   "everyday": true
+  },
+  {
+   "name": "제습제",
+   "everyday": true
+  },
+  {
+   "name": "옷장방충제",
+   "everyday": true
+  },
+  {
+   "name": "신발세척솔",
+   "everyday": true
+  },
+  {
+   "name": "분리수거봉투",
+   "everyday": true
+  },
+  {
+   "name": "종량제봉투",
+   "everyday": true
+  },
+  {
+   "name": "녹제거제",
+   "everyday": false
+  },
+  {
+   "name": "바퀴벌레약",
+   "everyday": false
+  },
+  {
+   "name": "초파리트랩",
+   "everyday": false
+  },
+  {
+   "name": "새집증후군제거제",
+   "everyday": false
+  }
+ ]
+}
