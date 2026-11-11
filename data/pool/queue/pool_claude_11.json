@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_claude_11",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "claude",
+ "prompt_version": "item_pool@v1",
+ "category": "주방용품·식기",
+ "target_count": 100
+}

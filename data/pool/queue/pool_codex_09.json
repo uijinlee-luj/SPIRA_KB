@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_codex_09",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "codex",
+ "prompt_version": "item_pool@v1",
+ "category": "휴지·위생·생활소모품",
+ "target_count": 60
+}

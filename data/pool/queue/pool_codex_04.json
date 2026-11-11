@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_codex_04",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "codex",
+ "prompt_version": "item_pool@v1",
+ "category": "쌀·면·양념·소스",
+ "target_count": 100
+}

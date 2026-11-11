@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_claude_15",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "claude",
+ "prompt_version": "item_pool@v1",
+ "category": "문구·학용품·도서",
+ "target_count": 60
+}

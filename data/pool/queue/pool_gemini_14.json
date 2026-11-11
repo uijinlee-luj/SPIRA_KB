@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_gemini_14",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "gemini",
+ "prompt_version": "item_pool@v1",
+ "category": "소형가전·가전 소모품",
+ "target_count": 80
+}

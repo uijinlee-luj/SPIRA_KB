@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_gemini_16",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "gemini",
+ "prompt_version": "item_pool@v1",
+ "category": "유아·아동 용품",
+ "target_count": 80
+}

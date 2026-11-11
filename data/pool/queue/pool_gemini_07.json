@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_gemini_07",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "gemini",
+ "prompt_version": "item_pool@v1",
+ "category": "주류",
+ "target_count": 30
+}

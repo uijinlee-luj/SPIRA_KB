@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_codex_06",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "codex",
+ "prompt_version": "item_pool@v1",
+ "category": "간편식·냉동식품",
+ "target_count": 80
+}

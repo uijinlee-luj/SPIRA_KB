@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_claude_13",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "claude",
+ "prompt_version": "item_pool@v1",
+ "category": "침구·패브릭·의류",
+ "target_count": 80
+}

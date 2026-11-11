@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_claude_12",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "claude",
+ "prompt_version": "item_pool@v1",
+ "category": "수납·정리·인테리어 소품",
+ "target_count": 80
+}

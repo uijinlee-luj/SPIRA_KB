@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_claude_04",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "claude",
+ "prompt_version": "item_pool@v1",
+ "category": "쌀·면·양념·소스",
+ "target_count": 100
+}

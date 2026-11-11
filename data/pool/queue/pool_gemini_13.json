@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_gemini_13",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "gemini",
+ "prompt_version": "item_pool@v1",
+ "category": "침구·패브릭·의류",
+ "target_count": 80
+}

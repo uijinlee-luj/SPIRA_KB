@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_codex_08",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "codex",
+ "prompt_version": "item_pool@v1",
+ "category": "세제·청소용품",
+ "target_count": 80
+}

@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_gemini_18",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "gemini",
+ "prompt_version": "item_pool@v1",
+ "category": "파티·행사·선물 용품",
+ "target_count": 60
+}

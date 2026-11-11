@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_codex_20",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "codex",
+ "prompt_version": "item_pool@v1",
+ "category": "스포츠·운동·취미",
+ "target_count": 60
+}
