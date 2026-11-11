@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_02",
+ "items": [
+  {
+   "name": "소등심",
+   "everyday": true
+  },
+  {
+   "name": "소안심",
+   "everyday": true
+  },
+  {
+   "name": "소갈비",
+   "everyday": true
+  },
+  {
+   "name": "차돌박이",
+   "everyday": true
+  },
+  {
+   "name": "소 국거리",
+   "everyday": true
+  },
+  {
+   "name": "소 불고기",
+   "everyday": true
+  },
+  {
+   "name": "소 양지",
+   "everyday": true
+  },
+  {
+   "name": "소 사태",
+   "everyday": true
+  },
+  {
+   "name": "소 사골",
+   "everyday": true
+  },
+  {
+   "name": "토마호크",
+   "everyday": false
+  },
+  {
+   "name": "삼겹살",
+   "everyday": true
+  },
+  {
+   "name": "돼지 목살",
+   "everyday": true
+  },
+  {
+   "name": "돼지갈비",
+   "everyday": true
+  },
+  {
+   "name": "돼지 등갈비",
+   "everyday": true
+  },
+  {
+   "name": "돼지 앞다리살",
+   "everyday": true
+  },
+  {
+   "name": "돼지 뒷다리살",
+   "everyday": true
+  },
+  {
+   "name": "돼지 안심",
+   "everyday": true
+  },
+  {
+   "name": "항정살",
+   "everyday": true
+  },
+  {
+   "name": "가브리살",
+   "everyday": true
+  },
+  {
+   "name": "돼지 등뼈",
+   "everyday": true
+  },
+  {
+   "name": "닭볶음탕용 닭",
+   "everyday": true
+  },
+  {
+   "name": "닭가슴살",
+   "everyday": true
+  },
+  {
+   "name": "닭다리",
+   "everyday": true
+  },
+  {
+   "name": "닭안심",
+   "everyday": true
+  },
+  {
+   "name": "닭날개",
+   "everyday": true
+  },
+  {
+   "name": "닭발",
+   "everyday": true
+  },
+  {
+   "name": "오리로스",
+   "everyday": true
+  },
+  {
+   "name": "훈제오리",
+   "everyday": true
+  },
+  {
+   "name": "양갈비",
+   "everyday": false
+  },
+  {
+   "name": "통칠면조",
+   "everyday": false
+  },
+  {
+   "name": "달걀",
+   "everyday": true
+  },
+  {
+   "name": "메추리알",
+   "everyday": true
+  },
+  {
+   "name": "구운란",
+   "everyday": true
+  },
+  {
+   "name": "고등어",
+   "everyday": true
+  },
+  {
+   "name": "갈치",
+   "everyday": true
+  },
+  {
+   "name": "삼치",
+   "everyday": true
+  },
+  {
+   "name": "연어",
+   "everyday": true
+  },
+  {
+   "name": "조기",
+   "everyday": true
+  },
+  {
+   "name": "꽁치",
+   "everyday": true
+  },
+  {
+   "name": "동태",
+   "everyday": true
+  },
+  {
+   "name": "대구",
+   "everyday": true
+  },
+  {
+   "name": "가자미",
+   "everyday": true
+  },
+  {
+   "name": "임연수",
+   "everyday": true
+  },
+  {
+   "name": "우럭",
+   "everyday": true
+  },
+  {
+   "name": "광어",
+   "everyday": true
+  },
+  {
+   "name": "도미",
+   "everyday": true
+  },
+  {
+   "name": "아귀",
+   "everyday": true
+  },
+  {
+   "name": "방어",
+   "everyday": true
+  },
+  {
+   "name": "장어",
+   "everyday": true
+  },
+  {
+   "name": "통북어",
+   "everyday": false
+  },
+  {
+   "name": "흰다리새우",
+   "everyday": true
+  },
+  {
+   "name": "칵테일새우",
+   "everyday": true
+  },
+  {
+   "name": "꽃게",
+   "everyday": true
+  },
+  {
+   "name": "김장 생새우",
+   "everyday": false
+  },
+  {
+   "name": "킹크랩",
+   "everyday": false
+  },
+  {
+   "name": "랍스터",
+   "everyday": false
+  },
+  {
+   "name": "오징어",
+   "everyday": true
+  },
+  {
+   "name": "낙지",
+   "everyday": true
+  },
+  {
+   "name": "주꾸미",
+   "everyday": true
+  },
+  {
+   "name": "문어",
+   "everyday": true
+  },
+  {
+   "name": "전복",
+   "everyday": true
+  },
+  {
+   "name": "바지락",
+   "everyday": true
+  },
+  {
+   "name": "홍합",
+   "everyday": true
+  },
+  {
+   "name": "꼬막",
+   "everyday": true
+  },
+  {
+   "name": "가리비",
+   "everyday": true
+  },
+  {
+   "name": "생굴",
+   "everyday": true
+  },
+  {
+   "name": "소라",
+   "everyday": true
+  },
+  {
+   "name": "골뱅이",
+   "everyday": true
+  },
+  {
+   "name": "모시조개",
+   "everyday": true
+  },
+  {
+   "name": "성게알",
+   "everyday": false
+  },
+  {
+   "name": "미역",
+   "everyday": true
+  },
+  {
+   "name": "다시마",
+   "everyday": true
+  },
+  {
+   "name": "매생이",
+   "everyday": true
+  },
+  {
+   "name": "파래",
+   "everyday": true
+  },
+  {
+   "name": "톳",
+   "everyday": true
+  },
+  {
+   "name": "국물용 멸치",
+   "everyday": true
+  },
+  {
+   "name": "볶음용 멸치",
+   "everyday": true
+  },
+  {
+   "name": "황태채",
+   "everyday": true
+  },
+  {
+   "name": "오징어채",
+   "everyday": true
+  },
+  {
+   "name": "건새우",
+   "everyday": true
+  }
+ ]
+}
