@@ -1,0 +1,245 @@
+{
+ "job_id": "pool_gemini_15",
+ "items": [
+  {
+   "name": "연필",
+   "everyday": true
+  },
+  {
+   "name": "볼펜",
+   "everyday": true
+  },
+  {
+   "name": "샤프",
+   "everyday": true
+  },
+  {
+   "name": "샤프심",
+   "everyday": true
+  },
+  {
+   "name": "형광펜",
+   "everyday": true
+  },
+  {
+   "name": "사인펜",
+   "everyday": true
+  },
+  {
+   "name": "네임펜",
+   "everyday": true
+  },
+  {
+   "name": "보드마카",
+   "everyday": true
+  },
+  {
+   "name": "색연필",
+   "everyday": true
+  },
+  {
+   "name": "지우개",
+   "everyday": true
+  },
+  {
+   "name": "수정테이프",
+   "everyday": true
+  },
+  {
+   "name": "연필깎이",
+   "everyday": true
+  },
+  {
+   "name": "공책",
+   "everyday": true
+  },
+  {
+   "name": "복사지",
+   "everyday": true
+  },
+  {
+   "name": "점착메모지",
+   "everyday": true
+  },
+  {
+   "name": "단어장",
+   "everyday": true
+  },
+  {
+   "name": "견출지",
+   "everyday": true
+  },
+  {
+   "name": "책받침",
+   "everyday": true
+  },
+  {
+   "name": "투명테이프",
+   "everyday": true
+  },
+  {
+   "name": "딱풀",
+   "everyday": true
+  },
+  {
+   "name": "가위",
+   "everyday": true
+  },
+  {
+   "name": "커터칼",
+   "everyday": true
+  },
+  {
+   "name": "스테이플러",
+   "everyday": true
+  },
+  {
+   "name": "클립",
+   "everyday": true
+  },
+  {
+   "name": "펀치",
+   "everyday": true
+  },
+  {
+   "name": "자",
+   "everyday": true
+  },
+  {
+   "name": "필통",
+   "everyday": true
+  },
+  {
+   "name": "파일철",
+   "everyday": true
+  },
+  {
+   "name": "바인더",
+   "everyday": true
+  },
+  {
+   "name": "서류함",
+   "everyday": true
+  },
+  {
+   "name": "북엔드",
+   "everyday": true
+  },
+  {
+   "name": "독서대",
+   "everyday": true
+  },
+  {
+   "name": "연필꽂이",
+   "everyday": true
+  },
+  {
+   "name": "클립보드",
+   "everyday": true
+  },
+  {
+   "name": "스케치북",
+   "everyday": true
+  },
+  {
+   "name": "색종이",
+   "everyday": true
+  },
+  {
+   "name": "크레파스",
+   "everyday": true
+  },
+  {
+   "name": "수채화물감",
+   "everyday": true
+  },
+  {
+   "name": "붓",
+   "everyday": true
+  },
+  {
+   "name": "파레트",
+   "everyday": true
+  },
+  {
+   "name": "화이트보드",
+   "everyday": true
+  },
+  {
+   "name": "소설책",
+   "everyday": true
+  },
+  {
+   "name": "동화책",
+   "everyday": true
+  },
+  {
+   "name": "시집",
+   "everyday": true
+  },
+  {
+   "name": "문제집",
+   "everyday": true
+  },
+  {
+   "name": "학습만화",
+   "everyday": true
+  },
+  {
+   "name": "사전",
+   "everyday": true
+  },
+  {
+   "name": "만년필",
+   "everyday": false
+  },
+  {
+   "name": "축하카드",
+   "everyday": false
+  },
+  {
+   "name": "선물포장지",
+   "everyday": false
+  },
+  {
+   "name": "다이어리",
+   "everyday": false
+  },
+  {
+   "name": "앨범",
+   "everyday": false
+  },
+  {
+   "name": "방명록",
+   "everyday": false
+  },
+  {
+   "name": "상장케이스",
+   "everyday": false
+  },
+  {
+   "name": "찰흙",
+   "everyday": false
+  },
+  {
+   "name": "조각칼",
+   "everyday": false
+  },
+  {
+   "name": "리코더",
+   "everyday": false
+  },
+  {
+   "name": "단소",
+   "everyday": false
+  },
+  {
+   "name": "캔버스",
+   "everyday": false
+  },
+  {
+   "name": "컬러링북",
+   "everyday": false
+  }
+ ]
+}
