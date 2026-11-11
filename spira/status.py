@@ -91,6 +91,26 @@ def build(now: datetime | None = None) -> dict:
         cell = batch.setdefault(group, {s: 0 for s in STATES})
         cell[j["state"]] += 1
 
+    # 배치 상태 · 품질 관문
+    batch_info = {}
+    for st_file in sorted(DATA.glob("*/batches/*/state.json")):
+        b = st_file.parent.name
+        st = (_load(st_file) or {}).get("state")
+        rep = _load(st_file.parent / "report.json") or {}
+        items = ((rep.get("metrics") or {}).get("items") or {})
+        batch_info[b] = {
+            "state": st, "verdict": rep.get("verdict"),
+            "failed_items": [k for k, v in items.items() if v.get("ok") is False],
+            "review": (rep.get("review") or {}).get("wrong_ratio"),
+        }
+    pool_status = None
+    pool_file = config.CONFIG / "lists" / "item_pool.yaml"
+    if pool_file.exists():
+        import yaml
+        pool_status = (yaml.safe_load(pool_file.read_text(encoding="utf-8")) or {}).get("status")
+    review_dir = config.ROOT / "review" / "todo"
+    review_todo = sorted(p.name for p in review_dir.glob("*.csv")) if review_dir.exists() else []
+
     # 사람 · 계정별
     cycles = config.load_cycles()
     people = []
@@ -130,6 +150,9 @@ def build(now: datetime | None = None) -> dict:
                                            "finished_at", "attempts", "prompt_version")}
                    | {"weekly_used_pct": (m.get("quota") or {}).get("weekly_used_pct")} for m in recent],
         "failed": failed,
+        "batches": batch_info,
+        "item_pool": pool_status,
+        "review_todo": review_todo,
         "cycles": {name: {"active": config.is_active(c, today), "ends_on": str(c.get("ends_on") or ""),
                           "models": c.get("models") or {}} for name, c in cycles.items()},
     }

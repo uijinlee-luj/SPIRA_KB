@@ -246,9 +246,9 @@ def work_account(acc: Account, max_jobs: int | None, stop: threading.Event, log,
         log(f"▶ {acc.label}: {job.job_id}")
         try:
             status, q_after = run_one(acc, job, stop, log, q)
-        except queue.GitError as e:
-            log(f"✗ {job.job_id}: {e}")
-            break
+        except queue.GitError as e:   # 결과는 커밋돼 있고, 다음 동기화 때 같이 올라간다
+            log(f"△ {job.job_id}: 올리기가 밀렸습니다. 다음 작업 때 같이 올립니다")
+            status, q_after = "done", None
         q = q_after if q_after is not None else (read_quota(acc.runner) if q is not None else None)
         stats[status] = stats.get(status, 0) + 1
         n += 1
@@ -274,13 +274,15 @@ _instance_lock = None
 
 
 def single_instance() -> bool:
-    """이 노트북에서 spira start가 이미 돌고 있으면 False. (localhost 포트를 잡아 두는 방식이라
-    프로그램이 꺼지면 저절로 풀린다)"""
+    """이 저장소 폴더에서 spira start가 이미 돌고 있으면 False. (localhost 포트를 잡아 두는 방식이라
+    프로그램이 꺼지면 저절로 풀린다. 포트는 저장소 경로에서 정한다)"""
     global _instance_lock
+    import hashlib
     import socket
+    port = 47000 + int(hashlib.sha256(str(config.ROOT).encode()).hexdigest()[:6], 16) % 1000
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
-        s.bind(("127.0.0.1", 47831))
+        s.bind(("127.0.0.1", port))
     except OSError:
         s.close()
         return False

@@ -1,0 +1,64 @@
+# 자동 진행: 결과가 올라올 때마다 + 30분마다 `spira tick`으로 단계를 한 칸씩 진행하고,
+# 품질 관문을 통과한 배치가 있으면 임베딩해서 DB(Neon)에 올린다.
+name: pipeline
+on:
+  push:
+    branches: [main]
+    paths: ["data/**", "review/done/**", "config/**", "checks/**"]
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    outputs:
+      ready_to_load: ${{ steps.tick.outputs.ready_to_load }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml pydantic typer
+      - name: git 사용자
+        run: |
+          git config user.name "spira-pipeline"
+          git config user.email "actions@users.noreply.github.com"
+      - id: tick
+        run: python -m spira.runner tick --commit
+      - name: 현황 갱신
+        run: bash scripts/publish_status.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  load:
+    needs: tick
+    if: needs.tick.outputs.ready_to_load != ''
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-bge-m3
+      - run: pip install pyyaml pydantic typer "FlagEmbedding>=1.2" "psycopg[binary]" pgvector
+      - name: git 사용자
+        run: |
+          git config user.name "spira-pipeline"
+          git config user.email "actions@users.noreply.github.com"
+      - run: python -m spira.runner load --commit
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      - name: 현황 갱신
+        run: bash scripts/publish_status.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

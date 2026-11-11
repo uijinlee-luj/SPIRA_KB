@@ -8,7 +8,7 @@ SPIRA 구매 의도 지식 베이스 — Gemini · Codex · Claude 에이전트�
 
 ## 상태
 
-**진행 상황.** 설정 · 목록 · 설정 검사(`spira check`), 프롬프트 v1, 작업 처리기(`spira start`)까지 있다. 코드 단계(①③⑤⑥⑦)는 구현 예정.
+**진행 상황.** 설정 · 목록 · 프롬프트, 작업 처리기(`spira start`), 코드 단계 ⓪①③⑤⑥⑦과 자동 진행(`spira tick`, GitHub Actions), 현황판까지 있다.
 
 ## 구조
 
@@ -89,6 +89,36 @@ uv run spira check      # 설정 검사
 - 5시간 한도가 거의 차면 다시 찰 때까지 기다렸다가 이어서 한다. 주간 한도가 5% 남으면 멈춘다
 - 한도 %를 읽을 수 없는 도구는 하루 `jobs_per_day`개(기본 10)로 센다
 - 할 일이 없으면 멈춘다. Ctrl+C로 멈추면 하던 작업은 대기열로 돌아간다
+
+## 자동 진행 (GitHub Actions)
+
+결과가 올라올 때마다, 그리고 30분마다 `pipeline` 워크플로가 `spira tick`으로 한 칸씩 진행한다.
+
+| 단계 | 언제 | 무엇을 |
+| --- | --- | --- |
+| ⓪ 아이템 풀 합치기 | 아이템 풀 작업 60개가 다 끝나면 | `config/lists/item_pool.yaml`(draft) + `review/item_pool_review.csv` |
+| ① 회차 시작 | 아이템 풀이 확정되고, 앞 회차가 검수 단계까지 가면 | 배치 3개 + 생성 작업 (조각당 약 11개) |
+| ③ 주문 조립 | 배치의 생성 작업이 다 끝나면 | 사례 1천 개 + 라벨 작업 40개 (확인용 사례 3개씩) |
+| ⑤ 비교 | 라벨 작업이 다 끝나면 | 확인용 사례를 틀린 작업은 한 번 다시, 아니면 두 라벨 비교 |
+| ⑥ 품질 관문 | 비교가 끝나면 → 검수가 다 모이면 | 자동 지표 + 검수 30개(4명에게 나눔) → passed / failed |
+| ⑦ 적재 | 통과하면 | 중복 제거(0.97) + BGE-M3 임베딩 + Neon `cases` 표, 회차가 끝나면 `kb-vN` 태그 |
+
+숫자(비율 · 기준)는 `config/pipeline.yaml`. 배치 기록은 `data/<사이클>/batches/<배치>/`(보고서는 `report.md`).
+
+## U가 하는 일
+
+```bash
+uv run spira confirm-pool          # 아이템 풀 검토 뒤 확정 (확정해야 사이클이 시작된다)
+uv run spira accept B1-1 --reason "…"   # 관문을 못 넘었지만 통과시킬 때 (첫 배치 기준 재조정 등)
+uv run spira redo-batch B1-1       # 프롬프트 · 설정을 고친 뒤 배치를 처음부터 다시
+```
+
+## 검수 (4명)
+
+```bash
+uv run spira review        # 내 검수 파일 보기 → 엑셀로 열어 '판정'에 O/X
+uv run spira review-done   # 다 적은 파일을 올리기
+```
 
 ## 설계 문서 (노션)
 

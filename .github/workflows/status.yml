@@ -1,10 +1,10 @@
-# 현황 갱신: data/ · config/가 바뀔 때마다 요약(status.json)을 만들어 status 브랜치에 올린다.
+# 현황 갱신: data/ · config/ · review/가 바뀔 때마다 요약(status.json)을 만들어 status 브랜치에 올린다.
 # main에는 커밋하지 않는다 (노트북들의 push와 부딪히지 않게).
 name: status
 on:
   push:
     branches: [main]
-    paths: ["data/**", "config/**", "spira/status.py", ".github/workflows/status.yml"]
+    paths: ["data/**", "config/**", "review/**", "spira/status.py", ".github/workflows/status.yml"]
   workflow_dispatch:
 concurrency:
   group: status
@@ -20,12 +20,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pyyaml
-      - run: python -m spira.status > "$RUNNER_TEMP/status.json"
-      - name: status 브랜치에 올리기
-        run: |
-          mkdir "$RUNNER_TEMP/pub" && cd "$RUNNER_TEMP/pub"
-          cp ../status.json .
-          git init -q -b status
-          git add status.json
-          git -c user.name="spira-status" -c user.email="actions@users.noreply.github.com" commit -qm "현황 ${GITHUB_SHA::7}"
-          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" status
+      - run: bash scripts/publish_status.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
