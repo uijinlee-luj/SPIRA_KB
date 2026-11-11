@@ -1,0 +1,245 @@
+{
+ "job_id": "pool_gemini_10",
+ "items": [
+  {
+   "name": "칫솔",
+   "everyday": true
+  },
+  {
+   "name": "치약",
+   "everyday": true
+  },
+  {
+   "name": "치실",
+   "everyday": true
+  },
+  {
+   "name": "구강청결제",
+   "everyday": true
+  },
+  {
+   "name": "혀클리너",
+   "everyday": true
+  },
+  {
+   "name": "샴푸",
+   "everyday": true
+  },
+  {
+   "name": "린스",
+   "everyday": true
+  },
+  {
+   "name": "헤어트리트먼트",
+   "everyday": true
+  },
+  {
+   "name": "헤어오일",
+   "everyday": true
+  },
+  {
+   "name": "헤어스프레이",
+   "everyday": true
+  },
+  {
+   "name": "헤어왁스",
+   "everyday": true
+  },
+  {
+   "name": "바디워시",
+   "everyday": true
+  },
+  {
+   "name": "비누",
+   "everyday": true
+  },
+  {
+   "name": "바디로션",
+   "everyday": true
+  },
+  {
+   "name": "핸드크림",
+   "everyday": true
+  },
+  {
+   "name": "샤워타월",
+   "everyday": true
+  },
+  {
+   "name": "때밀이타월",
+   "everyday": true
+  },
+  {
+   "name": "클렌징폼",
+   "everyday": true
+  },
+  {
+   "name": "클렌징오일",
+   "everyday": true
+  },
+  {
+   "name": "스킨",
+   "everyday": true
+  },
+  {
+   "name": "로션",
+   "everyday": true
+  },
+  {
+   "name": "수분크림",
+   "everyday": true
+  },
+  {
+   "name": "에센스",
+   "everyday": true
+  },
+  {
+   "name": "아이크림",
+   "everyday": true
+  },
+  {
+   "name": "선크림",
+   "everyday": true
+  },
+  {
+   "name": "립밤",
+   "everyday": true
+  },
+  {
+   "name": "마스크팩",
+   "everyday": true
+  },
+  {
+   "name": "파운데이션",
+   "everyday": true
+  },
+  {
+   "name": "컨실러",
+   "everyday": true
+  },
+  {
+   "name": "립스틱",
+   "everyday": true
+  },
+  {
+   "name": "마스카라",
+   "everyday": true
+  },
+  {
+   "name": "아이라이너",
+   "everyday": true
+  },
+  {
+   "name": "아이브로우",
+   "everyday": true
+  },
+  {
+   "name": "블러셔",
+   "everyday": true
+  },
+  {
+   "name": "아이섀도우",
+   "everyday": true
+  },
+  {
+   "name": "화장솜",
+   "everyday": true
+  },
+  {
+   "name": "면봉",
+   "everyday": true
+  },
+  {
+   "name": "손톱깎이",
+   "everyday": true
+  },
+  {
+   "name": "눈썹칼",
+   "everyday": true
+  },
+  {
+   "name": "뷰러",
+   "everyday": true
+  },
+  {
+   "name": "기름종이",
+   "everyday": true
+  },
+  {
+   "name": "머리빗",
+   "everyday": true
+  },
+  {
+   "name": "면도기",
+   "everyday": true
+  },
+  {
+   "name": "쉐이빙폼",
+   "everyday": true
+  },
+  {
+   "name": "생리대",
+   "everyday": true
+  },
+  {
+   "name": "여성청결제",
+   "everyday": true
+  },
+  {
+   "name": "욕실화",
+   "everyday": true
+  },
+  {
+   "name": "샤워기헤드",
+   "everyday": true
+  },
+  {
+   "name": "변기커버",
+   "everyday": true
+  },
+  {
+   "name": "샤워커튼",
+   "everyday": true
+  },
+  {
+   "name": "칫솔꽂이",
+   "everyday": true
+  },
+  {
+   "name": "욕실발매트",
+   "everyday": true
+  },
+  {
+   "name": "염색약",
+   "everyday": false
+  },
+  {
+   "name": "입욕제",
+   "everyday": false
+  },
+  {
+   "name": "제모크림",
+   "everyday": false
+  },
+  {
+   "name": "괄사",
+   "everyday": false
+  },
+  {
+   "name": "인조속눈썹",
+   "everyday": false
+  },
+  {
+   "name": "인조손톱",
+   "everyday": false
+  },
+  {
+   "name": "접이식 욕조",
+   "everyday": false
+  },
+  {
+   "name": "여행용 세면세트",
+   "everyday": false
+  }
+ ]
+}
