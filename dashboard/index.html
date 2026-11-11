@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Spira KB 현황판</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+/* 레이아웃: 위에서 아래로 "지금 → 진행 → 사람 → 기록". 작업 큐를 보는 운영 화면이라 숫자와 막대가 주인공 */
+:root {
+  --bg: #f6f7f5;
+  --panel: #ffffff;
+  --ink: #1d2320;
+  --muted: #66706b;
+  --line: #dfe3e0;
+  --track: #e9ece9;
+  --accent: #0f6e56;
+  --accent-soft: #d6eee6;
+  --run: #c27a0e;
+  --run-soft: #fbecd2;
+  --bad: #b3261e;
+  --bad-soft: #f8dcd9;
+  --gemini: #2f6fd6;
+  --codex: #1d2320;
+  --claude: #c2622d;
+  --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121614; --panel: #1a1f1d; --ink: #e6ebe8; --muted: #95a09a; --line: #2c3431; --track: #262d2a;
+    --accent: #4cc39b; --accent-soft: #1d3a31; --run: #e6a540; --run-soft: #3a2e19; --bad: #f08a80; --bad-soft: #3d2220;
+    --gemini: #79a8ff; --codex: #d9dfdc; --claude: #f0915c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121614; --panel: #1a1f1d; --ink: #e6ebe8; --muted: #95a09a; --line: #2c3431; --track: #262d2a;
+  --accent: #4cc39b; --accent-soft: #1d3a31; --run: #e6a540; --run-soft: #3a2e19; --bad: #f08a80; --bad-soft: #3d2220;
+  --gemini: #79a8ff; --codex: #d9dfdc; --claude: #f0915c; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.55 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 48px;
+}
+.wrap { max-width: 1080px; margin: 0 auto; display: grid; gap: 28px; }
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; }
+h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+h1 small { font-weight: 500; color: var(--muted); font-size: 14px; margin-left: 6px; }
+.meta { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 13px; flex-wrap: wrap; }
+.meta .num { font-family: var(--font-data); }
+button {
+  font: inherit; font-size: 13px; color: var(--ink); background: var(--panel); border: 1px solid var(--line);
+  border-radius: 6px; padding: 5px 10px; cursor: pointer;
+}
+button:hover { border-color: var(--muted); }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h2 { margin: 0 0 10px; font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0.04em; }
+section { min-width: 0; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex: none; }
+.co-gemini { --co: var(--gemini); } .co-codex { --co: var(--codex); } .co-claude { --co: var(--claude); }
+.co-tag { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
+.co-tag .dot { background: var(--co); }
+
+/* 지금 돌리는 중 */
+.running { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.run-card { padding: 12px 14px; display: grid; gap: 4px; border-left: 3px solid var(--run); }
+.run-card .who { display: flex; justify-content: space-between; gap: 8px; }
+.run-card .job { font-family: var(--font-data); font-size: 13px; overflow-wrap: anywhere; }
+.run-card .since { color: var(--muted); font-size: 12px; }
+.pulse { background: var(--run); animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+.empty { color: var(--muted); padding: 14px; }
+
+/* 진행 */
+.prog { padding: 6px 14px 12px; display: grid; gap: 4px; }
+.batch-title { font-weight: 600; margin: 10px 0 2px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.batch-title .num { color: var(--muted); font-weight: 400; font-size: 12px; }
+.row { display: grid; grid-template-columns: 92px 1fr 118px; gap: 10px; align-items: center; min-height: 26px; }
+.row .label { font-size: 13px; }
+.bar { height: 10px; background: var(--track); border-radius: 5px; overflow: hidden; display: flex; }
+.bar span { height: 100%; }
+.bar .done { background: var(--accent); }
+.bar .run { background: var(--run); }
+.bar .fail { background: var(--bad); }
+.row .count { font-size: 12px; text-align: right; color: var(--muted); }
+.row .count b { color: var(--ink); font-weight: 500; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); padding: 10px 14px 0; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+
+/* 사람별 */
+.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.person { padding: 12px 14px; display: grid; gap: 8px; }
+.person .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.person .name { font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+.chip { font-size: 11px; padding: 1px 7px; border-radius: 10px; background: var(--track); color: var(--muted); font-weight: 500; }
+.chip.on { background: var(--run-soft); color: var(--run); }
+.chip.off { background: var(--track); color: var(--muted); }
+.gauge { position: relative; height: 12px; background: var(--track); border-radius: 6px; }
+.gauge .fill { position: absolute; inset: 0 auto 0 0; background: var(--co); border-radius: 6px; opacity: .85; }
+.gauge .mark { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--ink); }
+.person .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 10px; font-size: 12px; color: var(--muted); }
+.person .stats b { color: var(--ink); font-weight: 500; font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+
+/* 기록 */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-weight: 500; color: var(--muted); font-size: 12px; }
+tr:last-child td { border-bottom: none; }
+td.r, th.r { text-align: right; }
+.ok { color: var(--accent); } .bad { color: var(--bad); }
+.fail-list { display: grid; gap: 8px; }
+.fail-item { padding: 10px 14px; border-left: 3px solid var(--bad); display: grid; gap: 2px; }
+.fail-item .err { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+.notice { padding: 12px 14px; border-left: 3px solid var(--bad); background: var(--bad-soft); border-radius: 6px; }
+footer { color: var(--muted); font-size: 12px; }
+footer a { color: inherit; }
+@media (max-width: 520px) {
+  .row { grid-template-columns: 70px 1fr 92px; gap: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Spira KB 현황판 <small>합성 데이터 자동화</small></h1>
+    <div class="meta">
+      <span>갱신 <span class="num" id="updated">—</span></span>
+      <span id="next" class="num"></span>
+      <button id="refresh" type="button">지금 새로고침</button>
+    </div>
+  </header>
+
+  <div id="error" class="notice" hidden></div>
+
+  <section>
+    <h2>지금 돌리는 중</h2>
+    <div id="running" class="running"><div class="panel empty">불러오는 중…</div></div>
+  </section>
+
+  <section>
+    <h2>진행</h2>
+    <div class="panel">
+      <div class="legend">
+        <span><i style="background:var(--accent)"></i>완료</span>
+        <span><i style="background:var(--run)"></i>하는 중</span>
+        <span><i style="background:var(--bad)"></i>실패</span>
+        <span><i style="background:var(--track)"></i>대기</span>
+      </div>
+      <div id="progress" class="prog"><div class="empty">불러오는 중…</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>사람별 사용량 · 최근 7일</h2>
+    <div id="people" class="people"></div>
+  </section>
+
+  <section id="failed-sec" hidden>
+    <h2>실패한 작업</h2>
+    <div id="failed" class="fail-list"></div>
+  </section>
+
+  <section>
+    <h2>최근 끝난 작업</h2>
+    <div class="panel table-wrap">
+      <table>
+        <thead><tr><th>끝난 시각</th><th>작업</th><th>누가</th><th class="r">걸린 시간</th><th class="r">주간 한도</th><th>결과</th></tr></thead>
+        <tbody id="recent"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    90초마다 자동으로 다시 읽습니다. 작업이 끝나고 1~2분 뒤에 반영됩니다.
+    주간 한도 %는 AI 도구가 알려 주는 값의 작업 전후 차이라서, 작업 하나씩은 0으로 보이기도 하고 합계로 보면 맞습니다.
+    · <a href="https://github.com/uijinlee-luj/SPIRA_KB/commits/main" target="_blank" rel="noopener">커밋 기록</a>
+  </footer>
+</div>
+
+<script>
+const REPO = "uijinlee-luj/SPIRA_KB";
+const SOURCES = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+  ? ["status.json"]
+  : [`https://api.github.com/repos/${REPO}/contents/status.json?ref=status`,
+     `https://raw.githubusercontent.com/${REPO}/status/status.json`];
+const REFRESH_S = 90;
+const CO = { gemini: "Gemini", codex: "Codex", claude: "Claude" };
+const ROLE = { generate: "생성", label_1: "라벨 ①", label_2: "라벨 ②", item_pool: "아이템 풀" };
+const SCOPE = { pool: "아이템 풀 (처음 한 번)", A: "사이클 A", B: "사이클 B" };
+let data = null, nextAt = 0;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const coTag = (c) => `<span class="co-tag co-${esc(c)}"><span class="dot"></span>${esc(CO[c] || c)}</span>`;
+
+function ago(iso) {
+  if (!iso) return "—";
+  const s = Math.max(0, (Date.now() - new Date(iso).getTime()) / 1000);
+  if (s < 60) return "방금";
+  if (s < 3600) return `${Math.floor(s / 60)}분 전`;
+  if (s < 86400) return `${Math.floor(s / 3600)}시간 전`;
+  return `${Math.floor(s / 86400)}일 전`;
+}
+function dur(sec) {
+  if (sec == null) return "—";
+  const m = Math.floor(sec / 60), s = Math.round(sec % 60);
+  return m ? `${m}분 ${s}초` : `${s}초`;
+}
+function since(iso) {
+  const s = Math.max(0, (Date.now() - new Date(iso).getTime()) / 1000);
+  return dur(s) + "째";
+}
+function clock(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  return d.toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false });
+}
+const pct = (x) => (x == null ? "—" : `${Number(x).toFixed(1)}%`);
+
+function renderRunning() {
+  const r = data.running || [];
+  $("running").innerHTML = r.length ? r.map((j) => `
+    <div class="panel run-card co-${esc(j.company)}">
+      <div class="who"><span class="co-tag"><span class="dot pulse"></span>${esc(j.person)} · ${esc(CO[j.company] || j.company)}</span>
+        <span class="since num" data-since="${esc(j.claimed_at)}">${since(j.claimed_at)}</span></div>
+      <div class="job">${esc(j.job_id)}</div>
+      <div class="since">${esc(ROLE[j.role] || j.role || "")}</div>
+    </div>`).join("") : `<div class="panel empty">지금 돌고 있는 작업이 없습니다.</div>`;
+}
+
+function bar(c) {
+  const total = c.queue + c.running + c.results + c.failed || 1;
+  const w = (n) => `${(100 * n / total).toFixed(2)}%`;
+  return `<div class="bar" role="img" aria-label="완료 ${c.results}, 하는 중 ${c.running}, 실패 ${c.failed}, 대기 ${c.queue}">
+    <span class="done" style="width:${w(c.results)}"></span><span class="run" style="width:${w(c.running)}"></span><span class="fail" style="width:${w(c.failed)}"></span></div>`;
+}
+
+function renderProgress() {
+  const p = data.progress || {};
+  const scopes = Object.keys(p).sort((a, b) => (a === "pool" ? -1 : b === "pool" ? 1 : a.localeCompare(b)));
+  if (!scopes.length) { $("progress").innerHTML = `<div class="empty">아직 만든 작업이 없습니다.</div>`; return; }
+  let html = "";
+  for (const s of scopes) {
+    const batches = p[s];
+    for (const b of Object.keys(batches).sort()) {
+      const groups = batches[b];
+      const sum = Object.values(groups).reduce((a, c) => ({ done: a.done + c.results, all: a.all + c.queue + c.running + c.results + c.failed }), { done: 0, all: 0 });
+      const title = s === "pool" ? SCOPE.pool : `${SCOPE[s] || s} · 배치 ${b}`;
+      html += `<div class="batch-title">${esc(title)} <span class="num">${sum.done} / ${sum.all} 작업</span></div>`;
+      const order = s === "pool" ? ["gemini", "codex", "claude"] : ["generate", "label_1", "label_2"];
+      const keys = [...order.filter((k) => groups[k]), ...Object.keys(groups).filter((k) => !order.includes(k))];
+      for (const k of keys) {
+        const c = groups[k];
+        const label = s === "pool" ? coTag(k) : esc(ROLE[k] || k);
+        const extra = [c.running ? `하는 중 ${c.running}` : "", c.failed ? `실패 ${c.failed}` : ""].filter(Boolean).join(" · ");
+        html += `<div class="row"><span class="label">${label}</span>${bar(c)}
+          <span class="count num"><b>${c.results}</b> / ${c.queue + c.running + c.results + c.failed}${extra ? `<br>${extra}` : ""}</span></div>`;
+      }
+    }
+  }
+  $("progress").innerHTML = html;
+}
+
+function renderPeople() {
+  const ppl = (data.people || []).slice().sort((a, b) => a.person.localeCompare(b.person) || a.company.localeCompare(b.company));
+  $("people").innerHTML = ppl.map((x) => {
+    const active = x.cycles && x.cycles.length;
+    const state = x.running.length ? `<span class="chip on">돌리는 중</span>` : active ? `<span class="chip">대기</span>` : `<span class="chip off">쉬는 중</span>`;
+    const gauge = x.measures_quota ? `
+      <div class="gauge co-${esc(x.company)}" role="img" aria-label="최근 7일 ${pct(x.week_pct)}, 주간 몫 ${pct(x.share)}">
+        <div class="fill" style="width:${Math.min(100, x.week_pct)}%"></div>
+        <div class="mark" style="left:${Math.min(100, x.share)}%" title="주간 몫 ${pct(x.share)}"></div>
+      </div>` : "";
+    const usage = x.measures_quota
+      ? `<span>오늘 <b>${pct(x.today_pct)}</b></span><span>7일 <b>${pct(x.week_pct)}</b> / 몫 ${pct(x.share)}</span>
+         <span>남은 주간 한도 <b>${pct(x.weekly_left)}</b></span><span>작업 오늘 <b>${x.today_jobs}</b>개</span>`
+      : `<span>작업 오늘 <b>${x.today_jobs}</b>개</span><span>7일 <b>${x.week_jobs}</b>개</span>
+         <span>몫 ${pct(x.share)}</span><span>${x.total_jobs ? "한도 % 미확인" : "아직 실행 전"}</span>`;
+    return `<div class="panel person co-${esc(x.company)}">
+      <div class="top"><span class="name">${esc(x.person)} ${coTag(x.company)}</span>${state}</div>
+      ${gauge}
+      <div class="stats">${usage}
+        <span>사이클 <b>${esc((x.cycles || []).join("·") || "—")}</b></span>
+        <span>마지막 작업 <b>${ago(x.last_finished_at)}</b></span>
+        ${x.failed_jobs ? `<span class="bad">실패 ${x.failed_jobs}개</span>` : ""}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderRecent() {
+  const r = data.recent || [];
+  $("recent").innerHTML = r.length ? r.map((m) => `<tr>
+    <td class="num">${clock(m.finished_at)}</td>
+    <td class="num">${esc(m.job_id)}</td>
+    <td>${esc(m.person)} · ${coTag(m.company)}</td>
+    <td class="r num">${dur(m.seconds)}</td>
+    <td class="r num">${m.weekly_used_pct == null ? "—" : pct(m.weekly_used_pct)}</td>
+    <td class="${m.ok ? "ok" : "bad"}">${m.ok ? "완료" : "실패"}${m.attempts > 1 ? " (2회째)" : ""}</td>
+  </tr>`).join("") : `<tr><td colspan="6" class="empty">아직 끝난 작업이 없습니다.</td></tr>`;
+}
+
+function renderFailed() {
+  const f = data.failed || [];
+  $("failed-sec").hidden = !f.length;
+  $("failed").innerHTML = f.map((x) => `<div class="panel fail-item">
+    <div><span class="num">${esc(x.job_id)}</span> · ${coTag(x.company)}</div>
+    <div class="err">${esc(x.error)}</div></div>`).join("");
+}
+
+function render() {
+  $("updated").textContent = clock(data.generated_at) + ` (${ago(data.generated_at)})`;
+  renderRunning(); renderProgress(); renderPeople(); renderFailed(); renderRecent();
+}
+
+async function load() {
+  nextAt = Date.now() + REFRESH_S * 1000;
+  for (const url of SOURCES) {
+    try {
+      const res = await fetch(url, { headers: url.includes("api.github.com") ? { Accept: "application/vnd.github.raw" } : {}, cache: "no-store" });
+      if (!res.ok) continue;
+      data = await res.json();
+      $("error").hidden = true;
+      render();
+      return;
+    } catch (e) { /* 다음 주소로 */ }
+  }
+  $("error").hidden = false;
+  $("error").textContent = data
+    ? "새 현황을 받지 못했습니다. 잠시 뒤 다시 시도합니다. 아래는 마지막으로 받은 내용입니다."
+    : "현황을 받지 못했습니다. 아직 첫 작업이 올라오기 전이거나, GitHub에 잠시 연결되지 않습니다.";
+}
+
+function tick() {
+  const left = Math.max(0, Math.round((nextAt - Date.now()) / 1000));
+  $("next").textContent = `다음 갱신 ${left}초`;
+  document.querySelectorAll("[data-since]").forEach((el) => { el.textContent = since(el.dataset.since); });
+  if (left === 0) load();
+}
+
+$("refresh").addEventListener("click", load);
+load();
+setInterval(tick, 1000);
+</script>
+</body>
+</html>
