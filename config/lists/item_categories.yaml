@@ -4,23 +4,23 @@
 # 의약품·건강 상품은 넣지 않는다 (민감한 의도를 빼기로 한 것과 같은 이유).
 
 categories:
-  - {no: "01", name: 과일·채소, target_count: 100}
-  - {no: "02", name: 정육·계란·수산, target_count: 80}
-  - {no: "03", name: 유제품·음료, target_count: 80}
-  - {no: "04", name: 쌀·면·양념·소스, target_count: 100}
-  - {no: "05", name: 간식·과자·빵, target_count: 80}
-  - {no: "06", name: 간편식·냉동식품, target_count: 80}
-  - {no: "07", name: 주류, target_count: 30}
-  - {no: "08", name: 세제·청소용품, target_count: 80}
-  - {no: "09", name: 휴지·위생·생활소모품, target_count: 60}
-  - {no: "10", name: 욕실·세면·화장품, target_count: 60}
-  - {no: "11", name: 주방용품·식기, target_count: 100}
-  - {no: "12", name: 수납·정리·인테리어 소품, target_count: 80}
-  - {no: "13", name: 침구·패브릭·의류, target_count: 80}
-  - {no: "14", name: 소형가전·가전 소모품, target_count: 80}
-  - {no: "15", name: 문구·학용품·도서, target_count: 60}
-  - {no: "16", name: 유아·아동 용품, target_count: 80}
-  - {no: "17", name: 반려동물 용품, target_count: 60}
-  - {no: "18", name: 파티·행사·선물 용품, target_count: 60}
-  - {no: "19", name: 캠핑·여행·나들이 용품, target_count: 80}
-  - {no: "20", name: 스포츠·운동·취미, target_count: 60}
+  - {num: "01", name: 과일·채소, target_count: 100}
+  - {num: "02", name: 정육·계란·수산, target_count: 80}
+  - {num: "03", name: 유제품·음료, target_count: 80}
+  - {num: "04", name: 쌀·면·양념·소스, target_count: 100}
+  - {num: "05", name: 간식·과자·빵, target_count: 80}
+  - {num: "06", name: 간편식·냉동식품, target_count: 80}
+  - {num: "07", name: 주류, target_count: 30}
+  - {num: "08", name: 세제·청소용품, target_count: 80}
+  - {num: "09", name: 휴지·위생·생활소모품, target_count: 60}
+  - {num: "10", name: 욕실·세면·화장품, target_count: 60}
+  - {num: "11", name: 주방용품·식기, target_count: 100}
+  - {num: "12", name: 수납·정리·인테리어 소품, target_count: 80}
+  - {num: "13", name: 침구·패브릭·의류, target_count: 80}
+  - {num: "14", name: 소형가전·가전 소모품, target_count: 80}
+  - {num: "15", name: 문구·학용품·도서, target_count: 60}
+  - {num: "16", name: 유아·아동 용품, target_count: 80}
+  - {num: "17", name: 반려동물 용품, target_count: 60}
+  - {num: "18", name: 파티·행사·선물 용품, target_count: 60}
+  - {num: "19", name: 캠핑·여행·나들이 용품, target_count: 80}
+  - {num: "20", name: 스포츠·운동·취미, target_count: 60}

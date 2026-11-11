@@ -8,14 +8,18 @@ SPIRA 구매 의도 지식 베이스 — Gemini · Codex · Claude 에이전트�
 
 ## 상태
 
-**뼈대 단계.** 폴더 구조, 설정, 목록, 설정 검사(`spira check`)까지 있다. 작업 처리(`spira start`)와 코드 단계는 구현 예정.
+**진행 상황.** 설정 · 목록 · 설정 검사(`spira check`), 프롬프트 v1, 작업 처리기(`spira start`)까지 있다. 코드 단계(①③⑤⑥⑦)는 구현 예정.
 
 ## 구조
 
 ```text
 SPIRA_KB/
 ├─ spira/                 # 코드 (두 사이클 공통)
-│  ├─ runner.py           #   spira 명령: check · whoami · start
+│  ├─ runner.py           #   spira 명령: check · whoami · start · make-pool-jobs
+│  ├─ worker.py           #   spira start 본체: 예약 → 새 세션 실행 → 결과 검사 → 기록
+│  ├─ queue.py            #   GitHub 저장소를 대기열로 (queue → running → results)
+│  ├─ schemas.py          #   작업 파일 · 결과 파일 양식
+│  ├─ validate.py         #   결과 검사 (형식 + 작업과 맞는지)
 │  ├─ config.py           #   설정 읽기 + 설계 규칙 검사
 │  ├─ embedding.py        #   basket_text · embed_basket (서버와 공동)
 │  ├─ steps/              #   코드 단계 ①③⑤⑥⑦ (GitHub Actions에서 실행)
@@ -25,8 +29,10 @@ SPIRA_KB/
 │  ├─ cycles/A.yaml       # 사이클 A (계속): Y=Gemini, J=Codex, S=Claude + 모델
 │  ├─ cycles/B.yaml       # 사이클 B (~11/18): U=Gemini, Y=Codex, J=Claude
 │  ├─ nodes/              # 사람별 계정과 낼 몫: U · Y · S · J
-│  └─ lists/              # 의도 30개 · 캘린더 태그 30개 · 가구 유형 20개
-├─ data/A/ · data/B/      # 사이클별 대기열(queue)과 결과(batches)
+│  └─ lists/              # 의도 · 캘린더 태그 · 가구 유형 · 아이템 풀 상품군
+├─ checks/                # 확인용 사례 (U가 정답을 단 20개)
+├─ data/pool/             # 아이템 풀 작업 (처음 한 번)
+├─ data/A/ · data/B/      # 사이클별 queue · running · results · logs · failed
 ├─ review/todo · done/    # 사람 검수 파일 (사람 기준이라 공통)
 ├─ .claude/commands/      # Claude Code의 /spira-start
 └─ AGENTS.md              # Codex · Antigravity용 /spira-start 안내
@@ -74,7 +80,13 @@ uv run spira check      # 설정 검사
 
 ## 매일
 
-에이전트 창(Claude Code · Codex · Antigravity 중 아무거나)에서 `/spira-start`.
+에이전트 창(Claude Code · Codex · Antigravity 중 아무거나)에서 `/spira-start`. 터미널에서 `uv run spira start`를 직접 쳐도 같다.
+
+- 내 계정마다 대기열에서 작업을 하나씩 가져와, 작업마다 새 세션으로 AI를 실행한다 (작업 폴더: `~/.spira-work/`, 저장소 밖)
+- 결과가 양식에 맞지 않으면 새 세션으로 한 번 더 하고, 또 실패하면 `data/*/failed/`로 보낸다
+- 결과 · 실제 모델 · 토큰 · 걸린 시간은 `data/*/results/` · `data/*/logs/`에 올라간다
+- 오늘 몫을 채우거나 할 일이 없으면 멈춘다. Ctrl+C로 멈추면 하던 작업은 대기열로 돌아간다
+- 측정 전(`calibration`이 비어 있음)에는 **측정 모드**로 하루 1개만 한다. 시작 전후 한도 화면을 U에게 알려 준다
 
 ## 설계 문서 (노션)
 

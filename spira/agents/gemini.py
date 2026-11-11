@@ -1,26 +1,29 @@
 """Antigravity CLI 무인 실행: `agy -p` (Google AI Pro 계정).
 
-반드시 Gemini 모델로 고정한다. Antigravity는 Claude 모델도 고를 수 있어서,
+반드시 Gemini 모델로 고정한다. Antigravity는 Claude · GPT-OSS 모델도 고를 수 있어서,
 고정하지 않으면 "회사가 다른 세 모델" 조건이 깨진다.
+- config/cycles의 models.gemini에 이름을 적으면 --model로 넘긴다.
+- 비어 있으면 Antigravity에서 고른 모델을 그대로 쓴다. 이때는 반드시 Gemini 모델이 골라져 있어야 한다.
 
-주의: 짧은 간격으로 반복 실행하면 분당 한도에 걸릴 수 있다. 측정 결과에 따라
-작업 하나의 크기를 키운다. 한도가 부족하면 Gemini API 무료 키를 예비로 쓴다.
+TODO(첫 실행, U 노트북): `agy --help`로 아래를 확인하고 고친다
+  - 모델을 고르는 옵션 이름 (--model인지)
+  - 승인 대기 없이 파일을 쓰게 하는 옵션
+  - 사용량 · 모델 이름이 출력에 나오는지 (안 나오면 할당량은 작업 개수로 잰다)
 """
 
 from __future__ import annotations
 
+from pathlib import Path
+
 from spira.agents.base import AgentResult
 
-# TODO(측정 후): 실제 모델 이름 확정. agy에서 고를 수 있는 Gemini 모델 중 하나로 고정.
-MODEL = "GEMINI_MODEL_TBD"
 
-
-def build_command(prompt: str) -> list[str]:
-    # TODO: 무인 실행에서 승인 대기로 멈추지 않도록 설정 (non-TTY에서 멈추는 문제 확인)
-    #       명령 실행 도구를 막는 설정 확인 (사례는 직접 읽고 판단해야 한다. 코드로 규칙화 금지)
-    return ["agy", "--model", MODEL, "-p", prompt]
+def build_command(instruction: str, model: str | None, workdir: Path) -> list[str]:
+    cmd = ["agy"]
+    if model:
+        cmd += ["--model", model]
+    return cmd + ["-p", instruction]
 
 
 def parse_output(stdout: str, returncode: int) -> AgentResult:
-    # TODO: JSON 출력과 사용량 필드 확인 후 채움
-    return AgentResult(ok=returncode == 0, text=stdout.strip(), usage={}, raw=stdout)
+    return AgentResult(ok=returncode == 0, text=stdout.strip()[-2000:], raw=stdout[-4000:])
