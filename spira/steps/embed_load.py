@@ -9,8 +9,7 @@
 """
 
 
-def basket_text(items: list[str]) -> str:
-    return ", ".join(sorted(items))
+from spira.embedding import basket_text, embed_baskets  # noqa: F401  (서버와 같은 함수)
 
 
 def run(cycle: str, slice_id: str) -> None:

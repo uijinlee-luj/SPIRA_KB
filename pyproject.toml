@@ -10,6 +10,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# 임베딩 함수만 (서버가 설치하는 묶음): pip install "spira-kb[embed] @ git+https://github.com/uijinlee-luj/SPIRA_KB"
+embed = [
+  "FlagEmbedding>=1.2",      # BGE-M3
+]
 # 코드 단계 (GitHub Actions에서만 필요). 노트북에는 설치하지 않아도 된다.
 pipeline = [
   "polars>=1",
