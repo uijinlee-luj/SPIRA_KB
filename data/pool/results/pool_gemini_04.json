@@ -1,0 +1,405 @@
+{
+ "job_id": "pool_gemini_04",
+ "items": [
+  {
+   "name": "백미",
+   "everyday": true
+  },
+  {
+   "name": "찹쌀",
+   "everyday": true
+  },
+  {
+   "name": "현미",
+   "everyday": true
+  },
+  {
+   "name": "흑미",
+   "everyday": true
+  },
+  {
+   "name": "보리쌀",
+   "everyday": true
+  },
+  {
+   "name": "귀리",
+   "everyday": true
+  },
+  {
+   "name": "서리태",
+   "everyday": true
+  },
+  {
+   "name": "팥",
+   "everyday": true
+  },
+  {
+   "name": "녹두",
+   "everyday": true
+  },
+  {
+   "name": "병아리콩",
+   "everyday": true
+  },
+  {
+   "name": "렌틸콩",
+   "everyday": true
+  },
+  {
+   "name": "누룽지",
+   "everyday": true
+  },
+  {
+   "name": "떡볶이떡",
+   "everyday": true
+  },
+  {
+   "name": "라이스페이퍼",
+   "everyday": true
+  },
+  {
+   "name": "떡국떡",
+   "everyday": false
+  },
+  {
+   "name": "소면",
+   "everyday": true
+  },
+  {
+   "name": "칼국수면",
+   "everyday": true
+  },
+  {
+   "name": "메밀국수",
+   "everyday": true
+  },
+  {
+   "name": "우동면",
+   "everyday": true
+  },
+  {
+   "name": "라면",
+   "everyday": true
+  },
+  {
+   "name": "짜장라면",
+   "everyday": true
+  },
+  {
+   "name": "비빔면",
+   "everyday": true
+  },
+  {
+   "name": "당면",
+   "everyday": true
+  },
+  {
+   "name": "넓적당면",
+   "everyday": true
+  },
+  {
+   "name": "스파게티면",
+   "everyday": true
+  },
+  {
+   "name": "푸실리",
+   "everyday": true
+  },
+  {
+   "name": "쌀국수면",
+   "everyday": true
+  },
+  {
+   "name": "라자냐시트",
+   "everyday": false
+  },
+  {
+   "name": "곤약면",
+   "everyday": false
+  },
+  {
+   "name": "밀가루",
+   "everyday": true
+  },
+  {
+   "name": "부침가루",
+   "everyday": true
+  },
+  {
+   "name": "튀김가루",
+   "everyday": true
+  },
+  {
+   "name": "감자전분",
+   "everyday": true
+  },
+  {
+   "name": "빵가루",
+   "everyday": true
+  },
+  {
+   "name": "찹쌀가루",
+   "everyday": true
+  },
+  {
+   "name": "미숫가루",
+   "everyday": true
+  },
+  {
+   "name": "핫케이크가루",
+   "everyday": true
+  },
+  {
+   "name": "베이킹파우더",
+   "everyday": false
+  },
+  {
+   "name": "이스트",
+   "everyday": false
+  },
+  {
+   "name": "엿기름",
+   "everyday": false
+  },
+  {
+   "name": "메주가루",
+   "everyday": false
+  },
+  {
+   "name": "누룩",
+   "everyday": false
+  },
+  {
+   "name": "한천가루",
+   "everyday": false
+  },
+  {
+   "name": "고추장",
+   "everyday": true
+  },
+  {
+   "name": "된장",
+   "everyday": true
+  },
+  {
+   "name": "쌈장",
+   "everyday": true
+  },
+  {
+   "name": "청국장",
+   "everyday": true
+  },
+  {
+   "name": "춘장",
+   "everyday": true
+  },
+  {
+   "name": "진간장",
+   "everyday": true
+  },
+  {
+   "name": "국간장",
+   "everyday": true
+  },
+  {
+   "name": "멸치액젓",
+   "everyday": true
+  },
+  {
+   "name": "참치액",
+   "everyday": true
+  },
+  {
+   "name": "소금",
+   "everyday": true
+  },
+  {
+   "name": "설탕",
+   "everyday": true
+  },
+  {
+   "name": "올리고당",
+   "everyday": true
+  },
+  {
+   "name": "물엿",
+   "everyday": true
+  },
+  {
+   "name": "꿀",
+   "everyday": true
+  },
+  {
+   "name": "매실청",
+   "everyday": true
+  },
+  {
+   "name": "맛술",
+   "everyday": true
+  },
+  {
+   "name": "식초",
+   "everyday": true
+  },
+  {
+   "name": "굴소스",
+   "everyday": true
+  },
+  {
+   "name": "치킨스톡",
+   "everyday": true
+  },
+  {
+   "name": "코인육수",
+   "everyday": true
+  },
+  {
+   "name": "알룰로스",
+   "everyday": false
+  },
+  {
+   "name": "참기름",
+   "everyday": true
+  },
+  {
+   "name": "들기름",
+   "everyday": true
+  },
+  {
+   "name": "식용유",
+   "everyday": true
+  },
+  {
+   "name": "올리브유",
+   "everyday": true
+  },
+  {
+   "name": "카놀라유",
+   "everyday": true
+  },
+  {
+   "name": "고추기름",
+   "everyday": true
+  },
+  {
+   "name": "트러플오일",
+   "everyday": false
+  },
+  {
+   "name": "고춧가루",
+   "everyday": true
+  },
+  {
+   "name": "후추",
+   "everyday": true
+  },
+  {
+   "name": "카레가루",
+   "everyday": true
+  },
+  {
+   "name": "계피가루",
+   "everyday": true
+  },
+  {
+   "name": "파슬리가루",
+   "everyday": true
+  },
+  {
+   "name": "와사비",
+   "everyday": true
+  },
+  {
+   "name": "겨자",
+   "everyday": true
+  },
+  {
+   "name": "바닐라익스트랙",
+   "everyday": false
+  },
+  {
+   "name": "바비큐시즈닝",
+   "everyday": false
+  },
+  {
+   "name": "양꼬치시즈닝",
+   "everyday": false
+  },
+  {
+   "name": "토마토파스타소스",
+   "everyday": true
+  },
+  {
+   "name": "크림파스타소스",
+   "everyday": true
+  },
+  {
+   "name": "바질페스토",
+   "everyday": true
+  },
+  {
+   "name": "케첩",
+   "everyday": true
+  },
+  {
+   "name": "마요네즈",
+   "everyday": true
+  },
+  {
+   "name": "머스터드",
+   "everyday": true
+  },
+  {
+   "name": "돈가스소스",
+   "everyday": true
+  },
+  {
+   "name": "스테이크소스",
+   "everyday": true
+  },
+  {
+   "name": "칠리소스",
+   "everyday": true
+  },
+  {
+   "name": "스리라차소스",
+   "everyday": true
+  },
+  {
+   "name": "핫소스",
+   "everyday": true
+  },
+  {
+   "name": "오리엔탈드레싱",
+   "everyday": true
+  },
+  {
+   "name": "참깨드레싱",
+   "everyday": true
+  },
+  {
+   "name": "쯔유",
+   "everyday": true
+  },
+  {
+   "name": "피시소스",
+   "everyday": true
+  },
+  {
+   "name": "두반장",
+   "everyday": true
+  },
+  {
+   "name": "월남쌈소스",
+   "everyday": true
+  },
+  {
+   "name": "마라소스",
+   "everyday": false
+  },
+  {
+   "name": "칵테일시럽",
+   "everyday": false
+  }
+ ]
+}
