@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_06",
+ "items": [
+  {
+   "name": "즉석밥",
+   "everyday": true
+  },
+  {
+   "name": "이유식",
+   "everyday": false
+  },
+  {
+   "name": "볶음밥",
+   "everyday": true
+  },
+  {
+   "name": "컵밥",
+   "everyday": true
+  },
+  {
+   "name": "비상식량",
+   "everyday": false
+  },
+  {
+   "name": "즉석죽",
+   "everyday": true
+  },
+  {
+   "name": "환자용 영양식",
+   "everyday": false
+  },
+  {
+   "name": "분말스프",
+   "everyday": true
+  },
+  {
+   "name": "주먹밥",
+   "everyday": true
+  },
+  {
+   "name": "누룽지",
+   "everyday": true
+  },
+  {
+   "name": "육개장",
+   "everyday": true
+  },
+  {
+   "name": "갈비탕",
+   "everyday": true
+  },
+  {
+   "name": "부대찌개",
+   "everyday": true
+  },
+  {
+   "name": "차례용 탕국",
+   "everyday": false
+  },
+  {
+   "name": "미역국",
+   "everyday": true
+  },
+  {
+   "name": "된장찌개",
+   "everyday": true
+  },
+  {
+   "name": "김치찌개",
+   "everyday": true
+  },
+  {
+   "name": "순두부찌개",
+   "everyday": true
+  },
+  {
+   "name": "삼계탕",
+   "everyday": true
+  },
+  {
+   "name": "추어탕",
+   "everyday": true
+  },
+  {
+   "name": "곰탕",
+   "everyday": true
+  },
+  {
+   "name": "감자탕",
+   "everyday": true
+  },
+  {
+   "name": "해장국",
+   "everyday": true
+  },
+  {
+   "name": "돈까스",
+   "everyday": true
+  },
+  {
+   "name": "치킨너겟",
+   "everyday": true
+  },
+  {
+   "name": "떡갈비",
+   "everyday": true
+  },
+  {
+   "name": "함박스테이크",
+   "everyday": true
+  },
+  {
+   "name": "제사용 모둠전",
+   "everyday": false
+  },
+  {
+   "name": "닭가슴살",
+   "everyday": true
+  },
+  {
+   "name": "소불고기",
+   "everyday": true
+  },
+  {
+   "name": "제육볶음",
+   "everyday": true
+  },
+  {
+   "name": "닭볶음탕",
+   "everyday": true
+  },
+  {
+   "name": "탕수육",
+   "everyday": true
+  },
+  {
+   "name": "폭립",
+   "everyday": true
+  },
+  {
+   "name": "캠핑용 바비큐세트",
+   "everyday": false
+  },
+  {
+   "name": "멘보샤",
+   "everyday": true
+  },
+  {
+   "name": "동그랑땡",
+   "everyday": true
+  },
+  {
+   "name": "훈제오리",
+   "everyday": true
+  },
+  {
+   "name": "떡볶이",
+   "everyday": true
+  },
+  {
+   "name": "순대",
+   "everyday": true
+  },
+  {
+   "name": "어묵탕",
+   "everyday": true
+  },
+  {
+   "name": "김말이튀김",
+   "everyday": true
+  },
+  {
+   "name": "핫도그",
+   "everyday": true
+  },
+  {
+   "name": "호떡",
+   "everyday": true
+  },
+  {
+   "name": "붕어빵",
+   "everyday": true
+  },
+  {
+   "name": "수능 찹쌀떡",
+   "everyday": false
+  },
+  {
+   "name": "냉동만두",
+   "everyday": true
+  },
+  {
+   "name": "찐빵",
+   "everyday": true
+  },
+  {
+   "name": "백일상 떡세트",
+   "everyday": false
+  },
+  {
+   "name": "치즈볼",
+   "everyday": true
+  },
+  {
+   "name": "냉동피자",
+   "everyday": true
+  },
+  {
+   "name": "냉동스파게티",
+   "everyday": true
+  },
+  {
+   "name": "크로와상 생지",
+   "everyday": true
+  },
+  {
+   "name": "냉동와플",
+   "everyday": true
+  },
+  {
+   "name": "브리또",
+   "everyday": true
+  },
+  {
+   "name": "라자냐",
+   "everyday": true
+  },
+  {
+   "name": "감자튀김",
+   "everyday": true
+  },
+  {
+   "name": "홈파티 플래터",
+   "everyday": false
+  },
+  {
+   "name": "냉동우동",
+   "everyday": true
+  },
+  {
+   "name": "냉동짜장면",
+   "everyday": true
+  },
+  {
+   "name": "냉동짬뽕",
+   "everyday": true
+  },
+  {
+   "name": "냉동모밀",
+   "everyday": true
+  },
+  {
+   "name": "야끼소바",
+   "everyday": true
+  },
+  {
+   "name": "닭발",
+   "everyday": true
+  },
+  {
+   "name": "막창",
+   "everyday": true
+  },
+  {
+   "name": "곱창전골",
+   "everyday": true
+  },
+  {
+   "name": "돼지껍데기",
+   "everyday": true
+  },
+  {
+   "name": "오돌뼈",
+   "everyday": true
+  },
+  {
+   "name": "먹태",
+   "everyday": true
+  },
+  {
+   "name": "타코야키",
+   "everyday": true
+  },
+  {
+   "name": "샤브샤브 밀키트",
+   "everyday": true
+  },
+  {
+   "name": "감바스 밀키트",
+   "everyday": true
+  },
+  {
+   "name": "어린이 생일상 세트",
+   "everyday": false
+  },
+  {
+   "name": "월남쌈 밀키트",
+   "everyday": true
+  },
+  {
+   "name": "마라탕 밀키트",
+   "everyday": true
+  },
+  {
+   "name": "자숙새우",
+   "everyday": true
+  },
+  {
+   "name": "손질오징어",
+   "everyday": true
+  },
+  {
+   "name": "고등어구이",
+   "everyday": true
+  },
+  {
+   "name": "간장게장",
+   "everyday": true
+  },
+  {
+   "name": "냉동블루베리",
+   "everyday": true
+  }
+ ]
+}
