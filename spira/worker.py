@@ -270,6 +270,24 @@ def describe(acc: Account) -> str:
 
 # ---------------------------------------------------------------- 시작
 
+_instance_lock = None
+
+
+def single_instance() -> bool:
+    """이 노트북에서 spira start가 이미 돌고 있으면 False. (localhost 포트를 잡아 두는 방식이라
+    프로그램이 꺼지면 저절로 풀린다)"""
+    global _instance_lock
+    import socket
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        s.bind(("127.0.0.1", 47831))
+    except OSError:
+        s.close()
+        return False
+    _instance_lock = s
+    return True
+
+
 def keep_awake() -> None:
     """실행 중 노트북이 잠들지 않게 한다 (Windows). 프로그램이 끝나면 자동으로 풀린다."""
     if sys.platform == "win32":
@@ -284,13 +302,16 @@ def start(person: str, max_jobs: int | None = None, echo=print) -> int:
         with lock:
             echo(msg)
 
+    if not single_instance():
+        log("📦 이미 이 노트북에서 spira start가 돌고 있습니다. 그 창이 끝날 때까지 기다리세요.")
+        return 0
     accounts = plan_accounts(person)
     if not accounts:
         log(f"📦 {person} — 지금 활성인 사이클이 없어서 할 일이 없습니다.")
         return 0
     all_scopes = sorted({s for a in accounts for s in a.scopes})
     try:
-        back = queue.requeue_stale(all_scopes)
+        back = queue.requeue_stale(all_scopes, me=person)
     except queue.GitError as e:
         log(f"✗ 저장소를 최신으로 받지 못했습니다: {e}")
         log("  main 브랜치에 있는지(`git checkout main`), 인터넷이 되는지 확인하고 다시 실행하세요.")
@@ -302,7 +323,7 @@ def start(person: str, max_jobs: int | None = None, echo=print) -> int:
         waiting = sum(len(queue.waiting(s, a.company)) for s in a.scopes)
         log(f"  - {describe(a)} · 기다리는 작업 {waiting}개")
     if back:
-        log(f"  - 멈춰 있던 작업 {len(back)}개를 대기열로 돌렸습니다")
+        log(f"  - 지난번에 멈춘 작업 {len(back)}개를 대기열로 돌렸습니다 (이어서 합니다)")
 
     keep_awake()
     stop = threading.Event()
