@@ -1,0 +1,405 @@
+{
+ "job_id": "pool_gemini_01",
+ "items": [
+  {
+   "name": "배추",
+   "everyday": true
+  },
+  {
+   "name": "양배추",
+   "everyday": true
+  },
+  {
+   "name": "양상추",
+   "everyday": true
+  },
+  {
+   "name": "상추",
+   "everyday": true
+  },
+  {
+   "name": "깻잎",
+   "everyday": true
+  },
+  {
+   "name": "시금치",
+   "everyday": true
+  },
+  {
+   "name": "부추",
+   "everyday": true
+  },
+  {
+   "name": "대파",
+   "everyday": true
+  },
+  {
+   "name": "양파",
+   "everyday": true
+  },
+  {
+   "name": "마늘",
+   "everyday": true
+  },
+  {
+   "name": "고추",
+   "everyday": true
+  },
+  {
+   "name": "감자",
+   "everyday": true
+  },
+  {
+   "name": "당근",
+   "everyday": true
+  },
+  {
+   "name": "무",
+   "everyday": true
+  },
+  {
+   "name": "오이",
+   "everyday": true
+  },
+  {
+   "name": "애호박",
+   "everyday": true
+  },
+  {
+   "name": "가지",
+   "everyday": true
+  },
+  {
+   "name": "브로콜리",
+   "everyday": true
+  },
+  {
+   "name": "파프리카",
+   "everyday": true
+  },
+  {
+   "name": "콩나물",
+   "everyday": true
+  },
+  {
+   "name": "숙주나물",
+   "everyday": true
+  },
+  {
+   "name": "팽이버섯",
+   "everyday": true
+  },
+  {
+   "name": "새송이버섯",
+   "everyday": true
+  },
+  {
+   "name": "표고버섯",
+   "everyday": true
+  },
+  {
+   "name": "느타리버섯",
+   "everyday": true
+  },
+  {
+   "name": "양송이버섯",
+   "everyday": true
+  },
+  {
+   "name": "사과",
+   "everyday": true
+  },
+  {
+   "name": "바나나",
+   "everyday": true
+  },
+  {
+   "name": "토마토",
+   "everyday": true
+  },
+  {
+   "name": "딸기",
+   "everyday": true
+  },
+  {
+   "name": "귤",
+   "everyday": true
+  },
+  {
+   "name": "포도",
+   "everyday": true
+  },
+  {
+   "name": "블루베리",
+   "everyday": true
+  },
+  {
+   "name": "청경채",
+   "everyday": false
+  },
+  {
+   "name": "미나리",
+   "everyday": false
+  },
+  {
+   "name": "쑥갓",
+   "everyday": false
+  },
+  {
+   "name": "근대",
+   "everyday": false
+  },
+  {
+   "name": "아욱",
+   "everyday": false
+  },
+  {
+   "name": "케일",
+   "everyday": false
+  },
+  {
+   "name": "치커리",
+   "everyday": false
+  },
+  {
+   "name": "머위",
+   "everyday": false
+  },
+  {
+   "name": "샐러리",
+   "everyday": false
+  },
+  {
+   "name": "루꼴라",
+   "everyday": false
+  },
+  {
+   "name": "갓",
+   "everyday": false
+  },
+  {
+   "name": "생강",
+   "everyday": false
+  },
+  {
+   "name": "바질",
+   "everyday": false
+  },
+  {
+   "name": "로즈마리",
+   "everyday": false
+  },
+  {
+   "name": "고수",
+   "everyday": false
+  },
+  {
+   "name": "파슬리",
+   "everyday": false
+  },
+  {
+   "name": "고구마",
+   "everyday": false
+  },
+  {
+   "name": "연근",
+   "everyday": false
+  },
+  {
+   "name": "우엉",
+   "everyday": false
+  },
+  {
+   "name": "도라지",
+   "everyday": false
+  },
+  {
+   "name": "더덕",
+   "everyday": false
+  },
+  {
+   "name": "마",
+   "everyday": false
+  },
+  {
+   "name": "토란",
+   "everyday": false
+  },
+  {
+   "name": "비트",
+   "everyday": false
+  },
+  {
+   "name": "콜라비",
+   "everyday": false
+  },
+  {
+   "name": "아스파라거스",
+   "everyday": false
+  },
+  {
+   "name": "죽순",
+   "everyday": false
+  },
+  {
+   "name": "단호박",
+   "everyday": false
+  },
+  {
+   "name": "옥수수",
+   "everyday": false
+  },
+  {
+   "name": "아보카도",
+   "everyday": false
+  },
+  {
+   "name": "고사리",
+   "everyday": false
+  },
+  {
+   "name": "취나물",
+   "everyday": false
+  },
+  {
+   "name": "곤드레",
+   "everyday": false
+  },
+  {
+   "name": "냉이",
+   "everyday": false
+  },
+  {
+   "name": "달래",
+   "everyday": false
+  },
+  {
+   "name": "참나물",
+   "everyday": false
+  },
+  {
+   "name": "두릅",
+   "everyday": false
+  },
+  {
+   "name": "새싹채소",
+   "everyday": false
+  },
+  {
+   "name": "목이버섯",
+   "everyday": false
+  },
+  {
+   "name": "만가닥버섯",
+   "everyday": false
+  },
+  {
+   "name": "배",
+   "everyday": false
+  },
+  {
+   "name": "감",
+   "everyday": false
+  },
+  {
+   "name": "모과",
+   "everyday": false
+  },
+  {
+   "name": "오렌지",
+   "everyday": false
+  },
+  {
+   "name": "레몬",
+   "everyday": false
+  },
+  {
+   "name": "자몽",
+   "everyday": false
+  },
+  {
+   "name": "유자",
+   "everyday": false
+  },
+  {
+   "name": "체리",
+   "everyday": false
+  },
+  {
+   "name": "라즈베리",
+   "everyday": false
+  },
+  {
+   "name": "복분자",
+   "everyday": false
+  },
+  {
+   "name": "복숭아",
+   "everyday": false
+  },
+  {
+   "name": "자두",
+   "everyday": false
+  },
+  {
+   "name": "살구",
+   "everyday": false
+  },
+  {
+   "name": "매실",
+   "everyday": false
+  },
+  {
+   "name": "수박",
+   "everyday": false
+  },
+  {
+   "name": "참외",
+   "everyday": false
+  },
+  {
+   "name": "멜론",
+   "everyday": false
+  },
+  {
+   "name": "키위",
+   "everyday": false
+  },
+  {
+   "name": "파인애플",
+   "everyday": false
+  },
+  {
+   "name": "망고",
+   "everyday": false
+  },
+  {
+   "name": "파파야",
+   "everyday": false
+  },
+  {
+   "name": "용과",
+   "everyday": false
+  },
+  {
+   "name": "패션후르츠",
+   "everyday": false
+  },
+  {
+   "name": "코코넛",
+   "everyday": false
+  },
+  {
+   "name": "무화과",
+   "everyday": false
+  },
+  {
+   "name": "석류",
+   "everyday": false
+  },
+  {
+   "name": "망고스틴",
+   "everyday": false
+  }
+ ]
+}
