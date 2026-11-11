@@ -17,7 +17,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from spira.agents.base import AgentResult
+import shutil
+import subprocess
+from datetime import datetime
+
+from spira.agents.base import AgentResult, Quota
 
 DEFAULT_MODEL = "gemini-3.8-flash-high"
 
@@ -46,3 +50,31 @@ def parse_output(stdout: str, returncode: int) -> AgentResult:
     return AgentResult(ok=ok, text=str(data.get("response", ""))[-2000:], usage=usage,
                        models=[model] if isinstance(model, str) else [],
                        raw=stdout[-4000:], error=str(data.get("error") or "")[:2000])
+
+
+def read_quota() -> Quota | None:
+    """`agy -p /usage`로 Gemini 모델 묶음의 남은 한도를 읽는다. 모델을 부르지 않아 한도를 쓰지 않는다."""
+    exe = shutil.which("agy")
+    if exe is None:
+        return None
+    proc = subprocess.run([exe, "-p", "/usage", "--output-format", "json"], capture_output=True, text=True,
+                          encoding="utf-8", errors="replace", timeout=60, stdin=subprocess.DEVNULL)
+    data = json.loads(proc.stdout.strip().splitlines()[-1])
+    return parse_quota(data)
+
+
+def parse_quota(data: dict) -> Quota | None:
+    groups = ((data.get("command") or {}).get("data") or {}).get("groups") or []
+    for g in groups:
+        if not str(g.get("name", "")).lower().startswith("gemini"):
+            continue
+        b = {x.get("window"): x for x in g.get("buckets", [])}
+        if "weekly" not in b:
+            return None
+        def t(x):
+            return datetime.fromisoformat(x["reset_time"].replace("Z", "+00:00"))
+        five = b.get("5h")
+        return Quota(weekly_left=float(b["weekly"]["remaining_fraction"]) * 100, weekly_reset=t(b["weekly"]),
+                     five_h_left=float(five["remaining_fraction"]) * 100 if five else None,
+                     five_h_reset=t(five) if five else None)
+    return None

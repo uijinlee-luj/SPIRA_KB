@@ -76,11 +76,11 @@ def start(max_jobs: int = typer.Option(None, "--max-jobs", help="이번 실행�
 
 @app.command("make-pool-jobs")
 def make_pool_jobs(push: bool = typer.Option(True, help="만든 뒤 바로 올릴지")) -> None:
-    """(U, 처음 한 번) 아이템 풀 작업을 상품군 × 세 회사만큼 대기열에 넣는다."""
+    """(U) 아이템 풀 작업을 상품군 × 세 회사만큼 대기열에 넣는다. 프롬프트 버전을 올린 뒤 다시 실행해도 된다."""
     from spira.steps import make_pool_jobs as step
 
-    n = step.run(push=push)
-    typer.echo(f"✓ 아이템 풀 작업 {n}개를 data/pool/queue/에 넣었습니다")
+    made, updated, redo = step.run(push=push)
+    typer.echo(f"✓ 아이템 풀 작업 ({step.PROMPT_VERSION}): 새로 {made}개 · 버전 변경 {updated}개 · 옛 결과 다시 돌림 {redo}개")
 
 
 if __name__ == "__main__":

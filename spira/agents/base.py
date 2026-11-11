@@ -10,6 +10,7 @@ from __future__ import annotations
 import shutil
 import subprocess
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
 
 INSTRUCTION = (
@@ -39,6 +40,27 @@ def total_tokens(usage: dict) -> int | None:
             "thinking_tokens", "cache_read_tokens")
     vals = [usage[k] for k in keys if isinstance(usage.get(k), (int, float))]
     return int(sum(vals)) if vals else None
+
+
+@dataclass
+class Quota:
+    """AI 도구가 알려 주는 남은 한도 (%). 읽을 수 없는 도구는 read_quota가 None."""
+    weekly_left: float
+    weekly_reset: datetime
+    five_h_left: float | None = None
+    five_h_reset: datetime | None = None
+
+
+def read_quota(company: str) -> Quota | None:
+    """회사 모듈에 read_quota가 있으면 부른다. 실패하면 None (작업 수로 셈)."""
+    module = _module(company)
+    fn = getattr(module, "read_quota", None)
+    if fn is None:
+        return None
+    try:
+        return fn()
+    except Exception:
+        return None
 
 
 def _module(company: str):

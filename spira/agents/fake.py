@@ -23,6 +23,10 @@ else:
     out = {"job_id": job["job_id"], "labels": [{"case_ref": c["case_ref"], "intents": []} for c in job["cases"]]}
 json.dump(out, open("result.json", "w", encoding="utf-8"), ensure_ascii=False)
 print(json.dumps({"usage": {"input_tokens": 1000, "output_tokens": 200}}))
+qf = os.environ.get("SPIRA_FAKE_QUOTA")
+if qf:
+    q = json.load(open(qf)); q["weekly"] -= 0.6; q["five"] -= 1.4
+    json.dump(q, open(qf, "w"))
 '''
 
 
@@ -37,3 +41,19 @@ def parse_output(stdout: str, returncode: int) -> AgentResult:
     except Exception:
         usage = {}
     return AgentResult(ok=returncode == 0, usage=usage, models=["fake"], raw=stdout)
+
+
+def read_quota():
+    """SPIRA_FAKE_QUOTA 파일이 있으면 가짜 한도를 돌려준다 (시험용)."""
+    import json
+    import os
+    from datetime import datetime, timedelta, timezone
+
+    from spira.agents.base import Quota
+    qf = os.environ.get("SPIRA_FAKE_QUOTA")
+    if not qf:
+        return None
+    q = json.load(open(qf))
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    return Quota(weekly_left=q["weekly"], weekly_reset=datetime.fromisoformat(q["weekly_reset"]),
+                 five_h_left=q["five"], five_h_reset=now + timedelta(hours=4))

@@ -138,12 +138,13 @@ def finish(job: Job, result: dict, meta: dict) -> None:
     with _lock:
         res = _dir(job.scope, "results") / f"{job.job_id}.json"
         log = _dir(job.scope, "logs") / f"{job.job_id}.meta.json"
+        kept = _keep_old_log(log)
         for p, d in ((res, result), (log, meta)):
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
         run = _dir(job.scope, "running")
         _remove_running(run, job.job_id)
-        if not _commit_and_push(f"완료 {job.job_id}", [res, log, run / f"{job.job_id}.json",
+        if not _commit_and_push(f"완료 {job.job_id}", [res, log, *kept, run / f"{job.job_id}.json",
                                                          run / f"{job.job_id}.claim.json"]):
             raise GitError(f"{job.job_id} 결과를 올리지 못했습니다. 잠시 뒤 `spira start`를 다시 실행하면 이어서 올립니다.")
 
@@ -157,12 +158,13 @@ def fail(job: Job, error: str, meta: dict) -> None:
         err = failed / f"{job.job_id}.error.txt"
         log = _dir(job.scope, "logs") / f"{job.job_id}.meta.json"
         log.parent.mkdir(parents=True, exist_ok=True)
+        kept = _keep_old_log(log)
         dst.write_text(json.dumps(job.data, ensure_ascii=False, indent=1), encoding="utf-8")
         err.write_text(error, encoding="utf-8")
         log.write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
         run = _dir(job.scope, "running")
         _remove_running(run, job.job_id)
-        _commit_and_push(f"실패 {job.job_id}", [dst, err, log, run / f"{job.job_id}.json",
+        _commit_and_push(f"실패 {job.job_id}", [dst, err, log, *kept, run / f"{job.job_id}.json",
                                                 run / f"{job.job_id}.claim.json"])
 
 
@@ -197,20 +199,32 @@ def requeue_stale(scopes: list[str]) -> list[str]:
     return back
 
 
+def _keep_old_log(log: Path) -> list[Path]:
+    """같은 작업을 다시 돌리면 옛 기록을 지우지 않고 이름을 바꿔 남긴다 (한도를 쓴 기록이라)."""
+    if not log.exists():
+        return []
+    k = 1
+    while (old := log.with_name(log.name.replace(".meta.json", f".prev{k}.meta.json"))).exists():
+        k += 1
+    log.replace(old)
+    return [old]
+
+
 def _remove_running(run: Path, job_id: str) -> None:
     for p in (run / f"{job_id}.json", run / f"{job_id}.claim.json"):
         if p.exists():
             p.unlink()
 
 
-def logs_for(person: str, company: str, day: str) -> list[dict]:
-    """그 사람 · 회사가 그날(UTC 날짜 아님, 기록된 local_date) 처리한 작업 기록."""
+def logs_for(person: str, company: str, days: str | set[str]) -> list[dict]:
+    """그 사람 · 회사가 그날(들) 처리한 작업 기록. 날짜는 실행한 노트북의 날짜(local_date)."""
+    days = {days} if isinstance(days, str) else days
     out = []
     for p in DATA.glob("*/logs/*.meta.json"):
         try:
             m = json.loads(p.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
             continue
-        if m.get("person") == person and m.get("company") == company and m.get("local_date") == day:
+        if m.get("person") == person and m.get("company") == company and m.get("local_date") in days:
             out.append(m)
     return out
