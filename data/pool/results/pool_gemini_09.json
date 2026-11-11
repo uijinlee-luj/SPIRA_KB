@@ -1,0 +1,245 @@
+{
+ "job_id": "pool_gemini_09",
+ "items": [
+  {
+   "name": "롤화장지",
+   "everyday": true
+  },
+  {
+   "name": "미용티슈",
+   "everyday": true
+  },
+  {
+   "name": "휴대용티슈",
+   "everyday": true
+  },
+  {
+   "name": "물티슈",
+   "everyday": true
+  },
+  {
+   "name": "비데물티슈",
+   "everyday": true
+  },
+  {
+   "name": "키친타월",
+   "everyday": true
+  },
+  {
+   "name": "손소독티슈",
+   "everyday": true
+  },
+  {
+   "name": "위생백",
+   "everyday": true
+  },
+  {
+   "name": "지퍼백",
+   "everyday": true
+  },
+  {
+   "name": "종이호일",
+   "everyday": true
+  },
+  {
+   "name": "알루미늄호일",
+   "everyday": true
+  },
+  {
+   "name": "랩",
+   "everyday": true
+  },
+  {
+   "name": "위생장갑",
+   "everyday": true
+  },
+  {
+   "name": "고무장갑",
+   "everyday": true
+  },
+  {
+   "name": "주방수세미",
+   "everyday": true
+  },
+  {
+   "name": "행주",
+   "everyday": true
+  },
+  {
+   "name": "배수구망",
+   "everyday": true
+  },
+  {
+   "name": "김장비닐",
+   "everyday": false
+  },
+  {
+   "name": "비누",
+   "everyday": true
+  },
+  {
+   "name": "핸드워시",
+   "everyday": true
+  },
+  {
+   "name": "샤워타월",
+   "everyday": true
+  },
+  {
+   "name": "때밀이타월",
+   "everyday": true
+  },
+  {
+   "name": "일회용면도기",
+   "everyday": true
+  },
+  {
+   "name": "칫솔",
+   "everyday": true
+  },
+  {
+   "name": "치약",
+   "everyday": true
+  },
+  {
+   "name": "치실",
+   "everyday": true
+  },
+  {
+   "name": "치간칫솔",
+   "everyday": true
+  },
+  {
+   "name": "구강청결제",
+   "everyday": true
+  },
+  {
+   "name": "혀클리너",
+   "everyday": true
+  },
+  {
+   "name": "틀니세정제",
+   "everyday": false
+  },
+  {
+   "name": "생리대",
+   "everyday": true
+  },
+  {
+   "name": "팬티라이너",
+   "everyday": true
+  },
+  {
+   "name": "탐폰",
+   "everyday": true
+  },
+  {
+   "name": "입는오버나이트",
+   "everyday": true
+  },
+  {
+   "name": "여성청결제",
+   "everyday": true
+  },
+  {
+   "name": "수유패드",
+   "everyday": false
+  },
+  {
+   "name": "면봉",
+   "everyday": true
+  },
+  {
+   "name": "화장솜",
+   "everyday": true
+  },
+  {
+   "name": "기름종이",
+   "everyday": true
+  },
+  {
+   "name": "반창고",
+   "everyday": true
+  },
+  {
+   "name": "방수밴드",
+   "everyday": false
+  },
+  {
+   "name": "소독용에탄올",
+   "everyday": true
+  },
+  {
+   "name": "핫팩",
+   "everyday": false
+  },
+  {
+   "name": "쿨패치",
+   "everyday": false
+  },
+  {
+   "name": "세탁망",
+   "everyday": true
+  },
+  {
+   "name": "건조기시트",
+   "everyday": true
+  },
+  {
+   "name": "롤클리너",
+   "everyday": true
+  },
+  {
+   "name": "정전기청소포",
+   "everyday": true
+  },
+  {
+   "name": "물걸레청소포",
+   "everyday": true
+  },
+  {
+   "name": "변기세정블록",
+   "everyday": true
+  },
+  {
+   "name": "배수구세정제",
+   "everyday": true
+  },
+  {
+   "name": "습기제거제",
+   "everyday": true
+  },
+  {
+   "name": "옷장방충제",
+   "everyday": false
+  },
+  {
+   "name": "모기향",
+   "everyday": false
+  },
+  {
+   "name": "모기기피제",
+   "everyday": false
+  },
+  {
+   "name": "섬유탈취제",
+   "everyday": true
+  },
+  {
+   "name": "방충망보수테이프",
+   "everyday": false
+  },
+  {
+   "name": "문풍지",
+   "everyday": false
+  },
+  {
+   "name": "건전지",
+   "everyday": true
+  },
+  {
+   "name": "쓰레기봉투",
+   "everyday": true
+  }
+ ]
+}
