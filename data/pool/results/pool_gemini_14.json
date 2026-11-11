@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_14",
+ "items": [
+  {
+   "name": "전기주전자",
+   "everyday": true
+  },
+  {
+   "name": "토스터",
+   "everyday": true
+  },
+  {
+   "name": "에어프라이어",
+   "everyday": true
+  },
+  {
+   "name": "믹서기",
+   "everyday": true
+  },
+  {
+   "name": "와플메이커",
+   "everyday": false
+  },
+  {
+   "name": "핸드블렌더",
+   "everyday": true
+  },
+  {
+   "name": "캡슐커피머신",
+   "everyday": false
+  },
+  {
+   "name": "미니밥솥",
+   "everyday": true
+  },
+  {
+   "name": "커피그라인더",
+   "everyday": false
+  },
+  {
+   "name": "전자레인지",
+   "everyday": true
+  },
+  {
+   "name": "우유거품기",
+   "everyday": false
+  },
+  {
+   "name": "주방저울",
+   "everyday": true
+  },
+  {
+   "name": "식품건조기",
+   "everyday": false
+  },
+  {
+   "name": "수비드머신",
+   "everyday": false
+  },
+  {
+   "name": "진공포장기",
+   "everyday": false
+  },
+  {
+   "name": "전기그릴",
+   "everyday": false
+  },
+  {
+   "name": "1구 인덕션",
+   "everyday": false
+  },
+  {
+   "name": "제빙기",
+   "everyday": false
+  },
+  {
+   "name": "요구르트제조기",
+   "everyday": false
+  },
+  {
+   "name": "전기 찜기",
+   "everyday": false
+  },
+  {
+   "name": "전기밥솥 고무패킹",
+   "everyday": true
+  },
+  {
+   "name": "전동 와인오프너",
+   "everyday": false
+  },
+  {
+   "name": "헤어드라이어",
+   "everyday": true
+  },
+  {
+   "name": "전기면도기",
+   "everyday": true
+  },
+  {
+   "name": "면도기 날망",
+   "everyday": true
+  },
+  {
+   "name": "전동칫솔",
+   "everyday": true
+  },
+  {
+   "name": "전동칫솔모",
+   "everyday": true
+  },
+  {
+   "name": "구강세정기",
+   "everyday": true
+  },
+  {
+   "name": "고데기",
+   "everyday": true
+  },
+  {
+   "name": "칫솔살균기",
+   "everyday": true
+  },
+  {
+   "name": "코털제거기",
+   "everyday": true
+  },
+  {
+   "name": "체중계",
+   "everyday": true
+  },
+  {
+   "name": "LED 마스크",
+   "everyday": false
+  },
+  {
+   "name": "갈바닉 마사지기",
+   "everyday": false
+  },
+  {
+   "name": "피지흡입기",
+   "everyday": false
+  },
+  {
+   "name": "전동 각질제거기",
+   "everyday": false
+  },
+  {
+   "name": "왁싱워머",
+   "everyday": false
+  },
+  {
+   "name": "네일드릴",
+   "everyday": false
+  },
+  {
+   "name": "가정용 이발기",
+   "everyday": false
+  },
+  {
+   "name": "핸디청소기",
+   "everyday": true
+  },
+  {
+   "name": "로봇청소기",
+   "everyday": true
+  },
+  {
+   "name": "청소기 먼지봉투",
+   "everyday": true
+  },
+  {
+   "name": "청소기 헤파필터",
+   "everyday": true
+  },
+  {
+   "name": "로봇청소기 물걸레 패드",
+   "everyday": true
+  },
+  {
+   "name": "세탁기 먼지 거름망",
+   "everyday": true
+  },
+  {
+   "name": "스팀다리미",
+   "everyday": true
+  },
+  {
+   "name": "보풀제거기",
+   "everyday": true
+  },
+  {
+   "name": "보풀제거기 칼날",
+   "everyday": true
+  },
+  {
+   "name": "데스크 스탠드",
+   "everyday": true
+  },
+  {
+   "name": "디지털 온습도계",
+   "everyday": true
+  },
+  {
+   "name": "초음파세척기",
+   "everyday": false
+  },
+  {
+   "name": "문서세단기",
+   "everyday": false
+  },
+  {
+   "name": "라벨프린터",
+   "everyday": false
+  },
+  {
+   "name": "전동 드라이버",
+   "everyday": false
+  },
+  {
+   "name": "선풍기",
+   "everyday": false
+  },
+  {
+   "name": "서큘레이터",
+   "everyday": false
+  },
+  {
+   "name": "가습기",
+   "everyday": false
+  },
+  {
+   "name": "제습기",
+   "everyday": false
+  },
+  {
+   "name": "전기장판",
+   "everyday": false
+  },
+  {
+   "name": "미니온풍기",
+   "everyday": false
+  },
+  {
+   "name": "충전식 손난로",
+   "everyday": false
+  },
+  {
+   "name": "신발건조기",
+   "everyday": false
+  },
+  {
+   "name": "전기파리채",
+   "everyday": false
+  },
+  {
+   "name": "전자 모기향",
+   "everyday": false
+  },
+  {
+   "name": "공기청정기 필터",
+   "everyday": true
+  },
+  {
+   "name": "정수기 필터",
+   "everyday": true
+  },
+  {
+   "name": "비데 필터",
+   "everyday": true
+  },
+  {
+   "name": "가습기 필터",
+   "everyday": true
+  },
+  {
+   "name": "에어컨 필터",
+   "everyday": true
+  },
+  {
+   "name": "마사지건",
+   "everyday": false
+  },
+  {
+   "name": "목어깨 마사지기",
+   "everyday": false
+  },
+  {
+   "name": "온열 찜질기",
+   "everyday": false
+  },
+  {
+   "name": "저주파 마사지기",
+   "everyday": false
+  },
+  {
+   "name": "건전지",
+   "everyday": true
+  },
+  {
+   "name": "멀티탭",
+   "everyday": true
+  },
+  {
+   "name": "스마트폰 충전기",
+   "everyday": true
+  },
+  {
+   "name": "충전 케이블",
+   "everyday": true
+  },
+  {
+   "name": "무선충전기",
+   "everyday": true
+  },
+  {
+   "name": "보조배터리",
+   "everyday": false
+  },
+  {
+   "name": "여행용 멀티어댑터",
+   "everyday": false
+  }
+ ]
+}
