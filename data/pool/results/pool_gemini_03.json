@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_03",
+ "items": [
+  {
+   "name": "우유",
+   "everyday": true
+  },
+  {
+   "name": "산양유",
+   "everyday": true
+  },
+  {
+   "name": "분유",
+   "everyday": false
+  },
+  {
+   "name": "연유",
+   "everyday": true
+  },
+  {
+   "name": "생크림",
+   "everyday": true
+  },
+  {
+   "name": "사워크림",
+   "everyday": true
+  },
+  {
+   "name": "버터",
+   "everyday": true
+  },
+  {
+   "name": "기버터",
+   "everyday": false
+  },
+  {
+   "name": "체다치즈",
+   "everyday": true
+  },
+  {
+   "name": "모차렐라치즈",
+   "everyday": true
+  },
+  {
+   "name": "크림치즈",
+   "everyday": true
+  },
+  {
+   "name": "파마산치즈",
+   "everyday": true
+  },
+  {
+   "name": "리코타치즈",
+   "everyday": true
+  },
+  {
+   "name": "마스카포네치즈",
+   "everyday": true
+  },
+  {
+   "name": "부라타치즈",
+   "everyday": true
+  },
+  {
+   "name": "브리치즈",
+   "everyday": true
+  },
+  {
+   "name": "스트링치즈",
+   "everyday": true
+  },
+  {
+   "name": "구워먹는치즈",
+   "everyday": true
+  },
+  {
+   "name": "퐁듀치즈",
+   "everyday": false
+  },
+  {
+   "name": "요거트",
+   "everyday": true
+  },
+  {
+   "name": "그릭요거트",
+   "everyday": true
+  },
+  {
+   "name": "드링크요거트",
+   "everyday": true
+  },
+  {
+   "name": "요구르트",
+   "everyday": true
+  },
+  {
+   "name": "케피어",
+   "everyday": true
+  },
+  {
+   "name": "두유",
+   "everyday": true
+  },
+  {
+   "name": "귀리음료",
+   "everyday": true
+  },
+  {
+   "name": "아몬드음료",
+   "everyday": true
+  },
+  {
+   "name": "코코넛밀크",
+   "everyday": true
+  },
+  {
+   "name": "생수",
+   "everyday": true
+  },
+  {
+   "name": "탄산수",
+   "everyday": true
+  },
+  {
+   "name": "토닉워터",
+   "everyday": true
+  },
+  {
+   "name": "콜라",
+   "everyday": true
+  },
+  {
+   "name": "사이다",
+   "everyday": true
+  },
+  {
+   "name": "과즙탄산음료",
+   "everyday": true
+  },
+  {
+   "name": "진저에일",
+   "everyday": true
+  },
+  {
+   "name": "에너지드링크",
+   "everyday": true
+  },
+  {
+   "name": "이온음료",
+   "everyday": true
+  },
+  {
+   "name": "비타민음료",
+   "everyday": true
+  },
+  {
+   "name": "과일주스",
+   "everyday": true
+  },
+  {
+   "name": "토마토주스",
+   "everyday": true
+  },
+  {
+   "name": "당근주스",
+   "everyday": true
+  },
+  {
+   "name": "알로에음료",
+   "everyday": true
+  },
+  {
+   "name": "식초음료",
+   "everyday": true
+  },
+  {
+   "name": "배도라지즙",
+   "everyday": true
+  },
+  {
+   "name": "양배추즙",
+   "everyday": true
+  },
+  {
+   "name": "석류즙",
+   "everyday": true
+  },
+  {
+   "name": "흑마늘즙",
+   "everyday": false
+  },
+  {
+   "name": "클렌즈주스",
+   "everyday": false
+  },
+  {
+   "name": "식혜",
+   "everyday": true
+  },
+  {
+   "name": "수정과",
+   "everyday": true
+  },
+  {
+   "name": "매실원액",
+   "everyday": true
+  },
+  {
+   "name": "오미자원액",
+   "everyday": true
+  },
+  {
+   "name": "유자청",
+   "everyday": true
+  },
+  {
+   "name": "미숫가루",
+   "everyday": true
+  },
+  {
+   "name": "뱅쇼키트",
+   "everyday": false
+  },
+  {
+   "name": "믹스커피",
+   "everyday": true
+  },
+  {
+   "name": "인스턴트커피",
+   "everyday": true
+  },
+  {
+   "name": "캡슐커피",
+   "everyday": true
+  },
+  {
+   "name": "드립백커피",
+   "everyday": true
+  },
+  {
+   "name": "커피원두",
+   "everyday": true
+  },
+  {
+   "name": "콜드브루원액",
+   "everyday": true
+  },
+  {
+   "name": "캔커피",
+   "everyday": true
+  },
+  {
+   "name": "녹차",
+   "everyday": true
+  },
+  {
+   "name": "홍차",
+   "everyday": true
+  },
+  {
+   "name": "보리차",
+   "everyday": true
+  },
+  {
+   "name": "옥수수수염차",
+   "everyday": true
+  },
+  {
+   "name": "둥굴레차",
+   "everyday": true
+  },
+  {
+   "name": "루이보스티",
+   "everyday": true
+  },
+  {
+   "name": "캐모마일티",
+   "everyday": true
+  },
+  {
+   "name": "율무차",
+   "everyday": true
+  },
+  {
+   "name": "콤부차",
+   "everyday": true
+  },
+  {
+   "name": "수유티",
+   "everyday": false
+  },
+  {
+   "name": "단백질음료",
+   "everyday": true
+  },
+  {
+   "name": "헛개음료",
+   "everyday": true
+  },
+  {
+   "name": "어린이음료",
+   "everyday": true
+  },
+  {
+   "name": "무알코올맥주",
+   "everyday": true
+  },
+  {
+   "name": "숙취해소음료",
+   "everyday": false
+  },
+  {
+   "name": "환자용 영양음료",
+   "everyday": false
+  },
+  {
+   "name": "무알코올와인",
+   "everyday": false
+  },
+  {
+   "name": "파워젤",
+   "everyday": false
+  }
+ ]
+}
