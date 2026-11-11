@@ -1,0 +1,9 @@
+{
+ "job_id": "pool_gemini_01",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "gemini",
+ "prompt_version": "item_pool@v2",
+ "category": "과일·채소",
+ "target_count": 100
+}

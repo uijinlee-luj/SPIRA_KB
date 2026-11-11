@@ -3,7 +3,7 @@
  "batch": "pool",
  "role": "item_pool",
  "company": "codex",
- "prompt_version": "item_pool@v1",
+ "prompt_version": "item_pool@v2",
  "category": "간식·과자·빵",
  "target_count": 80
 }

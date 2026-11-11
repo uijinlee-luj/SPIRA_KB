@@ -3,7 +3,7 @@
  "batch": "pool",
  "role": "item_pool",
  "company": "claude",
- "prompt_version": "item_pool@v1",
+ "prompt_version": "item_pool@v2",
  "category": "주류",
  "target_count": 30
 }

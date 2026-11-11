@@ -3,7 +3,7 @@
  "batch": "pool",
  "role": "item_pool",
  "company": "claude",
- "prompt_version": "item_pool@v1",
+ "prompt_version": "item_pool@v2",
  "category": "소형가전·가전 소모품",
  "target_count": 80
 }

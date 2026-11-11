@@ -3,7 +3,7 @@
  "batch": "pool",
  "role": "item_pool",
  "company": "gemini",
- "prompt_version": "item_pool@v1",
+ "prompt_version": "item_pool@v2",
  "category": "세제·청소용품",
  "target_count": 80
 }
