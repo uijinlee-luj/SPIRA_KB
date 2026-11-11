@@ -1,0 +1,32 @@
+{
+ "job_id": "pool_gemini_16",
+ "scope": "pool",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "gemini",
+ "person": "U",
+ "prompt_version": "item_pool@v2",
+ "model_config": "gemini-3.8-flash-high",
+ "models_seen": [],
+ "usage": {
+  "input_tokens": 69312,
+  "output_tokens": 24850,
+  "thinking_tokens": 22913,
+  "cache_read_tokens": 32849,
+  "total_tokens": 94162
+ },
+ "total_tokens": 94162,
+ "quota": {
+  "weekly_left_after": 96.862,
+  "weekly_used_pct": 0.443,
+  "five_h_used_pct": 0.876
+ },
+ "attempts": 1,
+ "ok": true,
+ "errors": [],
+ "started_at": "2026-11-12T02:45:34+09:00",
+ "finished_at": "2026-11-12T02:48:51+09:00",
+ "seconds": 196,
+ "local_date": "2026-11-12",
+ "fake": false
+}

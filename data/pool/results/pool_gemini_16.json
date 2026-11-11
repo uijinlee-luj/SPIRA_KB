@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_16",
+ "items": [
+  {
+   "name": "기저귀",
+   "everyday": true
+  },
+  {
+   "name": "방수기저귀",
+   "everyday": false
+  },
+  {
+   "name": "아기 물티슈",
+   "everyday": true
+  },
+  {
+   "name": "기저귀 휴지통",
+   "everyday": false
+  },
+  {
+   "name": "아기 로션",
+   "everyday": true
+  },
+  {
+   "name": "아기 바디워시",
+   "everyday": true
+  },
+  {
+   "name": "아기 샴푸",
+   "everyday": true
+  },
+  {
+   "name": "아기 수딩젤",
+   "everyday": true
+  },
+  {
+   "name": "기저귀 발진크림",
+   "everyday": true
+  },
+  {
+   "name": "유아 선크림",
+   "everyday": false
+  },
+  {
+   "name": "젖병 세정제",
+   "everyday": true
+  },
+  {
+   "name": "유아 세탁세제",
+   "everyday": true
+  },
+  {
+   "name": "아기 면봉",
+   "everyday": true
+  },
+  {
+   "name": "아기 손톱가위",
+   "everyday": true
+  },
+  {
+   "name": "아기 칫솔",
+   "everyday": true
+  },
+  {
+   "name": "유아 치약",
+   "everyday": true
+  },
+  {
+   "name": "분유",
+   "everyday": true
+  },
+  {
+   "name": "젖병",
+   "everyday": true
+  },
+  {
+   "name": "노리개젖꼭지",
+   "everyday": true
+  },
+  {
+   "name": "젖병 솔",
+   "everyday": true
+  },
+  {
+   "name": "젖병 소독기",
+   "everyday": false
+  },
+  {
+   "name": "모유저장팩",
+   "everyday": true
+  },
+  {
+   "name": "수유쿠션",
+   "everyday": false
+  },
+  {
+   "name": "유축기",
+   "everyday": false
+  },
+  {
+   "name": "이유식",
+   "everyday": true
+  },
+  {
+   "name": "떡뻥",
+   "everyday": true
+  },
+  {
+   "name": "이유식 보관용기",
+   "everyday": true
+  },
+  {
+   "name": "이유식 턱받이",
+   "everyday": true
+  },
+  {
+   "name": "빨대컵",
+   "everyday": true
+  },
+  {
+   "name": "유아 식판",
+   "everyday": true
+  },
+  {
+   "name": "투약병",
+   "everyday": true
+  },
+  {
+   "name": "아기 침대",
+   "everyday": false
+  },
+  {
+   "name": "방수패드",
+   "everyday": true
+  },
+  {
+   "name": "유아 베개",
+   "everyday": true
+  },
+  {
+   "name": "속싸개",
+   "everyday": true
+  },
+  {
+   "name": "수면조끼",
+   "everyday": true
+  },
+  {
+   "name": "낮잠이불",
+   "everyday": false
+  },
+  {
+   "name": "유아 쿨매트",
+   "everyday": false
+  },
+  {
+   "name": "유모차",
+   "everyday": false
+  },
+  {
+   "name": "카시트",
+   "everyday": false
+  },
+  {
+   "name": "아기띠",
+   "everyday": false
+  },
+  {
+   "name": "유아 안전문",
+   "everyday": false
+  },
+  {
+   "name": "모서리 보호대",
+   "everyday": false
+  },
+  {
+   "name": "콧물 흡입기",
+   "everyday": false
+  },
+  {
+   "name": "유아 체온계",
+   "everyday": false
+  },
+  {
+   "name": "유아 변기",
+   "everyday": false
+  },
+  {
+   "name": "아기 욕조",
+   "everyday": false
+  },
+  {
+   "name": "아기 비데",
+   "everyday": false
+  },
+  {
+   "name": "샴푸캡",
+   "everyday": true
+  },
+  {
+   "name": "목욕 타월",
+   "everyday": true
+  },
+  {
+   "name": "보행기 튜브",
+   "everyday": false
+  },
+  {
+   "name": "유아 구명조끼",
+   "everyday": false
+  },
+  {
+   "name": "유아 래시가드",
+   "everyday": false
+  },
+  {
+   "name": "배냇저고리",
+   "everyday": false
+  },
+  {
+   "name": "바디슈트",
+   "everyday": true
+  },
+  {
+   "name": "유아 내의",
+   "everyday": true
+  },
+  {
+   "name": "아동 양말",
+   "everyday": true
+  },
+  {
+   "name": "아동 팬티",
+   "everyday": true
+  },
+  {
+   "name": "아동 운동화",
+   "everyday": true
+  },
+  {
+   "name": "아동 장화",
+   "everyday": false
+  },
+  {
+   "name": "아동 우산",
+   "everyday": true
+  },
+  {
+   "name": "아동 한복",
+   "everyday": false
+  },
+  {
+   "name": "치발기",
+   "everyday": true
+  },
+  {
+   "name": "딸랑이",
+   "everyday": true
+  },
+  {
+   "name": "모빌",
+   "everyday": false
+  },
+  {
+   "name": "아기 체육관",
+   "everyday": false
+  },
+  {
+   "name": "사운드북",
+   "everyday": true
+  },
+  {
+   "name": "촉감책",
+   "everyday": true
+  },
+  {
+   "name": "스티커북",
+   "everyday": true
+  },
+  {
+   "name": "플레이도우",
+   "everyday": true
+  },
+  {
+   "name": "유아 크레파스",
+   "everyday": true
+  },
+  {
+   "name": "스케치북",
+   "everyday": true
+  },
+  {
+   "name": "아동 블록",
+   "everyday": true
+  },
+  {
+   "name": "유아 퍼즐",
+   "everyday": true
+  },
+  {
+   "name": "비눗방울",
+   "everyday": true
+  },
+  {
+   "name": "보행기",
+   "everyday": false
+  },
+  {
+   "name": "붕붕카",
+   "everyday": false
+  },
+  {
+   "name": "유아 킥보드",
+   "everyday": false
+  },
+  {
+   "name": "네임스티커",
+   "everyday": false
+  },
+  {
+   "name": "고리수건",
+   "everyday": false
+  }
+ ]
+}
