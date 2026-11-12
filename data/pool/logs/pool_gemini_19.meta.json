@@ -1,0 +1,33 @@
+{
+ "job_id": "pool_gemini_19",
+ "scope": "pool",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "gemini",
+ "person": "U",
+ "prompt_version": "item_pool@v2",
+ "model_config": "gemini-3.8-flash-high",
+ "models_seen": [],
+ "usage": {
+  "input_tokens": 71321,
+  "output_tokens": 25807,
+  "thinking_tokens": 24096,
+  "cache_read_tokens": 34048,
+  "total_tokens": 97128
+ },
+ "total_tokens": 97128,
+ "quota": {
+  "weekly_left_after": 96.425,
+  "weekly_used_pct": 0.601
+ },
+ "attempts": 2,
+ "ok": true,
+ "errors": [
+  "[1회] 에이전트 실행 실패: 1800초 안에 끝나지 않음"
+ ],
+ "started_at": "2026-11-12T02:56:32+09:00",
+ "finished_at": "2026-11-12T11:37:40+09:00",
+ "seconds": 31269,
+ "local_date": "2026-11-12",
+ "fake": false
+}

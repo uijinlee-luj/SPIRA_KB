@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_gemini_19",
+ "items": [
+  {
+   "name": "텐트",
+   "everyday": false
+  },
+  {
+   "name": "타프",
+   "everyday": false
+  },
+  {
+   "name": "그라운드시트",
+   "everyday": false
+  },
+  {
+   "name": "텐트 팩",
+   "everyday": false
+  },
+  {
+   "name": "스트링",
+   "everyday": false
+  },
+  {
+   "name": "팩망치",
+   "everyday": false
+  },
+  {
+   "name": "캠핑의자",
+   "everyday": false
+  },
+  {
+   "name": "캠핑테이블",
+   "everyday": false
+  },
+  {
+   "name": "야전침대",
+   "everyday": false
+  },
+  {
+   "name": "침낭",
+   "everyday": false
+  },
+  {
+   "name": "자충매트",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 베개",
+   "everyday": false
+  },
+  {
+   "name": "해먹",
+   "everyday": false
+  },
+  {
+   "name": "폴딩박스",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 왜건",
+   "everyday": false
+  },
+  {
+   "name": "인디언 행어",
+   "everyday": false
+  },
+  {
+   "name": "코펠",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 버너",
+   "everyday": false
+  },
+  {
+   "name": "부탄가스",
+   "everyday": true
+  },
+  {
+   "name": "그리들",
+   "everyday": false
+  },
+  {
+   "name": "화로대",
+   "everyday": false
+  },
+  {
+   "name": "석쇠",
+   "everyday": false
+  },
+  {
+   "name": "토치",
+   "everyday": false
+  },
+  {
+   "name": "장작",
+   "everyday": false
+  },
+  {
+   "name": "참숯",
+   "everyday": false
+  },
+  {
+   "name": "숯집게",
+   "everyday": false
+  },
+  {
+   "name": "시에라컵",
+   "everyday": false
+  },
+  {
+   "name": "식기건조망",
+   "everyday": false
+  },
+  {
+   "name": "양념통 세트",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 설거지통",
+   "everyday": false
+  },
+  {
+   "name": "윈드스크린",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 나이프",
+   "everyday": false
+  },
+  {
+   "name": "바비큐 꼬치",
+   "everyday": false
+  },
+  {
+   "name": "등유난로",
+   "everyday": false
+  },
+  {
+   "name": "일산화탄소 경보기",
+   "everyday": false
+  },
+  {
+   "name": "타프팬",
+   "everyday": false
+  },
+  {
+   "name": "비상 담요",
+   "everyday": false
+  },
+  {
+   "name": "카라비너",
+   "everyday": false
+  },
+  {
+   "name": "아이스박스",
+   "everyday": false
+  },
+  {
+   "name": "워터저그",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 랜턴",
+   "everyday": false
+  },
+  {
+   "name": "헤드랜턴",
+   "everyday": false
+  },
+  {
+   "name": "파워뱅크",
+   "everyday": false
+  },
+  {
+   "name": "보조배터리",
+   "everyday": true
+  },
+  {
+   "name": "건전지",
+   "everyday": true
+  },
+  {
+   "name": "보냉백",
+   "everyday": true
+  },
+  {
+   "name": "아이스팩",
+   "everyday": true
+  },
+  {
+   "name": "텀블러",
+   "everyday": true
+  },
+  {
+   "name": "보온병",
+   "everyday": true
+  },
+  {
+   "name": "도시락통",
+   "everyday": true
+  },
+  {
+   "name": "종이컵",
+   "everyday": true
+  },
+  {
+   "name": "일회용 접시",
+   "everyday": true
+  },
+  {
+   "name": "휴대용 물티슈",
+   "everyday": true
+  },
+  {
+   "name": "모기기피제",
+   "everyday": true
+  },
+  {
+   "name": "전기 파리채",
+   "everyday": true
+  },
+  {
+   "name": "핫팩",
+   "everyday": true
+  },
+  {
+   "name": "휴대용 선풍기",
+   "everyday": true
+  },
+  {
+   "name": "돗자리",
+   "everyday": false
+  },
+  {
+   "name": "피크닉 바구니",
+   "everyday": false
+  },
+  {
+   "name": "파라솔",
+   "everyday": false
+  },
+  {
+   "name": "접이식 방석",
+   "everyday": false
+  },
+  {
+   "name": "캐리어",
+   "everyday": false
+  },
+  {
+   "name": "여권지갑",
+   "everyday": false
+  },
+  {
+   "name": "여행용 파우치",
+   "everyday": false
+  },
+  {
+   "name": "캐리어 벨트",
+   "everyday": false
+  },
+  {
+   "name": "휴대용 손저울",
+   "everyday": false
+  },
+  {
+   "name": "목베개",
+   "everyday": false
+  },
+  {
+   "name": "수면안대",
+   "everyday": true
+  },
+  {
+   "name": "귀마개",
+   "everyday": true
+  },
+  {
+   "name": "멀티어댑터",
+   "everyday": false
+  },
+  {
+   "name": "여행용 공병",
+   "everyday": false
+  },
+  {
+   "name": "의류 압축팩",
+   "everyday": false
+  },
+  {
+   "name": "여행용 칫솔세트",
+   "everyday": true
+  },
+  {
+   "name": "자물쇠",
+   "everyday": true
+  },
+  {
+   "name": "스마트폰 방수팩",
+   "everyday": false
+  },
+  {
+   "name": "비치타월",
+   "everyday": false
+  },
+  {
+   "name": "여행용 접이식 포트",
+   "everyday": false
+  },
+  {
+   "name": "차박 매트",
+   "everyday": false
+  },
+  {
+   "name": "차량용 모기장",
+   "everyday": false
+  },
+  {
+   "name": "등산스틱",
+   "everyday": false
+  }
+ ]
+}
