@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_19",
+ "items": [
+  {
+   "name": "텐트",
+   "everyday": false
+  },
+  {
+   "name": "타프",
+   "everyday": false
+  },
+  {
+   "name": "텐트 폴대",
+   "everyday": false
+  },
+  {
+   "name": "텐트 팩",
+   "everyday": false
+  },
+  {
+   "name": "팩 망치",
+   "everyday": false
+  },
+  {
+   "name": "텐트 로프",
+   "everyday": false
+  },
+  {
+   "name": "방수포",
+   "everyday": false
+  },
+  {
+   "name": "침낭",
+   "everyday": false
+  },
+  {
+   "name": "침낭 라이너",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 매트",
+   "everyday": false
+  },
+  {
+   "name": "에어 매트",
+   "everyday": false
+  },
+  {
+   "name": "야전 침대",
+   "everyday": false
+  },
+  {
+   "name": "해먹",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 베개",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 의자",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 테이블",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 선반",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 수레",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 수납함",
+   "everyday": false
+  },
+  {
+   "name": "랜턴",
+   "everyday": false
+  },
+  {
+   "name": "헤드랜턴",
+   "everyday": false
+  },
+  {
+   "name": "랜턴 걸이",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 난로",
+   "everyday": false
+  },
+  {
+   "name": "화로대",
+   "everyday": false
+  },
+  {
+   "name": "장작",
+   "everyday": false
+  },
+  {
+   "name": "숯",
+   "everyday": false
+  },
+  {
+   "name": "착화제",
+   "everyday": false
+  },
+  {
+   "name": "불멍 가루",
+   "everyday": false
+  },
+  {
+   "name": "바비큐 그릴",
+   "everyday": false
+  },
+  {
+   "name": "석쇠",
+   "everyday": false
+  },
+  {
+   "name": "꼬치",
+   "everyday": false
+  },
+  {
+   "name": "숯 집게",
+   "everyday": false
+  },
+  {
+   "name": "바람막이",
+   "everyday": false
+  },
+  {
+   "name": "휴대용 버너",
+   "everyday": true
+  },
+  {
+   "name": "부탄가스",
+   "everyday": true
+  },
+  {
+   "name": "코펠",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 주전자",
+   "everyday": false
+  },
+  {
+   "name": "아이스박스",
+   "everyday": true
+  },
+  {
+   "name": "아이스팩",
+   "everyday": true
+  },
+  {
+   "name": "보냉 가방",
+   "everyday": true
+  },
+  {
+   "name": "물통",
+   "everyday": true
+  },
+  {
+   "name": "보온병",
+   "everyday": true
+  },
+  {
+   "name": "캠핑 설거지통",
+   "everyday": false
+  },
+  {
+   "name": "식기 건조망",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 샤워기",
+   "everyday": false
+  },
+  {
+   "name": "휴대용 변기",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 삽",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 도끼",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 톱",
+   "everyday": false
+  },
+  {
+   "name": "캠핑 나이프",
+   "everyday": false
+  },
+  {
+   "name": "다용도 칼",
+   "everyday": false
+  },
+  {
+   "name": "에어 펌프",
+   "everyday": false
+  },
+  {
+   "name": "모기장",
+   "everyday": false
+  },
+  {
+   "name": "돗자리",
+   "everyday": false
+  },
+  {
+   "name": "피크닉 바구니",
+   "everyday": false
+  },
+  {
+   "name": "도시락통",
+   "everyday": true
+  },
+  {
+   "name": "휴대용 수저",
+   "everyday": true
+  },
+  {
+   "name": "일회용 접시",
+   "everyday": true
+  },
+  {
+   "name": "일회용 컵",
+   "everyday": true
+  },
+  {
+   "name": "파라솔",
+   "everyday": false
+  },
+  {
+   "name": "비치 매트",
+   "everyday": false
+  },
+  {
+   "name": "비치 타월",
+   "everyday": false
+  },
+  {
+   "name": "방수 가방",
+   "everyday": false
+  },
+  {
+   "name": "방수팩",
+   "everyday": false
+  },
+  {
+   "name": "여행 가방",
+   "everyday": false
+  },
+  {
+   "name": "여권 지갑",
+   "everyday": false
+  },
+  {
+   "name": "네임 태그",
+   "everyday": false
+  },
+  {
+   "name": "수하물 자물쇠",
+   "everyday": false
+  },
+  {
+   "name": "캐리어 벨트",
+   "everyday": false
+  },
+  {
+   "name": "캐리어 커버",
+   "everyday": false
+  },
+  {
+   "name": "여행용 파우치",
+   "everyday": false
+  },
+  {
+   "name": "여행용 압축팩",
+   "everyday": false
+  },
+  {
+   "name": "여행용 공병",
+   "everyday": false
+  },
+  {
+   "name": "목베개",
+   "everyday": false
+  },
+  {
+   "name": "안대",
+   "everyday": true
+  },
+  {
+   "name": "귀마개",
+   "everyday": true
+  },
+  {
+   "name": "여행용 어댑터",
+   "everyday": false
+  },
+  {
+   "name": "휴대용 저울",
+   "everyday": false
+  },
+  {
+   "name": "휴대용 빨랫줄",
+   "everyday": false
+  },
+  {
+   "name": "여행용 세면도구",
+   "everyday": false
+  }
+ ]
+}
