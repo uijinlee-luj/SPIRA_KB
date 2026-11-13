@@ -1,0 +1,28 @@
+{
+ "job_id": "pool_codex_18",
+ "scope": "pool",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "codex",
+ "person": "Y",
+ "prompt_version": "item_pool@v2",
+ "model_config": "gpt-6.1-terra",
+ "models_seen": [],
+ "usage": {
+  "input_tokens": 60592,
+  "cached_input_tokens": 53632,
+  "cache_write_input_tokens": 0,
+  "output_tokens": 1432,
+  "reasoning_output_tokens": 69
+ },
+ "total_tokens": 115725,
+ "quota": null,
+ "attempts": 1,
+ "ok": true,
+ "errors": [],
+ "started_at": "2026-11-13T17:42:00+09:00",
+ "finished_at": "2026-11-13T17:42:59+09:00",
+ "seconds": 59,
+ "local_date": "2026-11-13",
+ "fake": false
+}
