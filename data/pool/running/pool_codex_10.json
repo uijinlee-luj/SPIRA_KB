@@ -1,9 +1,0 @@
-{
- "job_id": "pool_codex_10",
- "batch": "pool",
- "role": "item_pool",
- "company": "codex",
- "prompt_version": "item_pool@v2",
- "category": "욕실·세면·화장품",
- "target_count": 60
-}
