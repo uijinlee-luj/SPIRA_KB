@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_12",
+ "items": [
+  {
+   "name": "수납 상자",
+   "everyday": true
+  },
+  {
+   "name": "수납 바구니",
+   "everyday": true
+  },
+  {
+   "name": "서랍 정리함",
+   "everyday": true
+  },
+  {
+   "name": "칸막이",
+   "everyday": true
+  },
+  {
+   "name": "수납 선반",
+   "everyday": true
+  },
+  {
+   "name": "벽 선반",
+   "everyday": true
+  },
+  {
+   "name": "틈새 수납장",
+   "everyday": true
+  },
+  {
+   "name": "이동식 트롤리",
+   "everyday": true
+  },
+  {
+   "name": "옷걸이",
+   "everyday": true
+  },
+  {
+   "name": "바지걸이",
+   "everyday": true
+  },
+  {
+   "name": "옷걸이 정리대",
+   "everyday": true
+  },
+  {
+   "name": "행거",
+   "everyday": true
+  },
+  {
+   "name": "옷 커버",
+   "everyday": true
+  },
+  {
+   "name": "이불 보관함",
+   "everyday": true
+  },
+  {
+   "name": "압축팩",
+   "everyday": true
+  },
+  {
+   "name": "속옷 정리함",
+   "everyday": true
+  },
+  {
+   "name": "양말 정리함",
+   "everyday": true
+  },
+  {
+   "name": "가방 정리대",
+   "everyday": true
+  },
+  {
+   "name": "모자 걸이",
+   "everyday": true
+  },
+  {
+   "name": "신발 정리대",
+   "everyday": true
+  },
+  {
+   "name": "신발 상자",
+   "everyday": true
+  },
+  {
+   "name": "우산꽂이",
+   "everyday": true
+  },
+  {
+   "name": "열쇠 걸이",
+   "everyday": true
+  },
+  {
+   "name": "벽걸이 후크",
+   "everyday": true
+  },
+  {
+   "name": "문걸이 훅",
+   "everyday": true
+  },
+  {
+   "name": "압축봉",
+   "everyday": true
+  },
+  {
+   "name": "다용도 고리",
+   "everyday": true
+  },
+  {
+   "name": "케이블 정리함",
+   "everyday": true
+  },
+  {
+   "name": "케이블 홀더",
+   "everyday": true
+  },
+  {
+   "name": "리모컨 정리함",
+   "everyday": true
+  },
+  {
+   "name": "책꽂이",
+   "everyday": true
+  },
+  {
+   "name": "북엔드",
+   "everyday": true
+  },
+  {
+   "name": "파일 정리함",
+   "everyday": true
+  },
+  {
+   "name": "서류 트레이",
+   "everyday": true
+  },
+  {
+   "name": "연필꽂이",
+   "everyday": true
+  },
+  {
+   "name": "화장품 정리함",
+   "everyday": true
+  },
+  {
+   "name": "화장솜 보관함",
+   "everyday": true
+  },
+  {
+   "name": "면봉 보관함",
+   "everyday": true
+  },
+  {
+   "name": "액세서리 보관함",
+   "everyday": true
+  },
+  {
+   "name": "시계 보관함",
+   "everyday": true
+  },
+  {
+   "name": "안경 거치대",
+   "everyday": true
+  },
+  {
+   "name": "휴지 케이스",
+   "everyday": true
+  },
+  {
+   "name": "비닐봉지 정리함",
+   "everyday": true
+  },
+  {
+   "name": "리모컨 거치대",
+   "everyday": true
+  },
+  {
+   "name": "냉장고 정리함",
+   "everyday": true
+  },
+  {
+   "name": "계란 보관함",
+   "everyday": true
+  },
+  {
+   "name": "양념통",
+   "everyday": true
+  },
+  {
+   "name": "양념 선반",
+   "everyday": true
+  },
+  {
+   "name": "수저통",
+   "everyday": true
+  },
+  {
+   "name": "접시 정리대",
+   "everyday": true
+  },
+  {
+   "name": "냄비뚜껑 거치대",
+   "everyday": true
+  },
+  {
+   "name": "도마 거치대",
+   "everyday": true
+  },
+  {
+   "name": "컵 걸이",
+   "everyday": true
+  },
+  {
+   "name": "싱크대 선반",
+   "everyday": true
+  },
+  {
+   "name": "욕실 선반",
+   "everyday": true
+  },
+  {
+   "name": "칫솔꽂이",
+   "everyday": true
+  },
+  {
+   "name": "수건 걸이",
+   "everyday": true
+  },
+  {
+   "name": "비누 받침",
+   "everyday": true
+  },
+  {
+   "name": "세탁 바구니",
+   "everyday": true
+  },
+  {
+   "name": "장난감 정리함",
+   "everyday": true
+  },
+  {
+   "name": "약 보관함",
+   "everyday": true
+  },
+  {
+   "name": "공구함",
+   "everyday": true
+  },
+  {
+   "name": "현관 매트",
+   "everyday": true
+  },
+  {
+   "name": "러그",
+   "everyday": true
+  },
+  {
+   "name": "커튼",
+   "everyday": true
+  },
+  {
+   "name": "커튼 봉",
+   "everyday": true
+  },
+  {
+   "name": "커튼 집게",
+   "everyday": true
+  },
+  {
+   "name": "블라인드",
+   "everyday": true
+  },
+  {
+   "name": "쿠션",
+   "everyday": true
+  },
+  {
+   "name": "쿠션 커버",
+   "everyday": true
+  },
+  {
+   "name": "방석",
+   "everyday": true
+  },
+  {
+   "name": "벽시계",
+   "everyday": true
+  },
+  {
+   "name": "탁상시계",
+   "everyday": true
+  },
+  {
+   "name": "거울",
+   "everyday": true
+  },
+  {
+   "name": "액자",
+   "everyday": true
+  },
+  {
+   "name": "화병",
+   "everyday": true
+  },
+  {
+   "name": "조화",
+   "everyday": true
+  },
+  {
+   "name": "장식 조명",
+   "everyday": true
+  },
+  {
+   "name": "크리스마스 트리",
+   "everyday": false
+  },
+  {
+   "name": "파티 가랜드",
+   "everyday": false
+  }
+ ]
+}
