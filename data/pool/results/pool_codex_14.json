@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_14",
+ "items": [
+  {
+   "name": "전기주전자",
+   "everyday": true
+  },
+  {
+   "name": "토스터",
+   "everyday": true
+  },
+  {
+   "name": "전자레인지",
+   "everyday": true
+  },
+  {
+   "name": "에어프라이어",
+   "everyday": true
+  },
+  {
+   "name": "전기밥솥",
+   "everyday": true
+  },
+  {
+   "name": "전기압력솥",
+   "everyday": true
+  },
+  {
+   "name": "전기그릴",
+   "everyday": true
+  },
+  {
+   "name": "전기레인지",
+   "everyday": true
+  },
+  {
+   "name": "전기오븐",
+   "everyday": true
+  },
+  {
+   "name": "믹서기",
+   "everyday": true
+  },
+  {
+   "name": "핸드블렌더",
+   "everyday": true
+  },
+  {
+   "name": "착즙기",
+   "everyday": true
+  },
+  {
+   "name": "커피메이커",
+   "everyday": true
+  },
+  {
+   "name": "커피머신",
+   "everyday": true
+  },
+  {
+   "name": "커피그라인더",
+   "everyday": true
+  },
+  {
+   "name": "우유거품기",
+   "everyday": true
+  },
+  {
+   "name": "주방저울",
+   "everyday": true
+  },
+  {
+   "name": "요구르트제조기",
+   "everyday": false
+  },
+  {
+   "name": "제빵기",
+   "everyday": false
+  },
+  {
+   "name": "와플메이커",
+   "everyday": false
+  },
+  {
+   "name": "식품건조기",
+   "everyday": false
+  },
+  {
+   "name": "진공포장기",
+   "everyday": true
+  },
+  {
+   "name": "계란찜기",
+   "everyday": true
+  },
+  {
+   "name": "두유제조기",
+   "everyday": true
+  },
+  {
+   "name": "음식물처리기",
+   "everyday": true
+  },
+  {
+   "name": "식기건조기",
+   "everyday": true
+  },
+  {
+   "name": "전기청소기",
+   "everyday": true
+  },
+  {
+   "name": "로봇청소기",
+   "everyday": true
+  },
+  {
+   "name": "스팀청소기",
+   "everyday": true
+  },
+  {
+   "name": "침구청소기",
+   "everyday": true
+  },
+  {
+   "name": "보풀제거기",
+   "everyday": true
+  },
+  {
+   "name": "다리미",
+   "everyday": true
+  },
+  {
+   "name": "스팀다리미",
+   "everyday": true
+  },
+  {
+   "name": "의류건조기",
+   "everyday": true
+  },
+  {
+   "name": "신발건조기",
+   "everyday": true
+  },
+  {
+   "name": "선풍기",
+   "everyday": false
+  },
+  {
+   "name": "서큘레이터",
+   "everyday": true
+  },
+  {
+   "name": "가습기",
+   "everyday": true
+  },
+  {
+   "name": "제습기",
+   "everyday": true
+  },
+  {
+   "name": "공기청정기",
+   "everyday": true
+  },
+  {
+   "name": "전기히터",
+   "everyday": false
+  },
+  {
+   "name": "전기요",
+   "everyday": false
+  },
+  {
+   "name": "온수매트",
+   "everyday": false
+  },
+  {
+   "name": "전기방석",
+   "everyday": false
+  },
+  {
+   "name": "헤어드라이어",
+   "everyday": true
+  },
+  {
+   "name": "고데기",
+   "everyday": true
+  },
+  {
+   "name": "전기면도기",
+   "everyday": true
+  },
+  {
+   "name": "이발기",
+   "everyday": true
+  },
+  {
+   "name": "전동칫솔",
+   "everyday": true
+  },
+  {
+   "name": "구강세정기",
+   "everyday": true
+  },
+  {
+   "name": "체중계",
+   "everyday": true
+  },
+  {
+   "name": "안마기",
+   "everyday": true
+  },
+  {
+   "name": "손톱정리기",
+   "everyday": true
+  },
+  {
+   "name": "전기모기채",
+   "everyday": false
+  },
+  {
+   "name": "모기퇴치기",
+   "everyday": false
+  },
+  {
+   "name": "전기스탠드",
+   "everyday": true
+  },
+  {
+   "name": "건전지",
+   "everyday": true
+  },
+  {
+   "name": "충전지",
+   "everyday": true
+  },
+  {
+   "name": "배터리 충전기",
+   "everyday": true
+  },
+  {
+   "name": "멀티탭",
+   "everyday": true
+  },
+  {
+   "name": "휴대폰 충전기",
+   "everyday": true
+  },
+  {
+   "name": "충전 케이블",
+   "everyday": true
+  },
+  {
+   "name": "보조배터리",
+   "everyday": true
+  },
+  {
+   "name": "전구",
+   "everyday": true
+  },
+  {
+   "name": "형광등",
+   "everyday": true
+  },
+  {
+   "name": "청소기 먼지봉투",
+   "everyday": true
+  },
+  {
+   "name": "청소기 필터",
+   "everyday": true
+  },
+  {
+   "name": "청소기 브러시",
+   "everyday": true
+  },
+  {
+   "name": "로봇청소기 물걸레",
+   "everyday": true
+  },
+  {
+   "name": "공기청정기 필터",
+   "everyday": true
+  },
+  {
+   "name": "정수기 필터",
+   "everyday": true
+  },
+  {
+   "name": "가습기 필터",
+   "everyday": true
+  },
+  {
+   "name": "건조기 필터",
+   "everyday": true
+  },
+  {
+   "name": "밥솥 고무패킹",
+   "everyday": true
+  },
+  {
+   "name": "밥솥 내솥",
+   "everyday": true
+  },
+  {
+   "name": "면도기 날",
+   "everyday": true
+  },
+  {
+   "name": "전동칫솔모",
+   "everyday": true
+  },
+  {
+   "name": "구강세정기 노즐",
+   "everyday": true
+  },
+  {
+   "name": "커피머신 세정제",
+   "everyday": true
+  },
+  {
+   "name": "진공포장 비닐",
+   "everyday": true
+  }
+ ]
+}
