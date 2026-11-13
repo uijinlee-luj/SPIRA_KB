@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_13",
+ "items": [
+  {
+   "name": "이불",
+   "everyday": true
+  },
+  {
+   "name": "이불 커버",
+   "everyday": true
+  },
+  {
+   "name": "이불솜",
+   "everyday": true
+  },
+  {
+   "name": "담요",
+   "everyday": true
+  },
+  {
+   "name": "침대 패드",
+   "everyday": true
+  },
+  {
+   "name": "매트리스 커버",
+   "everyday": true
+  },
+  {
+   "name": "매트리스 토퍼",
+   "everyday": true
+  },
+  {
+   "name": "요",
+   "everyday": true
+  },
+  {
+   "name": "요커버",
+   "everyday": true
+  },
+  {
+   "name": "베개",
+   "everyday": true
+  },
+  {
+   "name": "베개 커버",
+   "everyday": true
+  },
+  {
+   "name": "바디필로우",
+   "everyday": true
+  },
+  {
+   "name": "방석",
+   "everyday": true
+  },
+  {
+   "name": "쿠션",
+   "everyday": true
+  },
+  {
+   "name": "쿠션 커버",
+   "everyday": true
+  },
+  {
+   "name": "침대 스커트",
+   "everyday": true
+  },
+  {
+   "name": "모기장",
+   "everyday": false
+  },
+  {
+   "name": "전기담요",
+   "everyday": false
+  },
+  {
+   "name": "커튼",
+   "everyday": true
+  },
+  {
+   "name": "커튼봉",
+   "everyday": true
+  },
+  {
+   "name": "커튼끈",
+   "everyday": true
+  },
+  {
+   "name": "블라인드",
+   "everyday": true
+  },
+  {
+   "name": "러그",
+   "everyday": true
+  },
+  {
+   "name": "발매트",
+   "everyday": true
+  },
+  {
+   "name": "소파 커버",
+   "everyday": true
+  },
+  {
+   "name": "식탁보",
+   "everyday": true
+  },
+  {
+   "name": "식탁 매트",
+   "everyday": true
+  },
+  {
+   "name": "앞치마",
+   "everyday": true
+  },
+  {
+   "name": "행주",
+   "everyday": true
+  },
+  {
+   "name": "수건",
+   "everyday": true
+  },
+  {
+   "name": "목욕가운",
+   "everyday": true
+  },
+  {
+   "name": "샤워 커튼",
+   "everyday": true
+  },
+  {
+   "name": "손수건",
+   "everyday": true
+  },
+  {
+   "name": "티셔츠",
+   "everyday": true
+  },
+  {
+   "name": "셔츠",
+   "everyday": true
+  },
+  {
+   "name": "블라우스",
+   "everyday": true
+  },
+  {
+   "name": "맨투맨",
+   "everyday": true
+  },
+  {
+   "name": "후드티",
+   "everyday": true
+  },
+  {
+   "name": "니트",
+   "everyday": true
+  },
+  {
+   "name": "카디건",
+   "everyday": true
+  },
+  {
+   "name": "조끼",
+   "everyday": true
+  },
+  {
+   "name": "재킷",
+   "everyday": true
+  },
+  {
+   "name": "코트",
+   "everyday": true
+  },
+  {
+   "name": "패딩",
+   "everyday": true
+  },
+  {
+   "name": "바람막이",
+   "everyday": true
+  },
+  {
+   "name": "청바지",
+   "everyday": true
+  },
+  {
+   "name": "슬랙스",
+   "everyday": true
+  },
+  {
+   "name": "반바지",
+   "everyday": true
+  },
+  {
+   "name": "치마",
+   "everyday": true
+  },
+  {
+   "name": "원피스",
+   "everyday": true
+  },
+  {
+   "name": "레깅스",
+   "everyday": true
+  },
+  {
+   "name": "운동복",
+   "everyday": false
+  },
+  {
+   "name": "수영복",
+   "everyday": false
+  },
+  {
+   "name": "잠옷",
+   "everyday": true
+  },
+  {
+   "name": "내복",
+   "everyday": true
+  },
+  {
+   "name": "런닝셔츠",
+   "everyday": true
+  },
+  {
+   "name": "팬티",
+   "everyday": true
+  },
+  {
+   "name": "브래지어",
+   "everyday": true
+  },
+  {
+   "name": "양말",
+   "everyday": true
+  },
+  {
+   "name": "스타킹",
+   "everyday": true
+  },
+  {
+   "name": "속바지",
+   "everyday": true
+  },
+  {
+   "name": "슬립",
+   "everyday": true
+  },
+  {
+   "name": "모자",
+   "everyday": true
+  },
+  {
+   "name": "장갑",
+   "everyday": true
+  },
+  {
+   "name": "목도리",
+   "everyday": true
+  },
+  {
+   "name": "벨트",
+   "everyday": true
+  },
+  {
+   "name": "넥타이",
+   "everyday": true
+  },
+  {
+   "name": "스카프",
+   "everyday": true
+  },
+  {
+   "name": "우비",
+   "everyday": true
+  },
+  {
+   "name": "운동화",
+   "everyday": true
+  },
+  {
+   "name": "구두",
+   "everyday": true
+  },
+  {
+   "name": "슬리퍼",
+   "everyday": true
+  },
+  {
+   "name": "샌들",
+   "everyday": true
+  },
+  {
+   "name": "장화",
+   "everyday": false
+  },
+  {
+   "name": "실내화",
+   "everyday": true
+  },
+  {
+   "name": "한복",
+   "everyday": false
+  },
+  {
+   "name": "교복",
+   "everyday": false
+  },
+  {
+   "name": "정장",
+   "everyday": true
+  },
+  {
+   "name": "수유복",
+   "everyday": false
+  },
+  {
+   "name": "배냇저고리",
+   "everyday": false
+  }
+ ]
+}
