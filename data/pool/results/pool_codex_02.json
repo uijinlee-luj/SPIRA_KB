@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_02",
+ "items": [
+  {
+   "name": "소고기 등심",
+   "everyday": true
+  },
+  {
+   "name": "소고기 안심",
+   "everyday": true
+  },
+  {
+   "name": "소고기 채끝",
+   "everyday": true
+  },
+  {
+   "name": "소고기 양지",
+   "everyday": true
+  },
+  {
+   "name": "소고기 사태",
+   "everyday": true
+  },
+  {
+   "name": "소고기 우둔",
+   "everyday": true
+  },
+  {
+   "name": "소고기 갈비",
+   "everyday": true
+  },
+  {
+   "name": "소고기 차돌박이",
+   "everyday": true
+  },
+  {
+   "name": "소고기 다짐육",
+   "everyday": true
+  },
+  {
+   "name": "소꼬리",
+   "everyday": true
+  },
+  {
+   "name": "소사골",
+   "everyday": true
+  },
+  {
+   "name": "소곱창",
+   "everyday": true
+  },
+  {
+   "name": "소대창",
+   "everyday": true
+  },
+  {
+   "name": "소막창",
+   "everyday": true
+  },
+  {
+   "name": "소간",
+   "everyday": true
+  },
+  {
+   "name": "소천엽",
+   "everyday": true
+  },
+  {
+   "name": "소혀",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 삼겹살",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 목살",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 앞다리살",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 뒷다리살",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 등심",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 안심",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 갈비",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 항정살",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 가브리살",
+   "everyday": true
+  },
+  {
+   "name": "돼지고기 다짐육",
+   "everyday": true
+  },
+  {
+   "name": "돼지등뼈",
+   "everyday": true
+  },
+  {
+   "name": "돼지족발",
+   "everyday": true
+  },
+  {
+   "name": "돼지껍데기",
+   "everyday": true
+  },
+  {
+   "name": "돼지막창",
+   "everyday": true
+  },
+  {
+   "name": "닭",
+   "everyday": true
+  },
+  {
+   "name": "닭가슴살",
+   "everyday": true
+  },
+  {
+   "name": "닭다리살",
+   "everyday": true
+  },
+  {
+   "name": "닭날개",
+   "everyday": true
+  },
+  {
+   "name": "닭발",
+   "everyday": true
+  },
+  {
+   "name": "닭똥집",
+   "everyday": true
+  },
+  {
+   "name": "오리고기",
+   "everyday": true
+  },
+  {
+   "name": "양고기",
+   "everyday": true
+  },
+  {
+   "name": "달걀",
+   "everyday": true
+  },
+  {
+   "name": "메추리알",
+   "everyday": true
+  },
+  {
+   "name": "오리알",
+   "everyday": true
+  },
+  {
+   "name": "고등어",
+   "everyday": true
+  },
+  {
+   "name": "갈치",
+   "everyday": true
+  },
+  {
+   "name": "삼치",
+   "everyday": true
+  },
+  {
+   "name": "꽁치",
+   "everyday": true
+  },
+  {
+   "name": "조기",
+   "everyday": true
+  },
+  {
+   "name": "명태",
+   "everyday": true
+  },
+  {
+   "name": "대구",
+   "everyday": true
+  },
+  {
+   "name": "동태",
+   "everyday": true
+  },
+  {
+   "name": "황태",
+   "everyday": true
+  },
+  {
+   "name": "아귀",
+   "everyday": true
+  },
+  {
+   "name": "가자미",
+   "everyday": true
+  },
+  {
+   "name": "임연수어",
+   "everyday": true
+  },
+  {
+   "name": "연어",
+   "everyday": true
+  },
+  {
+   "name": "참치",
+   "everyday": true
+  },
+  {
+   "name": "광어",
+   "everyday": true
+  },
+  {
+   "name": "우럭",
+   "everyday": true
+  },
+  {
+   "name": "도미",
+   "everyday": true
+  },
+  {
+   "name": "방어",
+   "everyday": true
+  },
+  {
+   "name": "장어",
+   "everyday": true
+  },
+  {
+   "name": "민어",
+   "everyday": true
+  },
+  {
+   "name": "복어",
+   "everyday": true
+  },
+  {
+   "name": "멸치",
+   "everyday": true
+  },
+  {
+   "name": "뱅어포",
+   "everyday": true
+  },
+  {
+   "name": "오징어",
+   "everyday": true
+  },
+  {
+   "name": "낙지",
+   "everyday": true
+  },
+  {
+   "name": "문어",
+   "everyday": true
+  },
+  {
+   "name": "주꾸미",
+   "everyday": true
+  },
+  {
+   "name": "새우",
+   "everyday": true
+  },
+  {
+   "name": "꽃게",
+   "everyday": true
+  },
+  {
+   "name": "대게",
+   "everyday": true
+  },
+  {
+   "name": "바지락",
+   "everyday": true
+  },
+  {
+   "name": "홍합",
+   "everyday": true
+  },
+  {
+   "name": "굴",
+   "everyday": true
+  },
+  {
+   "name": "전복",
+   "everyday": true
+  },
+  {
+   "name": "가리비",
+   "everyday": true
+  },
+  {
+   "name": "꼬막",
+   "everyday": true
+  },
+  {
+   "name": "미역",
+   "everyday": true
+  },
+  {
+   "name": "다시마",
+   "everyday": true
+  }
+ ]
+}
