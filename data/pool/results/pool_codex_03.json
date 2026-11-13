@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_03",
+ "items": [
+  {
+   "name": "우유",
+   "everyday": true
+  },
+  {
+   "name": "두유",
+   "everyday": true
+  },
+  {
+   "name": "산양유",
+   "everyday": true
+  },
+  {
+   "name": "귀리음료",
+   "everyday": true
+  },
+  {
+   "name": "아몬드음료",
+   "everyday": true
+  },
+  {
+   "name": "코코넛음료",
+   "everyday": true
+  },
+  {
+   "name": "쌀음료",
+   "everyday": true
+  },
+  {
+   "name": "요구르트",
+   "everyday": true
+  },
+  {
+   "name": "떠먹는 요거트",
+   "everyday": true
+  },
+  {
+   "name": "그릭요거트",
+   "everyday": true
+  },
+  {
+   "name": "케피어",
+   "everyday": true
+  },
+  {
+   "name": "생크림",
+   "everyday": true
+  },
+  {
+   "name": "휘핑크림",
+   "everyday": true
+  },
+  {
+   "name": "사워크림",
+   "everyday": true
+  },
+  {
+   "name": "연유",
+   "everyday": true
+  },
+  {
+   "name": "분유",
+   "everyday": false
+  },
+  {
+   "name": "탈지분유",
+   "everyday": true
+  },
+  {
+   "name": "버터",
+   "everyday": true
+  },
+  {
+   "name": "슬라이스 치즈",
+   "everyday": true
+  },
+  {
+   "name": "모차렐라 치즈",
+   "everyday": true
+  },
+  {
+   "name": "체더 치즈",
+   "everyday": true
+  },
+  {
+   "name": "크림치즈",
+   "everyday": true
+  },
+  {
+   "name": "리코타 치즈",
+   "everyday": true
+  },
+  {
+   "name": "코티지 치즈",
+   "everyday": true
+  },
+  {
+   "name": "파르메산 치즈",
+   "everyday": true
+  },
+  {
+   "name": "스트링 치즈",
+   "everyday": true
+  },
+  {
+   "name": "브리 치즈",
+   "everyday": true
+  },
+  {
+   "name": "고다 치즈",
+   "everyday": true
+  },
+  {
+   "name": "블루치즈",
+   "everyday": true
+  },
+  {
+   "name": "마스카르포네",
+   "everyday": true
+  },
+  {
+   "name": "생수",
+   "everyday": true
+  },
+  {
+   "name": "탄산수",
+   "everyday": true
+  },
+  {
+   "name": "콜라",
+   "everyday": true
+  },
+  {
+   "name": "사이다",
+   "everyday": true
+  },
+  {
+   "name": "진저에일",
+   "everyday": true
+  },
+  {
+   "name": "토닉워터",
+   "everyday": true
+  },
+  {
+   "name": "탄산음료",
+   "everyday": true
+  },
+  {
+   "name": "오렌지주스",
+   "everyday": true
+  },
+  {
+   "name": "사과주스",
+   "everyday": true
+  },
+  {
+   "name": "포도주스",
+   "everyday": true
+  },
+  {
+   "name": "토마토주스",
+   "everyday": true
+  },
+  {
+   "name": "당근주스",
+   "everyday": true
+  },
+  {
+   "name": "자몽주스",
+   "everyday": true
+  },
+  {
+   "name": "레몬주스",
+   "everyday": true
+  },
+  {
+   "name": "석류주스",
+   "everyday": true
+  },
+  {
+   "name": "매실음료",
+   "everyday": true
+  },
+  {
+   "name": "알로에음료",
+   "everyday": true
+  },
+  {
+   "name": "식혜",
+   "everyday": true
+  },
+  {
+   "name": "수정과",
+   "everyday": true
+  },
+  {
+   "name": "미숫가루 음료",
+   "everyday": true
+  },
+  {
+   "name": "곡물차",
+   "everyday": true
+  },
+  {
+   "name": "보리차",
+   "everyday": true
+  },
+  {
+   "name": "옥수수차",
+   "everyday": true
+  },
+  {
+   "name": "녹차",
+   "everyday": true
+  },
+  {
+   "name": "홍차",
+   "everyday": true
+  },
+  {
+   "name": "우롱차",
+   "everyday": true
+  },
+  {
+   "name": "보이차",
+   "everyday": true
+  },
+  {
+   "name": "허브차",
+   "everyday": true
+  },
+  {
+   "name": "둥굴레차",
+   "everyday": true
+  },
+  {
+   "name": "결명자차",
+   "everyday": true
+  },
+  {
+   "name": "메밀차",
+   "everyday": true
+  },
+  {
+   "name": "유자차",
+   "everyday": true
+  },
+  {
+   "name": "생강차",
+   "everyday": true
+  },
+  {
+   "name": "대추차",
+   "everyday": true
+  },
+  {
+   "name": "율무차",
+   "everyday": true
+  },
+  {
+   "name": "콤부차",
+   "everyday": true
+  },
+  {
+   "name": "원두커피",
+   "everyday": true
+  },
+  {
+   "name": "인스턴트커피",
+   "everyday": true
+  },
+  {
+   "name": "커피믹스",
+   "everyday": true
+  },
+  {
+   "name": "캡슐커피",
+   "everyday": true
+  },
+  {
+   "name": "더치커피",
+   "everyday": true
+  },
+  {
+   "name": "캔커피",
+   "everyday": true
+  },
+  {
+   "name": "카페라테",
+   "everyday": true
+  },
+  {
+   "name": "코코아",
+   "everyday": true
+  },
+  {
+   "name": "밀크티",
+   "everyday": true
+  },
+  {
+   "name": "이온음료",
+   "everyday": true
+  },
+  {
+   "name": "에너지음료",
+   "everyday": true
+  },
+  {
+   "name": "단백질 음료",
+   "everyday": true
+  },
+  {
+   "name": "식초음료",
+   "everyday": true
+  },
+  {
+   "name": "과일청",
+   "everyday": true
+  }
+ ]
+}
