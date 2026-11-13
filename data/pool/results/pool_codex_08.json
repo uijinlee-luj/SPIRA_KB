@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_08",
+ "items": [
+  {
+   "name": "세탁세제",
+   "everyday": true
+  },
+  {
+   "name": "섬유유연제",
+   "everyday": true
+  },
+  {
+   "name": "표백제",
+   "everyday": true
+  },
+  {
+   "name": "산소계 표백제",
+   "everyday": true
+  },
+  {
+   "name": "세탁비누",
+   "everyday": true
+  },
+  {
+   "name": "얼룩제거제",
+   "everyday": true
+  },
+  {
+   "name": "세탁조 세정제",
+   "everyday": true
+  },
+  {
+   "name": "섬유탈취제",
+   "everyday": true
+  },
+  {
+   "name": "다림질 풀",
+   "everyday": true
+  },
+  {
+   "name": "세탁망",
+   "everyday": true
+  },
+  {
+   "name": "보풀제거기",
+   "everyday": true
+  },
+  {
+   "name": "먼지제거 롤러",
+   "everyday": true
+  },
+  {
+   "name": "주방세제",
+   "everyday": true
+  },
+  {
+   "name": "식기세척기 세제",
+   "everyday": true
+  },
+  {
+   "name": "식기세척기 린스",
+   "everyday": true
+  },
+  {
+   "name": "과일 세정제",
+   "everyday": true
+  },
+  {
+   "name": "젖병 세정제",
+   "everyday": false
+  },
+  {
+   "name": "수세미",
+   "everyday": true
+  },
+  {
+   "name": "병솔",
+   "everyday": true
+  },
+  {
+   "name": "빨대솔",
+   "everyday": true
+  },
+  {
+   "name": "설거지 브러시",
+   "everyday": true
+  },
+  {
+   "name": "고무장갑",
+   "everyday": true
+  },
+  {
+   "name": "행주",
+   "everyday": true
+  },
+  {
+   "name": "싱크대 거름망",
+   "everyday": true
+  },
+  {
+   "name": "배수구 세정제",
+   "everyday": true
+  },
+  {
+   "name": "배수구 브러시",
+   "everyday": true
+  },
+  {
+   "name": "기름때 제거제",
+   "everyday": true
+  },
+  {
+   "name": "주방 후드 필터",
+   "everyday": true
+  },
+  {
+   "name": "인덕션 세정제",
+   "everyday": true
+  },
+  {
+   "name": "식기세척기 세정제",
+   "everyday": true
+  },
+  {
+   "name": "욕실 세정제",
+   "everyday": true
+  },
+  {
+   "name": "변기 세정제",
+   "everyday": true
+  },
+  {
+   "name": "변기솔",
+   "everyday": true
+  },
+  {
+   "name": "변기 뚫어뻥",
+   "everyday": true
+  },
+  {
+   "name": "곰팡이 제거제",
+   "everyday": true
+  },
+  {
+   "name": "물때 제거제",
+   "everyday": true
+  },
+  {
+   "name": "타일 틈새솔",
+   "everyday": true
+  },
+  {
+   "name": "욕실 바닥솔",
+   "everyday": true
+  },
+  {
+   "name": "욕실 물기제거기",
+   "everyday": true
+  },
+  {
+   "name": "샤워기 세정제",
+   "everyday": true
+  },
+  {
+   "name": "거울 세정제",
+   "everyday": true
+  },
+  {
+   "name": "유리 세정제",
+   "everyday": true
+  },
+  {
+   "name": "유리창 닦이",
+   "everyday": true
+  },
+  {
+   "name": "방충망 청소솔",
+   "everyday": true
+  },
+  {
+   "name": "창틀 청소솔",
+   "everyday": true
+  },
+  {
+   "name": "바닥 세정제",
+   "everyday": true
+  },
+  {
+   "name": "마루 광택제",
+   "everyday": true
+  },
+  {
+   "name": "카펫 세정제",
+   "everyday": true
+  },
+  {
+   "name": "가죽 세정제",
+   "everyday": true
+  },
+  {
+   "name": "가구 광택제",
+   "everyday": true
+  },
+  {
+   "name": "스테인리스 세정제",
+   "everyday": true
+  },
+  {
+   "name": "은 세척제",
+   "everyday": false
+  },
+  {
+   "name": "접착제 제거제",
+   "everyday": true
+  },
+  {
+   "name": "찌든때 제거제",
+   "everyday": true
+  },
+  {
+   "name": "살균소독제",
+   "everyday": true
+  },
+  {
+   "name": "소독용 알코올",
+   "everyday": true
+  },
+  {
+   "name": "베이킹소다",
+   "everyday": true
+  },
+  {
+   "name": "구연산",
+   "everyday": true
+  },
+  {
+   "name": "과탄산소다",
+   "everyday": true
+  },
+  {
+   "name": "청소용 물티슈",
+   "everyday": true
+  },
+  {
+   "name": "청소포",
+   "everyday": true
+  },
+  {
+   "name": "걸레",
+   "everyday": true
+  },
+  {
+   "name": "극세사 천",
+   "everyday": true
+  },
+  {
+   "name": "매직블록",
+   "everyday": true
+  },
+  {
+   "name": "먼지털이",
+   "everyday": true
+  },
+  {
+   "name": "빗자루",
+   "everyday": true
+  },
+  {
+   "name": "쓰레받기",
+   "everyday": true
+  },
+  {
+   "name": "밀대",
+   "everyday": true
+  },
+  {
+   "name": "대걸레",
+   "everyday": true
+  },
+  {
+   "name": "걸레통",
+   "everyday": true
+  },
+  {
+   "name": "청소용 분무기",
+   "everyday": true
+  },
+  {
+   "name": "청소기 먼지봉투",
+   "everyday": true
+  },
+  {
+   "name": "청소기 필터",
+   "everyday": true
+  },
+  {
+   "name": "쓰레기봉투",
+   "everyday": true
+  },
+  {
+   "name": "음식물 쓰레기봉투",
+   "everyday": true
+  },
+  {
+   "name": "음식물 쓰레기통",
+   "everyday": true
+  },
+  {
+   "name": "쓰레기통",
+   "everyday": true
+  },
+  {
+   "name": "분리수거함",
+   "everyday": true
+  },
+  {
+   "name": "제습제",
+   "everyday": true
+  },
+  {
+   "name": "신발 탈취제",
+   "everyday": true
+  }
+ ]
+}
