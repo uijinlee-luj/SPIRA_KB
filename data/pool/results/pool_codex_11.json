@@ -1,0 +1,405 @@
+{
+ "job_id": "pool_codex_11",
+ "items": [
+  {
+   "name": "밥공기",
+   "everyday": true
+  },
+  {
+   "name": "국그릇",
+   "everyday": true
+  },
+  {
+   "name": "접시",
+   "everyday": true
+  },
+  {
+   "name": "찬기",
+   "everyday": true
+  },
+  {
+   "name": "면기",
+   "everyday": true
+  },
+  {
+   "name": "대접",
+   "everyday": true
+  },
+  {
+   "name": "종지",
+   "everyday": true
+  },
+  {
+   "name": "컵",
+   "everyday": true
+  },
+  {
+   "name": "머그잔",
+   "everyday": true
+  },
+  {
+   "name": "소주잔",
+   "everyday": true
+  },
+  {
+   "name": "와인잔",
+   "everyday": true
+  },
+  {
+   "name": "술잔",
+   "everyday": true
+  },
+  {
+   "name": "물병",
+   "everyday": true
+  },
+  {
+   "name": "주전자",
+   "everyday": true
+  },
+  {
+   "name": "찻주전자",
+   "everyday": true
+  },
+  {
+   "name": "찻잔",
+   "everyday": true
+  },
+  {
+   "name": "수저",
+   "everyday": true
+  },
+  {
+   "name": "젓가락",
+   "everyday": true
+  },
+  {
+   "name": "포크",
+   "everyday": true
+  },
+  {
+   "name": "식사용 나이프",
+   "everyday": true
+  },
+  {
+   "name": "수저받침",
+   "everyday": true
+  },
+  {
+   "name": "쟁반",
+   "everyday": true
+  },
+  {
+   "name": "식탁매트",
+   "everyday": true
+  },
+  {
+   "name": "냄비받침",
+   "everyday": true
+  },
+  {
+   "name": "냄비",
+   "everyday": true
+  },
+  {
+   "name": "뚝배기",
+   "everyday": true
+  },
+  {
+   "name": "프라이팬",
+   "everyday": true
+  },
+  {
+   "name": "웍",
+   "everyday": true
+  },
+  {
+   "name": "찜기",
+   "everyday": true
+  },
+  {
+   "name": "압력솥",
+   "everyday": true
+  },
+  {
+   "name": "냄비뚜껑",
+   "everyday": true
+  },
+  {
+   "name": "생선구이팬",
+   "everyday": true
+  },
+  {
+   "name": "석쇠",
+   "everyday": true
+  },
+  {
+   "name": "오븐팬",
+   "everyday": true
+  },
+  {
+   "name": "도마",
+   "everyday": true
+  },
+  {
+   "name": "식칼",
+   "everyday": true
+  },
+  {
+   "name": "과도",
+   "everyday": true
+  },
+  {
+   "name": "빵칼",
+   "everyday": true
+  },
+  {
+   "name": "주방가위",
+   "everyday": true
+  },
+  {
+   "name": "칼갈이",
+   "everyday": true
+  },
+  {
+   "name": "감자칼",
+   "everyday": true
+  },
+  {
+   "name": "강판",
+   "everyday": true
+  },
+  {
+   "name": "채칼",
+   "everyday": true
+  },
+  {
+   "name": "마늘다지기",
+   "everyday": true
+  },
+  {
+   "name": "절구",
+   "everyday": true
+  },
+  {
+   "name": "밀대",
+   "everyday": true
+  },
+  {
+   "name": "국자",
+   "everyday": true
+  },
+  {
+   "name": "뒤집개",
+   "everyday": true
+  },
+  {
+   "name": "주걱",
+   "everyday": true
+  },
+  {
+   "name": "집게",
+   "everyday": true
+  },
+  {
+   "name": "거품기",
+   "everyday": true
+  },
+  {
+   "name": "조리용 솔",
+   "everyday": true
+  },
+  {
+   "name": "뜰채",
+   "everyday": true
+  },
+  {
+   "name": "계량컵",
+   "everyday": true
+  },
+  {
+   "name": "계량스푼",
+   "everyday": true
+  },
+  {
+   "name": "주방저울",
+   "everyday": true
+  },
+  {
+   "name": "요리 온도계",
+   "everyday": true
+  },
+  {
+   "name": "조리 타이머",
+   "everyday": true
+  },
+  {
+   "name": "믹싱볼",
+   "everyday": true
+  },
+  {
+   "name": "채반",
+   "everyday": true
+  },
+  {
+   "name": "체",
+   "everyday": true
+  },
+  {
+   "name": "깔때기",
+   "everyday": true
+  },
+  {
+   "name": "기름 거름망",
+   "everyday": true
+  },
+  {
+   "name": "물빠짐 바구니",
+   "everyday": true
+  },
+  {
+   "name": "쌀함박",
+   "everyday": true
+  },
+  {
+   "name": "샐러드 탈수기",
+   "everyday": true
+  },
+  {
+   "name": "병따개",
+   "everyday": true
+  },
+  {
+   "name": "캔따개",
+   "everyday": true
+  },
+  {
+   "name": "코르크 마개따개",
+   "everyday": true
+  },
+  {
+   "name": "병뚜껑 따개",
+   "everyday": true
+  },
+  {
+   "name": "얼음틀",
+   "everyday": true
+  },
+  {
+   "name": "보온병",
+   "everyday": true
+  },
+  {
+   "name": "도시락통",
+   "everyday": true
+  },
+  {
+   "name": "밀폐용기",
+   "everyday": true
+  },
+  {
+   "name": "김치통",
+   "everyday": true
+  },
+  {
+   "name": "쌀통",
+   "everyday": true
+  },
+  {
+   "name": "양념통",
+   "everyday": true
+  },
+  {
+   "name": "기름병",
+   "everyday": true
+  },
+  {
+   "name": "소스병",
+   "everyday": true
+  },
+  {
+   "name": "수저통",
+   "everyday": true
+  },
+  {
+   "name": "식기건조대",
+   "everyday": true
+  },
+  {
+   "name": "도마꽂이",
+   "everyday": true
+  },
+  {
+   "name": "칼꽂이",
+   "everyday": true
+  },
+  {
+   "name": "수세미 거치대",
+   "everyday": true
+  },
+  {
+   "name": "싱크대 거름망",
+   "everyday": true
+  },
+  {
+   "name": "싱크대 배수구 덮개",
+   "everyday": true
+  },
+  {
+   "name": "고무장갑",
+   "everyday": true
+  },
+  {
+   "name": "수세미",
+   "everyday": true
+  },
+  {
+   "name": "행주",
+   "everyday": true
+  },
+  {
+   "name": "앞치마",
+   "everyday": true
+  },
+  {
+   "name": "오븐장갑",
+   "everyday": true
+  },
+  {
+   "name": "위생장갑",
+   "everyday": true
+  },
+  {
+   "name": "비닐랩",
+   "everyday": true
+  },
+  {
+   "name": "알루미늄 포일",
+   "everyday": true
+  },
+  {
+   "name": "종이호일",
+   "everyday": true
+  },
+  {
+   "name": "지퍼백",
+   "everyday": true
+  },
+  {
+   "name": "위생봉투",
+   "everyday": true
+  },
+  {
+   "name": "커피 드리퍼",
+   "everyday": true
+  },
+  {
+   "name": "커피 필터",
+   "everyday": true
+  },
+  {
+   "name": "제빵틀",
+   "everyday": false
+  }
+ ]
+}
