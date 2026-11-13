@@ -1,0 +1,245 @@
+{
+ "job_id": "pool_codex_09",
+ "items": [
+  {
+   "name": "화장지",
+   "everyday": true
+  },
+  {
+   "name": "미용티슈",
+   "everyday": true
+  },
+  {
+   "name": "키친타월",
+   "everyday": true
+  },
+  {
+   "name": "물티슈",
+   "everyday": true
+  },
+  {
+   "name": "손수건 티슈",
+   "everyday": true
+  },
+  {
+   "name": "냅킨",
+   "everyday": true
+  },
+  {
+   "name": "기름종이",
+   "everyday": true
+  },
+  {
+   "name": "화장솜",
+   "everyday": true
+  },
+  {
+   "name": "면봉",
+   "everyday": true
+  },
+  {
+   "name": "칫솔",
+   "everyday": true
+  },
+  {
+   "name": "치약",
+   "everyday": true
+  },
+  {
+   "name": "치실",
+   "everyday": true
+  },
+  {
+   "name": "치간칫솔",
+   "everyday": true
+  },
+  {
+   "name": "구강청결제",
+   "everyday": true
+  },
+  {
+   "name": "혀클리너",
+   "everyday": true
+  },
+  {
+   "name": "틀니 세정제",
+   "everyday": false
+  },
+  {
+   "name": "비누",
+   "everyday": true
+  },
+  {
+   "name": "손 세정제",
+   "everyday": true
+  },
+  {
+   "name": "샴푸",
+   "everyday": true
+  },
+  {
+   "name": "린스",
+   "everyday": true
+  },
+  {
+   "name": "바디워시",
+   "everyday": true
+  },
+  {
+   "name": "세안제",
+   "everyday": true
+  },
+  {
+   "name": "샤워타월",
+   "everyday": true
+  },
+  {
+   "name": "때밀이",
+   "everyday": true
+  },
+  {
+   "name": "면도기",
+   "everyday": true
+  },
+  {
+   "name": "면도날",
+   "everyday": true
+  },
+  {
+   "name": "면도크림",
+   "everyday": true
+  },
+  {
+   "name": "제모크림",
+   "everyday": false
+  },
+  {
+   "name": "생리대",
+   "everyday": true
+  },
+  {
+   "name": "탐폰",
+   "everyday": true
+  },
+  {
+   "name": "팬티라이너",
+   "everyday": true
+  },
+  {
+   "name": "기저귀",
+   "everyday": false
+  },
+  {
+   "name": "성인 기저귀",
+   "everyday": false
+  },
+  {
+   "name": "수유패드",
+   "everyday": false
+  },
+  {
+   "name": "일회용 마스크",
+   "everyday": true
+  },
+  {
+   "name": "손 소독제",
+   "everyday": true
+  },
+  {
+   "name": "소독용 알코올",
+   "everyday": true
+  },
+  {
+   "name": "소독솜",
+   "everyday": true
+  },
+  {
+   "name": "밴드",
+   "everyday": true
+  },
+  {
+   "name": "거즈",
+   "everyday": true
+  },
+  {
+   "name": "반창고",
+   "everyday": true
+  },
+  {
+   "name": "귀마개",
+   "everyday": true
+  },
+  {
+   "name": "콘택트렌즈 세정액",
+   "everyday": false
+  },
+  {
+   "name": "쓰레기봉투",
+   "everyday": true
+  },
+  {
+   "name": "음식물쓰레기 봉투",
+   "everyday": true
+  },
+  {
+   "name": "위생봉투",
+   "everyday": true
+  },
+  {
+   "name": "지퍼백",
+   "everyday": true
+  },
+  {
+   "name": "주방랩",
+   "everyday": true
+  },
+  {
+   "name": "알루미늄 포일",
+   "everyday": true
+  },
+  {
+   "name": "종이호일",
+   "everyday": true
+  },
+  {
+   "name": "종이컵",
+   "everyday": true
+  },
+  {
+   "name": "일회용 젓가락",
+   "everyday": true
+  },
+  {
+   "name": "위생장갑",
+   "everyday": true
+  },
+  {
+   "name": "고무장갑",
+   "everyday": true
+  },
+  {
+   "name": "수세미",
+   "everyday": true
+  },
+  {
+   "name": "행주",
+   "everyday": true
+  },
+  {
+   "name": "먼지제거 테이프",
+   "everyday": true
+  },
+  {
+   "name": "배수구 거름망",
+   "everyday": true
+  },
+  {
+   "name": "제습제",
+   "everyday": true
+  },
+  {
+   "name": "방충제",
+   "everyday": false
+  }
+ ]
+}
