@@ -1,0 +1,245 @@
+{
+ "job_id": "pool_gemini_20",
+ "items": [
+  {
+   "name": "요가매트",
+   "everyday": false
+  },
+  {
+   "name": "덤벨",
+   "everyday": false
+  },
+  {
+   "name": "폼롤러",
+   "everyday": false
+  },
+  {
+   "name": "줄넘기",
+   "everyday": false
+  },
+  {
+   "name": "악력기",
+   "everyday": false
+  },
+  {
+   "name": "저항밴드",
+   "everyday": false
+  },
+  {
+   "name": "푸시업바",
+   "everyday": false
+  },
+  {
+   "name": "짐볼",
+   "everyday": false
+  },
+  {
+   "name": "문틀 철봉",
+   "everyday": false
+  },
+  {
+   "name": "스텝퍼",
+   "everyday": false
+  },
+  {
+   "name": "마사지볼",
+   "everyday": true
+  },
+  {
+   "name": "모래주머니",
+   "everyday": false
+  },
+  {
+   "name": "손목보호대",
+   "everyday": true
+  },
+  {
+   "name": "무릎보호대",
+   "everyday": true
+  },
+  {
+   "name": "쿨토시",
+   "everyday": true
+  },
+  {
+   "name": "스포츠양말",
+   "everyday": true
+  },
+  {
+   "name": "스포츠물병",
+   "everyday": true
+  },
+  {
+   "name": "축구공",
+   "everyday": false
+  },
+  {
+   "name": "농구공",
+   "everyday": false
+  },
+  {
+   "name": "배구공",
+   "everyday": false
+  },
+  {
+   "name": "야구공",
+   "everyday": false
+  },
+  {
+   "name": "야구글러브",
+   "everyday": false
+  },
+  {
+   "name": "배드민턴 라켓",
+   "everyday": false
+  },
+  {
+   "name": "셔틀콕",
+   "everyday": false
+  },
+  {
+   "name": "테니스 라켓",
+   "everyday": false
+  },
+  {
+   "name": "테니스공",
+   "everyday": false
+  },
+  {
+   "name": "탁구 라켓",
+   "everyday": false
+  },
+  {
+   "name": "탁구공",
+   "everyday": false
+  },
+  {
+   "name": "골프공",
+   "everyday": false
+  },
+  {
+   "name": "골프장갑",
+   "everyday": false
+  },
+  {
+   "name": "골프티",
+   "everyday": false
+  },
+  {
+   "name": "퍼팅매트",
+   "everyday": false
+  },
+  {
+   "name": "등산스틱",
+   "everyday": false
+  },
+  {
+   "name": "아이젠",
+   "everyday": false
+  },
+  {
+   "name": "등산방석",
+   "everyday": false
+  },
+  {
+   "name": "캠핑의자",
+   "everyday": false
+  },
+  {
+   "name": "침낭",
+   "everyday": false
+  },
+  {
+   "name": "자전거 헬멧",
+   "everyday": false
+  },
+  {
+   "name": "자전거 자물쇠",
+   "everyday": false
+  },
+  {
+   "name": "자전거 펌프",
+   "everyday": false
+  },
+  {
+   "name": "수경",
+   "everyday": false
+  },
+  {
+   "name": "수모",
+   "everyday": false
+  },
+  {
+   "name": "오리발",
+   "everyday": false
+  },
+  {
+   "name": "스노클",
+   "everyday": false
+  },
+  {
+   "name": "암밴드",
+   "everyday": false
+  },
+  {
+   "name": "복싱 글러브",
+   "everyday": false
+  },
+  {
+   "name": "인라인스케이트",
+   "everyday": false
+  },
+  {
+   "name": "스케이트보드",
+   "everyday": false
+  },
+  {
+   "name": "보드게임",
+   "everyday": false
+  },
+  {
+   "name": "체스",
+   "everyday": false
+  },
+  {
+   "name": "바둑판",
+   "everyday": false
+  },
+  {
+   "name": "직소퍼즐",
+   "everyday": false
+  },
+  {
+   "name": "스케치북",
+   "everyday": true
+  },
+  {
+   "name": "색연필",
+   "everyday": true
+  },
+  {
+   "name": "수채화물감",
+   "everyday": false
+  },
+  {
+   "name": "클레이",
+   "everyday": true
+  },
+  {
+   "name": "뜨개실",
+   "everyday": false
+  },
+  {
+   "name": "코바늘",
+   "everyday": false
+  },
+  {
+   "name": "기타줄",
+   "everyday": false
+  },
+  {
+   "name": "낚시대",
+   "everyday": false
+  }
+ ]
+}
