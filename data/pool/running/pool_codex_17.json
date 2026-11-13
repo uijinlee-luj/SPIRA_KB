@@ -1,9 +1,0 @@
-{
- "job_id": "pool_codex_17",
- "batch": "pool",
- "role": "item_pool",
- "company": "codex",
- "prompt_version": "item_pool@v2",
- "category": "반려동물 용품",
- "target_count": 60
-}

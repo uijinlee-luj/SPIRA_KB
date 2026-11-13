@@ -1,0 +1,245 @@
+{
+ "job_id": "pool_codex_17",
+ "items": [
+  {
+   "name": "강아지 사료",
+   "everyday": true
+  },
+  {
+   "name": "고양이 사료",
+   "everyday": true
+  },
+  {
+   "name": "강아지 간식",
+   "everyday": true
+  },
+  {
+   "name": "고양이 간식",
+   "everyday": true
+  },
+  {
+   "name": "껌",
+   "everyday": true
+  },
+  {
+   "name": "영양제",
+   "everyday": true
+  },
+  {
+   "name": "분유",
+   "everyday": false
+  },
+  {
+   "name": "사료 보관통",
+   "everyday": true
+  },
+  {
+   "name": "밥그릇",
+   "everyday": true
+  },
+  {
+   "name": "물그릇",
+   "everyday": true
+  },
+  {
+   "name": "자동 급식기",
+   "everyday": false
+  },
+  {
+   "name": "급수기",
+   "everyday": true
+  },
+  {
+   "name": "배변패드",
+   "everyday": true
+  },
+  {
+   "name": "배변판",
+   "everyday": true
+  },
+  {
+   "name": "배변봉투",
+   "everyday": true
+  },
+  {
+   "name": "고양이 화장실",
+   "everyday": true
+  },
+  {
+   "name": "고양이 모래",
+   "everyday": true
+  },
+  {
+   "name": "모래 삽",
+   "everyday": true
+  },
+  {
+   "name": "모래 매트",
+   "everyday": true
+  },
+  {
+   "name": "탈취제",
+   "everyday": true
+  },
+  {
+   "name": "얼룩 제거제",
+   "everyday": true
+  },
+  {
+   "name": "물티슈",
+   "everyday": true
+  },
+  {
+   "name": "샴푸",
+   "everyday": true
+  },
+  {
+   "name": "린스",
+   "everyday": true
+  },
+  {
+   "name": "빗",
+   "everyday": true
+  },
+  {
+   "name": "발톱깎이",
+   "everyday": true
+  },
+  {
+   "name": "칫솔",
+   "everyday": true
+  },
+  {
+   "name": "치약",
+   "everyday": true
+  },
+  {
+   "name": "귀 세정제",
+   "everyday": true
+  },
+  {
+   "name": "눈 세정제",
+   "everyday": true
+  },
+  {
+   "name": "발 세정제",
+   "everyday": true
+  },
+  {
+   "name": "이발기",
+   "everyday": true
+  },
+  {
+   "name": "목줄",
+   "everyday": true
+  },
+  {
+   "name": "가슴줄",
+   "everyday": true
+  },
+  {
+   "name": "리드줄",
+   "everyday": true
+  },
+  {
+   "name": "인식표",
+   "everyday": true
+  },
+  {
+   "name": "입마개",
+   "everyday": false
+  },
+  {
+   "name": "이동장",
+   "everyday": false
+  },
+  {
+   "name": "유모차",
+   "everyday": false
+  },
+  {
+   "name": "안전문",
+   "everyday": false
+  },
+  {
+   "name": "울타리",
+   "everyday": false
+  },
+  {
+   "name": "방석",
+   "everyday": true
+  },
+  {
+   "name": "집",
+   "everyday": true
+  },
+  {
+   "name": "계단",
+   "everyday": false
+  },
+  {
+   "name": "미끄럼 방지매트",
+   "everyday": false
+  },
+  {
+   "name": "넥카라",
+   "everyday": false
+  },
+  {
+   "name": "기저귀",
+   "everyday": false
+  },
+  {
+   "name": "옷",
+   "everyday": false
+  },
+  {
+   "name": "우비",
+   "everyday": false
+  },
+  {
+   "name": "신발",
+   "everyday": false
+  },
+  {
+   "name": "공",
+   "everyday": true
+  },
+  {
+   "name": "노즈워크 매트",
+   "everyday": true
+  },
+  {
+   "name": "고양이 낚싯대",
+   "everyday": true
+  },
+  {
+   "name": "스크래처",
+   "everyday": true
+  },
+  {
+   "name": "캣타워",
+   "everyday": true
+  },
+  {
+   "name": "캣닢",
+   "everyday": true
+  },
+  {
+   "name": "햄스터 사료",
+   "everyday": true
+  },
+  {
+   "name": "햄스터 쳇바퀴",
+   "everyday": true
+  },
+  {
+   "name": "새 모이",
+   "everyday": true
+  },
+  {
+   "name": "물고기 사료",
+   "everyday": true
+  }
+ ]
+}
