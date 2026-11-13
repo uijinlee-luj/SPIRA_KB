@@ -1,9 +1,0 @@
-{
- "job_id": "pool_codex_01",
- "batch": "pool",
- "role": "item_pool",
- "company": "codex",
- "prompt_version": "item_pool@v2",
- "category": "과일·채소",
- "target_count": 100
-}

@@ -1,0 +1,25 @@
+{
+ "job_id": "pool_codex_01",
+ "scope": "pool",
+ "batch": "pool",
+ "role": "item_pool",
+ "company": "codex",
+ "person": "Y",
+ "prompt_version": "item_pool@v2",
+ "model_config": "gpt-6.1-sol",
+ "models_seen": [],
+ "usage": {},
+ "total_tokens": null,
+ "quota": null,
+ "attempts": 2,
+ "ok": false,
+ "errors": [
+  "[1회] 에이전트 실행 실패: Reading additional input from stdin...\n2026-11-13T08:20:40.112126Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-11-13T08:20:40.112799Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-11-13T08:20:40.534361Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-11-13T08:20:40.534371Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-11-13T08:20:40.595001Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer realm=\\\"OAuth\\\", resource_metadata=\\\"https://mcp.notion.com/.well-known/oauth-protected-resource/mcp\\\", scope=\\\"default\\\"\" })\n2026-11-13T08:20:41.111276Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses\n2026-11-13T08:20:41.112526Z  WARN codex_core::client: falling back to HTTP\n2026-11-13T08:20:44.102139Z  WARN codex_mcp::rmcp_client: failed to initialize MCP client during shutdown: MCP startup failed: handshaking with MCP server failed: Send message error Transport [codex_rmcp_client::event_notification_transport::EventNotificationTransport<rmcp::transport::worker::WorkerTransport<rmcp::transport::streamable_http_client::StreamableHttpClientWorker<codex_rmcp_client::http_client_adapter::StreamableHttpClientAdapter>>>] error: Auth required, when send initialize request\n",
+  "[2회] 에이전트 실행 실패: Reading additional input from stdin...\n2026-11-13T08:20:44.689235Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-11-13T08:20:44.689255Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-11-13T08:20:45.145661Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-11-13T08:20:45.145674Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-11-13T08:20:45.251002Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer realm=\\\"OAuth\\\", resource_metadata=\\\"https://mcp.notion.com/.well-known/oauth-protected-resource/mcp\\\", scope=\\\"default\\\"\" })\n2026-11-13T08:20:45.811877Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses\n2026-11-13T08:20:45.812146Z  WARN codex_core::client: falling back to HTTP\n2026-11-13T08:20:48.611772Z  WARN codex_mcp::rmcp_client: failed to initialize MCP client during shutdown: MCP startup failed: handshaking with MCP server failed: Send message error Transport [codex_rmcp_client::event_notification_transport::EventNotificationTransport<rmcp::transport::worker::WorkerTransport<rmcp::transport::streamable_http_client::StreamableHttpClientWorker<codex_rmcp_client::http_client_adapter::StreamableHttpClientAdapter>>>] error: Auth required, when send initialize request\n"
+ ],
+ "started_at": "2026-11-13T17:20:39+09:00",
+ "finished_at": "2026-11-13T17:20:48+09:00",
+ "seconds": 9,
+ "local_date": "2026-11-13",
+ "fake": false
+}
