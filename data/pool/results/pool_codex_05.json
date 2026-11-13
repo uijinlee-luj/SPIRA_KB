@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_05",
+ "items": [
+  {
+   "name": "감자칩",
+   "everyday": true
+  },
+  {
+   "name": "옥수수 과자",
+   "everyday": true
+  },
+  {
+   "name": "새우 과자",
+   "everyday": true
+  },
+  {
+   "name": "쌀과자",
+   "everyday": true
+  },
+  {
+   "name": "누룽지 과자",
+   "everyday": true
+  },
+  {
+   "name": "뻥튀기",
+   "everyday": true
+  },
+  {
+   "name": "팝콘",
+   "everyday": true
+  },
+  {
+   "name": "프레첼",
+   "everyday": true
+  },
+  {
+   "name": "크래커",
+   "everyday": true
+  },
+  {
+   "name": "비스킷",
+   "everyday": true
+  },
+  {
+   "name": "쿠키",
+   "everyday": true
+  },
+  {
+   "name": "웨하스",
+   "everyday": true
+  },
+  {
+   "name": "샌드 과자",
+   "everyday": true
+  },
+  {
+   "name": "파이 과자",
+   "everyday": true
+  },
+  {
+   "name": "전병",
+   "everyday": true
+  },
+  {
+   "name": "약과",
+   "everyday": true
+  },
+  {
+   "name": "유과",
+   "everyday": true
+  },
+  {
+   "name": "강정",
+   "everyday": true
+  },
+  {
+   "name": "한과",
+   "everyday": true
+  },
+  {
+   "name": "건빵",
+   "everyday": true
+  },
+  {
+   "name": "과자 선물세트",
+   "everyday": false
+  },
+  {
+   "name": "초콜릿",
+   "everyday": true
+  },
+  {
+   "name": "초콜릿 선물세트",
+   "everyday": false
+  },
+  {
+   "name": "사탕",
+   "everyday": true
+  },
+  {
+   "name": "젤리",
+   "everyday": true
+  },
+  {
+   "name": "껌",
+   "everyday": true
+  },
+  {
+   "name": "캐러멜",
+   "everyday": true
+  },
+  {
+   "name": "마시멜로",
+   "everyday": true
+  },
+  {
+   "name": "양갱",
+   "everyday": true
+  },
+  {
+   "name": "엿",
+   "everyday": true
+  },
+  {
+   "name": "누가",
+   "everyday": true
+  },
+  {
+   "name": "푸딩",
+   "everyday": true
+  },
+  {
+   "name": "젤라틴 디저트",
+   "everyday": true
+  },
+  {
+   "name": "아이스크림",
+   "everyday": true
+  },
+  {
+   "name": "아이스바",
+   "everyday": true
+  },
+  {
+   "name": "아이스크림 콘",
+   "everyday": true
+  },
+  {
+   "name": "빙수",
+   "everyday": true
+  },
+  {
+   "name": "아이스샌드",
+   "everyday": true
+  },
+  {
+   "name": "식빵",
+   "everyday": true
+  },
+  {
+   "name": "모닝빵",
+   "everyday": true
+  },
+  {
+   "name": "바게트",
+   "everyday": true
+  },
+  {
+   "name": "베이글",
+   "everyday": true
+  },
+  {
+   "name": "크루아상",
+   "everyday": true
+  },
+  {
+   "name": "치아바타",
+   "everyday": true
+  },
+  {
+   "name": "포카치아",
+   "everyday": true
+  },
+  {
+   "name": "잉글리시 머핀",
+   "everyday": true
+  },
+  {
+   "name": "햄버거빵",
+   "everyday": true
+  },
+  {
+   "name": "핫도그빵",
+   "everyday": true
+  },
+  {
+   "name": "단팥빵",
+   "everyday": true
+  },
+  {
+   "name": "소보로빵",
+   "everyday": true
+  },
+  {
+   "name": "크림빵",
+   "everyday": true
+  },
+  {
+   "name": "슈크림빵",
+   "everyday": true
+  },
+  {
+   "name": "카스텔라",
+   "everyday": true
+  },
+  {
+   "name": "머핀",
+   "everyday": true
+  },
+  {
+   "name": "스콘",
+   "everyday": true
+  },
+  {
+   "name": "도넛",
+   "everyday": true
+  },
+  {
+   "name": "꽈배기",
+   "everyday": true
+  },
+  {
+   "name": "와플",
+   "everyday": true
+  },
+  {
+   "name": "팬케이크",
+   "everyday": true
+  },
+  {
+   "name": "호떡",
+   "everyday": true
+  },
+  {
+   "name": "붕어빵",
+   "everyday": true
+  },
+  {
+   "name": "찐빵",
+   "everyday": true
+  },
+  {
+   "name": "만주",
+   "everyday": true
+  },
+  {
+   "name": "마들렌",
+   "everyday": true
+  },
+  {
+   "name": "휘낭시에",
+   "everyday": true
+  },
+  {
+   "name": "마카롱",
+   "everyday": true
+  },
+  {
+   "name": "에클레어",
+   "everyday": true
+  },
+  {
+   "name": "슈",
+   "everyday": true
+  },
+  {
+   "name": "타르트",
+   "everyday": true
+  },
+  {
+   "name": "브라우니",
+   "everyday": true
+  },
+  {
+   "name": "치즈케이크",
+   "everyday": true
+  },
+  {
+   "name": "롤케이크",
+   "everyday": true
+  },
+  {
+   "name": "생일 케이크",
+   "everyday": false
+  },
+  {
+   "name": "경단",
+   "everyday": true
+  },
+  {
+   "name": "인절미",
+   "everyday": true
+  },
+  {
+   "name": "떡꼬치",
+   "everyday": true
+  },
+  {
+   "name": "견과류",
+   "everyday": true
+  },
+  {
+   "name": "건과일",
+   "everyday": true
+  },
+  {
+   "name": "육포",
+   "everyday": true
+  },
+  {
+   "name": "오징어채",
+   "everyday": true
+  }
+ ]
+}
