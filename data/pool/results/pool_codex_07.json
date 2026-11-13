@@ -1,0 +1,125 @@
+{
+ "job_id": "pool_codex_07",
+ "items": [
+  {
+   "name": "맥주",
+   "everyday": true
+  },
+  {
+   "name": "소주",
+   "everyday": true
+  },
+  {
+   "name": "막걸리",
+   "everyday": true
+  },
+  {
+   "name": "약주",
+   "everyday": true
+  },
+  {
+   "name": "청주",
+   "everyday": true
+  },
+  {
+   "name": "와인",
+   "everyday": true
+  },
+  {
+   "name": "위스키",
+   "everyday": true
+  },
+  {
+   "name": "브랜디",
+   "everyday": true
+  },
+  {
+   "name": "보드카",
+   "everyday": true
+  },
+  {
+   "name": "진",
+   "everyday": true
+  },
+  {
+   "name": "럼",
+   "everyday": true
+  },
+  {
+   "name": "데킬라",
+   "everyday": true
+  },
+  {
+   "name": "고량주",
+   "everyday": true
+  },
+  {
+   "name": "매실주",
+   "everyday": true
+  },
+  {
+   "name": "복분자주",
+   "everyday": true
+  },
+  {
+   "name": "인삼주",
+   "everyday": true
+  },
+  {
+   "name": "사과주",
+   "everyday": true
+  },
+  {
+   "name": "벌꿀주",
+   "everyday": true
+  },
+  {
+   "name": "리큐르",
+   "everyday": true
+  },
+  {
+   "name": "압생트",
+   "everyday": true
+  },
+  {
+   "name": "아쿠아비트",
+   "everyday": true
+  },
+  {
+   "name": "황주",
+   "everyday": true
+  },
+  {
+   "name": "아와모리",
+   "everyday": true
+  },
+  {
+   "name": "포트와인",
+   "everyday": true
+  },
+  {
+   "name": "셰리",
+   "everyday": true
+  },
+  {
+   "name": "하이볼",
+   "everyday": true
+  },
+  {
+   "name": "이강주",
+   "everyday": true
+  },
+  {
+   "name": "문배주",
+   "everyday": true
+  },
+  {
+   "name": "오미자주",
+   "everyday": true
+  },
+  {
+   "name": "오가피주",
+   "everyday": true
+  }
+ ]
+}
