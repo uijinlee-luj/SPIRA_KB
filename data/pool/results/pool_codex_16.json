@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_16",
+ "items": [
+  {
+   "name": "기저귀",
+   "everyday": true
+  },
+  {
+   "name": "물티슈",
+   "everyday": true
+  },
+  {
+   "name": "기저귀 크림",
+   "everyday": true
+  },
+  {
+   "name": "기저귀 봉투",
+   "everyday": true
+  },
+  {
+   "name": "기저귀 매트",
+   "everyday": true
+  },
+  {
+   "name": "배변훈련 팬티",
+   "everyday": false
+  },
+  {
+   "name": "유아 변기",
+   "everyday": false
+  },
+  {
+   "name": "변기 커버",
+   "everyday": false
+  },
+  {
+   "name": "분유",
+   "everyday": true
+  },
+  {
+   "name": "이유식",
+   "everyday": true
+  },
+  {
+   "name": "유아 간식",
+   "everyday": true
+  },
+  {
+   "name": "젖병",
+   "everyday": true
+  },
+  {
+   "name": "젖꼭지",
+   "everyday": true
+  },
+  {
+   "name": "젖병 세정제",
+   "everyday": true
+  },
+  {
+   "name": "젖병 솔",
+   "everyday": true
+  },
+  {
+   "name": "젖병 건조대",
+   "everyday": true
+  },
+  {
+   "name": "젖병 소독기",
+   "everyday": true
+  },
+  {
+   "name": "분유 포트",
+   "everyday": true
+  },
+  {
+   "name": "분유 케이스",
+   "everyday": true
+  },
+  {
+   "name": "이유식 용기",
+   "everyday": true
+  },
+  {
+   "name": "이유식 스푼",
+   "everyday": true
+  },
+  {
+   "name": "유아 식판",
+   "everyday": true
+  },
+  {
+   "name": "유아 수저",
+   "everyday": true
+  },
+  {
+   "name": "유아 컵",
+   "everyday": true
+  },
+  {
+   "name": "빨대컵",
+   "everyday": true
+  },
+  {
+   "name": "턱받이",
+   "everyday": true
+  },
+  {
+   "name": "유아 식탁의자",
+   "everyday": true
+  },
+  {
+   "name": "공갈젖꼭지",
+   "everyday": true
+  },
+  {
+   "name": "치발기",
+   "everyday": true
+  },
+  {
+   "name": "유아 칫솔",
+   "everyday": true
+  },
+  {
+   "name": "유아 치약",
+   "everyday": true
+  },
+  {
+   "name": "유아 치실",
+   "everyday": true
+  },
+  {
+   "name": "유아 샴푸",
+   "everyday": true
+  },
+  {
+   "name": "유아 바디워시",
+   "everyday": true
+  },
+  {
+   "name": "유아 로션",
+   "everyday": true
+  },
+  {
+   "name": "유아 오일",
+   "everyday": true
+  },
+  {
+   "name": "유아 비누",
+   "everyday": true
+  },
+  {
+   "name": "유아 욕조",
+   "everyday": true
+  },
+  {
+   "name": "목욕 장난감",
+   "everyday": true
+  },
+  {
+   "name": "샴푸캡",
+   "everyday": true
+  },
+  {
+   "name": "유아 수건",
+   "everyday": true
+  },
+  {
+   "name": "유아 손톱깎이",
+   "everyday": true
+  },
+  {
+   "name": "유아 면봉",
+   "everyday": true
+  },
+  {
+   "name": "콧물 흡입기",
+   "everyday": true
+  },
+  {
+   "name": "체온계",
+   "everyday": true
+  },
+  {
+   "name": "유아 세탁세제",
+   "everyday": true
+  },
+  {
+   "name": "유아 옷걸이",
+   "everyday": true
+  },
+  {
+   "name": "배냇저고리",
+   "everyday": false
+  },
+  {
+   "name": "우주복",
+   "everyday": true
+  },
+  {
+   "name": "유아 내의",
+   "everyday": true
+  },
+  {
+   "name": "유아 양말",
+   "everyday": true
+  },
+  {
+   "name": "유아 신발",
+   "everyday": true
+  },
+  {
+   "name": "유아 잠옷",
+   "everyday": true
+  },
+  {
+   "name": "속싸개",
+   "everyday": true
+  },
+  {
+   "name": "수면조끼",
+   "everyday": true
+  },
+  {
+   "name": "유아 이불",
+   "everyday": true
+  },
+  {
+   "name": "아기 침대",
+   "everyday": true
+  },
+  {
+   "name": "방수요",
+   "everyday": true
+  },
+  {
+   "name": "아기띠",
+   "everyday": true
+  },
+  {
+   "name": "유모차",
+   "everyday": true
+  },
+  {
+   "name": "카시트",
+   "everyday": false
+  },
+  {
+   "name": "유모차 방풍커버",
+   "everyday": false
+  },
+  {
+   "name": "유모차 모기장",
+   "everyday": false
+  },
+  {
+   "name": "기저귀 가방",
+   "everyday": true
+  },
+  {
+   "name": "미아방지 가방",
+   "everyday": false
+  },
+  {
+   "name": "안전문",
+   "everyday": false
+  },
+  {
+   "name": "모서리 보호대",
+   "everyday": false
+  },
+  {
+   "name": "콘센트 안전커버",
+   "everyday": false
+  },
+  {
+   "name": "서랍 잠금장치",
+   "everyday": false
+  },
+  {
+   "name": "놀이 매트",
+   "everyday": true
+  },
+  {
+   "name": "딸랑이",
+   "everyday": true
+  },
+  {
+   "name": "헝겊책",
+   "everyday": true
+  },
+  {
+   "name": "그림책",
+   "everyday": true
+  },
+  {
+   "name": "블록",
+   "everyday": true
+  },
+  {
+   "name": "인형",
+   "everyday": true
+  },
+  {
+   "name": "퍼즐",
+   "everyday": true
+  },
+  {
+   "name": "크레파스",
+   "everyday": true
+  },
+  {
+   "name": "색종이",
+   "everyday": true
+  },
+  {
+   "name": "점토",
+   "everyday": true
+  },
+  {
+   "name": "유아 가위",
+   "everyday": true
+  }
+ ]
+}
