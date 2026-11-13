@@ -1,0 +1,325 @@
+{
+ "job_id": "pool_codex_06",
+ "items": [
+  {
+   "name": "즉석밥",
+   "everyday": true
+  },
+  {
+   "name": "볶음밥",
+   "everyday": true
+  },
+  {
+   "name": "주먹밥",
+   "everyday": true
+  },
+  {
+   "name": "김밥",
+   "everyday": true
+  },
+  {
+   "name": "유부초밥",
+   "everyday": true
+  },
+  {
+   "name": "비빔밥",
+   "everyday": true
+  },
+  {
+   "name": "덮밥",
+   "everyday": true
+  },
+  {
+   "name": "카레",
+   "everyday": true
+  },
+  {
+   "name": "짜장",
+   "everyday": true
+  },
+  {
+   "name": "죽",
+   "everyday": true
+  },
+  {
+   "name": "누룽지",
+   "everyday": true
+  },
+  {
+   "name": "떡국",
+   "everyday": true
+  },
+  {
+   "name": "떡볶이",
+   "everyday": true
+  },
+  {
+   "name": "라볶이",
+   "everyday": true
+  },
+  {
+   "name": "라면",
+   "everyday": true
+  },
+  {
+   "name": "우동",
+   "everyday": true
+  },
+  {
+   "name": "냉면",
+   "everyday": true
+  },
+  {
+   "name": "쫄면",
+   "everyday": true
+  },
+  {
+   "name": "칼국수",
+   "everyday": true
+  },
+  {
+   "name": "수제비",
+   "everyday": true
+  },
+  {
+   "name": "잔치국수",
+   "everyday": true
+  },
+  {
+   "name": "막국수",
+   "everyday": true
+  },
+  {
+   "name": "메밀국수",
+   "everyday": true
+  },
+  {
+   "name": "쌀국수",
+   "everyday": true
+  },
+  {
+   "name": "파스타",
+   "everyday": true
+  },
+  {
+   "name": "라자냐",
+   "everyday": true
+  },
+  {
+   "name": "리소토",
+   "everyday": true
+  },
+  {
+   "name": "그라탱",
+   "everyday": true
+  },
+  {
+   "name": "피자",
+   "everyday": true
+  },
+  {
+   "name": "핫도그",
+   "everyday": true
+  },
+  {
+   "name": "햄버거",
+   "everyday": true
+  },
+  {
+   "name": "샌드위치",
+   "everyday": true
+  },
+  {
+   "name": "토스트",
+   "everyday": true
+  },
+  {
+   "name": "부리토",
+   "everyday": true
+  },
+  {
+   "name": "퀘사디아",
+   "everyday": true
+  },
+  {
+   "name": "만두",
+   "everyday": true
+  },
+  {
+   "name": "딤섬",
+   "everyday": true
+  },
+  {
+   "name": "찐빵",
+   "everyday": true
+  },
+  {
+   "name": "호떡",
+   "everyday": true
+  },
+  {
+   "name": "붕어빵",
+   "everyday": true
+  },
+  {
+   "name": "어묵탕",
+   "everyday": true
+  },
+  {
+   "name": "미역국",
+   "everyday": true
+  },
+  {
+   "name": "육개장",
+   "everyday": true
+  },
+  {
+   "name": "설렁탕",
+   "everyday": true
+  },
+  {
+   "name": "곰탕",
+   "everyday": true
+  },
+  {
+   "name": "갈비탕",
+   "everyday": true
+  },
+  {
+   "name": "삼계탕",
+   "everyday": true
+  },
+  {
+   "name": "추어탕",
+   "everyday": true
+  },
+  {
+   "name": "감자탕",
+   "everyday": true
+  },
+  {
+   "name": "부대찌개",
+   "everyday": true
+  },
+  {
+   "name": "김치찌개",
+   "everyday": true
+  },
+  {
+   "name": "된장찌개",
+   "everyday": true
+  },
+  {
+   "name": "순두부찌개",
+   "everyday": true
+  },
+  {
+   "name": "청국장찌개",
+   "everyday": true
+  },
+  {
+   "name": "동태탕",
+   "everyday": true
+  },
+  {
+   "name": "스프",
+   "everyday": true
+  },
+  {
+   "name": "불고기",
+   "everyday": true
+  },
+  {
+   "name": "제육볶음",
+   "everyday": true
+  },
+  {
+   "name": "닭갈비",
+   "everyday": true
+  },
+  {
+   "name": "찜닭",
+   "everyday": true
+  },
+  {
+   "name": "족발",
+   "everyday": true
+  },
+  {
+   "name": "보쌈",
+   "everyday": true
+  },
+  {
+   "name": "순대",
+   "everyday": true
+  },
+  {
+   "name": "떡갈비",
+   "everyday": true
+  },
+  {
+   "name": "함박스테이크",
+   "everyday": true
+  },
+  {
+   "name": "미트볼",
+   "everyday": true
+  },
+  {
+   "name": "돈가스",
+   "everyday": true
+  },
+  {
+   "name": "치킨너겟",
+   "everyday": true
+  },
+  {
+   "name": "치킨텐더",
+   "everyday": true
+  },
+  {
+   "name": "탕수육",
+   "everyday": true
+  },
+  {
+   "name": "새우튀김",
+   "everyday": true
+  },
+  {
+   "name": "오징어튀김",
+   "everyday": true
+  },
+  {
+   "name": "감자튀김",
+   "everyday": true
+  },
+  {
+   "name": "고로케",
+   "everyday": true
+  },
+  {
+   "name": "치즈스틱",
+   "everyday": true
+  },
+  {
+   "name": "해물파전",
+   "everyday": true
+  },
+  {
+   "name": "동그랑땡",
+   "everyday": true
+  },
+  {
+   "name": "잡채",
+   "everyday": true
+  },
+  {
+   "name": "계란찜",
+   "everyday": true
+  },
+  {
+   "name": "생선구이",
+   "everyday": true
+  }
+ ]
+}
