@@ -2,7 +2,7 @@
 
 서버는 이 파일을 그대로 가져다 쓴다:
 
-    pip install "spira-kb[embed] @ git+https://github.com/uijinlee-luj/SPIRA_KB"
+    pip install "spira-kb[embed] @ git+https://github.com/CSE-SPIRA/SPIRA_KB"
 
     from spira.embedding import basket_text, embed_basket
 
