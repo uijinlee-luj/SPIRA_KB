@@ -4,7 +4,7 @@ Synthetic purchase-intent knowledge base for SPIRA — multi-agent pipeline (Gem
 
 SPIRA 구매 의도 지식 베이스 — Gemini · Codex · Claude 에이전트가 합성 주문 사례를 생성하고 블라인드 라벨을 단 뒤, 품질 관문을 통과한 사례만 PostgreSQL + pgvector에 저장하는 자동화 파이프라인.
 
-메인 저장소: [iejunkimu/SPIRA_AI](https://github.com/iejunkimu/SPIRA_AI) (README의 Knowledge Retrieval 파트)
+팀 저장소: [CSE-SPIRA/SPIRA](https://github.com/CSE-SPIRA/SPIRA) (README의 Knowledge Retrieval 파트)
 
 ## 상태
 
@@ -64,7 +64,7 @@ basket_text(["세제", "딸기", "줄넘기"])   # "딸기, 세제, 줄넘기"  
 embed_basket(["세제", "딸기", "줄넘기"])  # BGE-M3, 1024차원, L2 정규화
 ```
 
-목록 세 개(`config/lists/`)의 원본은 이 저장소다 (KB-15). 바뀌면 JSON으로 만들어 SPIRA_AI `contracts/`에 PR로 보낸다 (자동화 예정).
+목록 세 개(`config/lists/`)의 원본은 이 저장소다 (KB-15). 바뀌면 JSON으로 만들어 팀 저장소 SPIRA `contracts/`에 PR로 보낸다 (자동화 예정).
 
 ## 처음 한 번 (팀원)
 
