@@ -54,10 +54,11 @@ def _me() -> str:
 
 
 @app.command()
-def start(args: list[str] = typer.Argument(None, help="작업 수 · AI 이름 (둘 다 비워도 됨). 예: 20 / gemini / 5 gemini"),
+def start(args: list[str] = typer.Argument(None, help="작업 수 · AI 이름 · 사이클 (모두 비워도 됨). 예: 20 / gemini / A 20 / A gemini 5"),
           max_jobs: int = typer.Option(None, "--max-jobs", hidden=True)) -> None:
     """작업을 가져와 처리한다. `spira start` = 기본 몫만큼, `spira start 20` = 계정마다 20개까지,
-    `spira start 5 gemini` = Gemini 계정만 5개 (gemini · codex · claude, 순서 상관없음).
+    `spira start 5 gemini` = Gemini 계정만 5개 (gemini · codex · claude), `spira start A 20` = 사이클 A 몫만 20개.
+    순서는 상관없다.
 
     1. git pull로 대기열 최신화, 오래 멈춘 작업은 대기열로 되돌림
     2. 내 계정마다 활성 사이클의 대기열에서 작업을 하나씩 예약 (아이템 풀 작업이 먼저)
@@ -73,16 +74,20 @@ def start(args: list[str] = typer.Argument(None, help="작업 수 · AI 이름 (
             typer.echo(f"✗ {p}")
         typer.echo("설정 검사를 통과하지 못해 시작하지 않습니다. U에게 알려 주세요.")
         raise typer.Exit(1)
-    count, only = None, None
+    count, only, cycle = None, None, None
+    cycle_names = sorted(config.load_cycles())
     for a in args or []:
         if a.isdigit() and int(a) >= 1:
             count = int(a)
         elif a.lower() in worker.COMPANY_NAME:
             only = a.lower()
+        elif a.upper() in cycle_names:
+            cycle = a.upper()
         else:
-            typer.echo(f"✗ '{a}'를 알아듣지 못했습니다. 숫자(작업 수)나 gemini · codex · claude만 쓸 수 있습니다.")
+            typer.echo(f"✗ '{a}'를 알아듣지 못했습니다. 숫자(작업 수), gemini · codex · claude, "
+                       f"사이클 이름({' · '.join(cycle_names)})만 쓸 수 있습니다.")
             raise typer.Exit(1)
-    raise typer.Exit(worker.start(_me(), max_jobs=count or max_jobs, only=only, echo=typer.echo))
+    raise typer.Exit(worker.start(_me(), max_jobs=count or max_jobs, only=only, cycle=cycle, echo=typer.echo))
 
 
 @app.command("make-pool-jobs")

@@ -20,7 +20,7 @@ import shutil
 import sys
 import threading
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -298,7 +298,8 @@ def keep_awake() -> None:
         ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)
 
 
-def start(person: str, max_jobs: int | None = None, only: str | None = None, echo=print) -> int:
+def start(person: str, max_jobs: int | None = None, only: str | None = None,
+          cycle: str | None = None, echo=print) -> int:
     lock = threading.Lock()
 
     def log(msg: str) -> None:
@@ -312,11 +313,14 @@ def start(person: str, max_jobs: int | None = None, only: str | None = None, ech
     if not accounts:
         log(f"📦 {person} — 지금 활성인 사이클이 없어서 할 일이 없습니다.")
         return 0
-    if only:
-        mine = [a for a in accounts if a.company == only]
+    if only or cycle:
+        mine = [a for a in accounts if (not only or a.company == only) and (not cycle or cycle in a.cycles)]
+        if cycle:   # 그 사이클 대기열만 (아이템 풀 작업은 회사 몫이라 그대로 포함)
+            mine = [replace(a, cycles=[cycle]) for a in mine]
         if not mine:
-            have = " · ".join(COMPANY_NAME[a.company] for a in accounts)
-            log(f"📦 {person} — 지금 돌릴 수 있는 {COMPANY_NAME[only]} 계정이 없습니다 (내 계정: {have}).")
+            have = " · ".join(a.label for a in accounts)
+            want = " ".join(x for x in [cycle and f"사이클 {cycle}", only and COMPANY_NAME[only]] if x)
+            log(f"📦 {person} — 지금 돌릴 수 있는 {want} 계정이 없습니다 (내 계정: {have}).")
             return 0
         accounts = mine
     all_scopes = sorted({s for a in accounts for s in a.scopes})
@@ -328,7 +332,8 @@ def start(person: str, max_jobs: int | None = None, only: str | None = None, ech
         return 1
 
     now = datetime.now()
-    who = f"{COMPANY_NAME[only]}만 " if only else ("계정마다 " if max_jobs else "")
+    picked = " ".join(x for x in [cycle, only and COMPANY_NAME[only]] if x)
+    who = f"{picked}만 " if picked else ("계정마다 " if max_jobs else "")
     how = f"{who}{max_jobs}개" if max_jobs else f"{who}기본 몫만큼"
     log(f"📦 {person} · {now.month}월 {now.day}일 — 시작합니다 ({how})")
     for a in accounts:
