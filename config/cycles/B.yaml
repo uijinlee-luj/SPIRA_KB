@@ -10,7 +10,7 @@ no_new_cycle_if_unfinishable: true
 members:
   gemini: { person: U, tool: antigravity }
   codex:  { person: Y, tool: codex }
-  claude: { person: J, tool: claude_code }
+  claude: { person: S, tool: claude_code }
 
 # 역할 돌리기: 묶음을 만든 회사는 자기 조각에 라벨을 달지 않는다
 # 배치 이름 = {사이클}{회차}-{조각}  예) B1-1, B1-2, B1-3, B2-1 …

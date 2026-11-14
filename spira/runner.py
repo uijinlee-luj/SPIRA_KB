@@ -54,8 +54,9 @@ def _me() -> str:
 
 
 @app.command()
-def start(max_jobs: int = typer.Option(None, "--max-jobs", help="이번 실행에서 계정마다 최대 몇 개 (시험용)")) -> None:
-    """오늘 할당량만큼 작업을 가져와 처리한다. (`/spira-start`가 부르는 명령)
+def start(count: int = typer.Argument(None, min=1, help="이번에 할 작업 수 (계정마다). 비우면 기본 몫만큼"),
+          max_jobs: int = typer.Option(None, "--max-jobs", hidden=True)) -> None:
+    """작업을 가져와 처리한다. `spira start` = 기본 몫만큼, `spira start 20` = 계정마다 20개까지.
 
     1. git pull로 대기열 최신화, 오래 멈춘 작업은 대기열로 되돌림
     2. 내 계정마다 활성 사이클의 대기열에서 작업을 하나씩 예약 (아이템 풀 작업이 먼저)
@@ -71,7 +72,7 @@ def start(max_jobs: int = typer.Option(None, "--max-jobs", help="이번 실행�
             typer.echo(f"✗ {p}")
         typer.echo("설정 검사를 통과하지 못해 시작하지 않습니다. U에게 알려 주세요.")
         raise typer.Exit(1)
-    raise typer.Exit(worker.start(_me(), max_jobs=max_jobs, echo=typer.echo))
+    raise typer.Exit(worker.start(_me(), max_jobs=count or max_jobs, echo=typer.echo))
 
 
 @app.command("make-pool-jobs")

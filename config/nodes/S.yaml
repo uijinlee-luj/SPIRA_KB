@@ -1,8 +1,8 @@
 # S — 각자 낼 몫. spira start가 이 파일을 읽는다 (비워 두면 기본값).
 person: S
 accounts:
-  - { company: claude, tool: claude_code, cycles: [A] }
-  - { company: codex,  tool: codex,       cycles: [] }   # 예비
+  - { company: codex,  tool: codex,       cycles: [A] }
+  - { company: claude, tool: claude_code, cycles: [B] }
 
 weekly_share_percent: null   # 주간 한도 중 낼 몫 (%, 비우면 30). AI 도구의 한도 %를 자동으로 읽어서 맞춘다
 jobs_per_day: null           # 한도 %를 알려 주지 않는 도구만: 하루 작업 수 (비우면 10)
