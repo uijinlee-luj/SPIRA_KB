@@ -54,7 +54,7 @@ SPIRA_KB/
 ## 서버에서 쓰는 법 (KB-16)
 
 ```bash
-pip install "spira-kb[embed] @ git+https://github.com/uijinlee-luj/SPIRA_KB"
+pip install "spira-kb[embed] @ git+https://github.com/CSE-SPIRA/SPIRA_KB"
 ```
 
 ```python
@@ -69,7 +69,7 @@ embed_basket(["세제", "딸기", "줄넘기"])  # BGE-M3, 1024차원, L2 정규
 ## 처음 한 번 (팀원)
 
 ```bash
-git clone https://github.com/uijinlee-luj/SPIRA_KB.git
+git clone https://github.com/CSE-SPIRA/SPIRA_KB.git
 cd SPIRA_KB
 uv sync                 # uv가 없으면: https://docs.astral.sh/uv/
 uv run spira whoami Y   # 내 이름 (U / Y / S / J)
