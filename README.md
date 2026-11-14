@@ -90,6 +90,7 @@ uv run spira check      # 설정 검사
 - 한도 %를 읽을 수 없는 도구는 하루 `jobs_per_day`개(기본 10)로 센다
 - 오늘 몫보다 더 하려면 숫자를 붙인다: `/spira-start 5` 또는 `uv run spira start 5` = 이번 실행에서 계정마다 5개 (오늘 몫과 상관없이). 주간 한도 5% 안전장치는 그대로
 - AI 하나만 돌리려면 이름을 붙인다: `/spira-start 5 gemini` = Gemini 계정만 5개 (`gemini` · `codex` · `claude`, 숫자 없이 이름만 쓰면 그 계정의 기본 몫)
+  - 순서를 바꿔도 된다: `/spira-start gemini 5`도 같다
 - 할 일이 없으면 멈춘다. Ctrl+C로 멈추면 하던 작업은 대기열로 돌아간다
 
 ## 자동 진행 (GitHub Actions)
