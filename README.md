@@ -88,6 +88,9 @@ uv run spira check      # 설정 검사
 - 몫은 `config/nodes/내이름.yaml`의 `weekly_share_percent`(주간 한도 중 낼 %). AI 도구가 알려 주는 남은 한도 %를 작업 전후로 자동으로 읽어서, 이번 주 몫을 남은 날에 나눠 채운다. 팀원이 재거나 적을 것은 없다
 - 5시간 한도가 거의 차면 다시 찰 때까지 기다렸다가 이어서 한다. 주간 한도가 5% 남으면 멈춘다
 - 한도 %를 읽을 수 없는 도구는 하루 `jobs_per_day`개(기본 10)로 센다
+- 오늘 몫보다 더 하려면 숫자를 붙인다: `/spira-start 5` 또는 `uv run spira start 5` = 이번 실행에서 계정마다 5개 (오늘 몫과 상관없이). 주간 한도 5% 안전장치는 그대로
+- AI 하나만 돌리려면 이름을 붙인다: `/spira-start 5 gemini` = Gemini 계정만 5개 (`gemini` · `codex` · `claude`, 숫자 없이 이름만 쓰면 그 계정의 기본 몫)
+  - 순서를 바꿔도 된다: `/spira-start gemini 5`도 같다
 - 할 일이 없으면 멈춘다. Ctrl+C로 멈추면 하던 작업은 대기열로 돌아간다
 
 ## 자동 진행 (GitHub Actions)

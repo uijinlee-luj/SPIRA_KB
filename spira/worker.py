@@ -298,7 +298,7 @@ def keep_awake() -> None:
         ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)
 
 
-def start(person: str, max_jobs: int | None = None, echo=print) -> int:
+def start(person: str, max_jobs: int | None = None, only: str | None = None, echo=print) -> int:
     lock = threading.Lock()
 
     def log(msg: str) -> None:
@@ -312,6 +312,13 @@ def start(person: str, max_jobs: int | None = None, echo=print) -> int:
     if not accounts:
         log(f"📦 {person} — 지금 활성인 사이클이 없어서 할 일이 없습니다.")
         return 0
+    if only:
+        mine = [a for a in accounts if a.company == only]
+        if not mine:
+            have = " · ".join(COMPANY_NAME[a.company] for a in accounts)
+            log(f"📦 {person} — 지금 돌릴 수 있는 {COMPANY_NAME[only]} 계정이 없습니다 (내 계정: {have}).")
+            return 0
+        accounts = mine
     all_scopes = sorted({s for a in accounts for s in a.scopes})
     try:
         back = queue.requeue_stale(all_scopes, me=person)
@@ -321,7 +328,8 @@ def start(person: str, max_jobs: int | None = None, echo=print) -> int:
         return 1
 
     now = datetime.now()
-    how = f"계정마다 {max_jobs}개" if max_jobs else "기본 몫만큼"
+    who = f"{COMPANY_NAME[only]}만 " if only else ("계정마다 " if max_jobs else "")
+    how = f"{who}{max_jobs}개" if max_jobs else f"{who}기본 몫만큼"
     log(f"📦 {person} · {now.month}월 {now.day}일 — 시작합니다 ({how})")
     for a in accounts:
         waiting = sum(len(queue.waiting(s, a.company)) for s in a.scopes)
