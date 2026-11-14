@@ -6,8 +6,8 @@ ends_on: null            # 끝나는 날 없음
 # 회사별 담당 계정 (회사가 다른 세 모델이어야 한다)
 members:
   gemini: { person: Y, tool: antigravity }
-  codex:  { person: J, tool: codex }
-  claude: { person: S, tool: claude_code }
+  codex:  { person: S, tool: codex }
+  claude: { person: J, tool: claude_code }
 
 # 역할 돌리기: 묶음을 만든 회사는 자기 조각에 라벨을 달지 않는다
 # 배치 이름 = {사이클}{회차}-{조각}  예) A1-1, A1-2, A1-3, A2-1 …

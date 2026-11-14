@@ -218,11 +218,12 @@ def work_account(acc: Account, max_jobs: int | None, stop: threading.Event, log,
     q = read_quota(acc.runner)
     while not stop.is_set():
         if max_jobs is not None and n >= max_jobs:
+            log(f"■ {acc.label}: 요청한 {max_jobs}개를 끝냈습니다")
             break
         if q is not None:
             target, today = today_target(acc, q, datetime.now(timezone.utc))
-            if today >= target:
-                log(f"■ {acc.label}: 오늘 목표({fmt(target)})를 채웠습니다")
+            if max_jobs is None and today >= target:
+                log(f"■ {acc.label}: 오늘 목표({fmt(target)})를 채웠습니다. 더 하려면 `uv run spira start 숫자`")
                 break
             if q.weekly_left <= WEEKLY_FLOOR:
                 log(f"■ {acc.label}: 주간 한도가 {fmt(q.weekly_left)}만 남아 멈춥니다")
@@ -232,8 +233,8 @@ def work_account(acc: Account, max_jobs: int | None, stop: threading.Event, log,
                 if q is None:
                     break
                 continue
-        elif jobs_today(acc) >= acc.jobs_per_day:
-            log(f"■ {acc.label}: 오늘 {acc.jobs_per_day}개를 채웠습니다")
+        elif max_jobs is None and jobs_today(acc) >= acc.jobs_per_day:
+            log(f"■ {acc.label}: 오늘 {acc.jobs_per_day}개를 채웠습니다. 더 하려면 `uv run spira start 숫자`")
             break
         try:
             job = queue.claim_next(acc.scopes, acc.company, acc.person)
@@ -320,7 +321,8 @@ def start(person: str, max_jobs: int | None = None, echo=print) -> int:
         return 1
 
     now = datetime.now()
-    log(f"📦 {person} · {now.month}월 {now.day}일 — 시작합니다")
+    how = f"계정마다 {max_jobs}개" if max_jobs else "기본 몫만큼"
+    log(f"📦 {person} · {now.month}월 {now.day}일 — 시작합니다 ({how})")
     for a in accounts:
         waiting = sum(len(queue.waiting(s, a.company)) for s in a.scopes)
         log(f"  - {describe(a)} · 기다리는 작업 {waiting}개")
